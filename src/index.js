@@ -23,16 +23,7 @@ var Badge = React.createClass({
       'div',
       null,
       'This is the badge component',
-      React.createElement(
-        'h3',
-        null,
-        'It will have a picture of the badge'
-      ),
-      React.createElement(
-        'h4',
-        null,
-        'with some 37949874(ie numbas) on it %%%%'
-      )
+      React.createElement('img', { src: '../assets/badge.png' })
     );
   }
 });

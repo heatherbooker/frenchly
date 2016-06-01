@@ -6,7 +6,7 @@ var watchify = require('watchify');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 
-gulp.task('default', ['html', 'js'], function() {});
+gulp.task('default', ['html', 'js', 'sass'], function() {});
 
 gulp.task('watch', function() {
   gulp.watch('src/*.jsx', ['js'])

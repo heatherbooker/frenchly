@@ -15,8 +15,7 @@ var Badge = React.createClass({
 	render: function() {
 		return (
       <div>This is the badge component
-        <h3>It will have a picture of the badge</h3>
-        <h4>with some 37949874(ie numbas) on it %%%%</h4>
+        <img src="../assets/badge.png" />
       </div>
       );
 	}
