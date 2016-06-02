@@ -14,6 +14,6 @@ totally a copycat of duolingo
 ```git clone https://github.com/heatherbooker/frenchly.git  
 cd frenchly  
 npm install  
-npm run start  ```  
+npm run start```  
 open localhost:8080 in browser
 #####voila!
