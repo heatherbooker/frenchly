@@ -11,13 +11,12 @@ totally a copycat of duolingo
 
 #### to run:  
 
-```git clone https://github.com/heatherbooker/frenchly.git  
-
+```
+git clone https://github.com/heatherbooker/frenchly.git  
 cd frenchly  
-
 npm install  
-
-npm run start```  
+npm run start
+```  
 
 open localhost:8080 in browser
 
