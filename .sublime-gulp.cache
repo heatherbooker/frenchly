@@ -1,0 +1,1 @@
+{"/home/heather/dev/frenchly/gulpfile.js":{"sha1":"740c055fbfa2d11f000ebc1cba98dc81370309a7","tasks":{"default":{"name":"default","dependencies":"sass js"},"watch":{"name":"watch","dependencies":""},"babel":{"name":"babel","dependencies":""},"js":{"name":"js","dependencies":""},"sass":{"name":"sass","dependencies":""}}}}
