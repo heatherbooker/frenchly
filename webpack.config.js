@@ -1,7 +1,7 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./src/index.jsx",
   output: {
     path: 'build',
     filename: "index.js"
@@ -11,12 +11,15 @@ module.exports = {
       test: /\.scss$/,
       loaders: ["style", "css", "sass"]
     }, {
-      test: /\.js$/,
+      test: /\.jsx$/,
       exclude: /node_modules/,
-      loader: 'babel-loader',
+      loader: 'babel',
       query: {
-        presets: ['es2015', 'react']
+        presets: ['es2015', 'react', 'react-hmre']
       }
+    }, {
+      test: /\.png$/,
+      loader: 'file'
     }]
   },
   plugins: [

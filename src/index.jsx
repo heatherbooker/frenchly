@@ -2,7 +2,9 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 
 //require stylesheet
-require("./styles.css");
+require("./styles.scss");
+//require imgs
+var badge = require("./assets/badge.png");
 
 var Main = React.createClass({
   render:function() {
@@ -19,7 +21,7 @@ var Badge = React.createClass({
 		return (
       <div>This is the badge component
         <div className='aBadgeDiv'>This has a className</div>
-        <img src="../assets/badge.png" />
+        <img src={badge} />
       </div>
       );
 	}
