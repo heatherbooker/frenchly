@@ -2,7 +2,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 
 //require stylesheet
-require("./styles.scss");
+require("./stylesheets/main.scss");
 //require imgs
 var badge = require("./assets/badge.png");
 
