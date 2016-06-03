@@ -1,7 +1,15 @@
 $main-blue: #20A6e7;
+$font-lite: 400;
+$font-med: 500;
+$font-bold: 600;
 
 //basic browser reset styles
-@import partials/reset; 
+@import "partials/reset"; 
+//component styles
+@import "partials/nav";
+@import "partials/buttons";
+@import "partials/left-panel";
+@import "partials/right-panel";
 
 
 body {
@@ -17,20 +25,4 @@ a {
   color: inherit;
 }
 
-.badge-div {
-  color: red;
-}
 
-.nav {
-  background-color: $main-blue;
-  min-height: 70px;
-  width: 100%;
-  position: fixed;
-}
-
-.nav-logo {
-  color: #fff;
-  margin-left: 20%;
-  height: 60px;
-  line-height: 60px;
-}

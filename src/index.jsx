@@ -24,7 +24,7 @@ var Nav = React.createClass({
   render: function() {
     return (
       <div className='nav'>
-        <h3 className='nav-logo'><a href='index.html'>Frenchly</a></h3>
+        <h1 className='nav-logo'><a href='index.html'>Frenchly</a></h1>
       </div>
     );
   }
