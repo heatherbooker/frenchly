@@ -7,7 +7,7 @@ require("./stylesheets/main.scss");
 var badge = require("./assets/badge.png");
 
 //uri vars
-var home = 'index.html'; //how to use this instead of hardcoding the link?
+var home = 'index.html';
 
 var MainDiv = React.createClass({
   render: function() {
@@ -24,7 +24,7 @@ var Nav = React.createClass({
   render: function() {
     return (
       <div className='nav'>
-        <h1 className='nav-logo'><a href='index.html'>Frenchly</a></h1>
+        <h1 className='nav-logo'><a href={home}>Frenchly</a></h1>
       </div>
     );
   }
