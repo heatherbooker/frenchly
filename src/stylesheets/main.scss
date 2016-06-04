@@ -1,10 +1,7 @@
-$main-blue: #20A6e7;
-$font-lite: 400;
-$font-med: 500;
-$font-bold: 600;
-
 //basic browser reset styles
 @import "partials/reset"; 
+//variables
+@import "modules/variables";
 //component styles
 @import "partials/nav";
 @import "partials/buttons";
