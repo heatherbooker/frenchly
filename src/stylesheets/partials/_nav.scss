@@ -2,12 +2,11 @@
   background-color: $main-blue;
   min-height: 70px;
   width: 100%;
-  position: fixed;
+  position: relative;
 }
 
 .nav-logo {
   color: #fff;
-  margin-left: 20%;
   height: 60px;
   line-height: 60px;
   font-weight: $font-bold;
