@@ -52,8 +52,19 @@ var PanelRight = React.createClass({
           <div className='pad-10'>
             <h4 className='progress'>Progress</h4>
             <Badge />
+            <Button />
           </div>
         </div>
+      </div>
+    );
+  }
+});
+
+var Button = React.createClass({
+  render: function() {
+    return (
+      <div className='btn-blue'>
+        <h4>Reset</h4>
       </div>
     );
   }
