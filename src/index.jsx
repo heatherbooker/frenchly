@@ -4,7 +4,7 @@ var ReactDOM = require('react-dom');
 //require stylesheet
 require("./stylesheets/main.scss");
 //require imgs
-var badge = require("./assets/badge.png");
+var badge = require("./assets/badge.svg");
 
 //uri vars
 var home = 'index.html';
@@ -36,6 +36,8 @@ var PanelLeft = React.createClass({
     return (
       <div className='col-3-4'>
         <div className='panel panel-left'>
+          <div className='pad-10'>
+          </div>
         </div>
       </div>
     );
@@ -47,7 +49,22 @@ var PanelRight = React.createClass({
     return (
       <div className='col-1-4'>
         <div className='panel panel-right'>
+          <div className='pad-10'>
+            <h4 className='progress'>Progress</h4>
+            <Badge />
+            <Button />
+          </div>
         </div>
+      </div>
+    );
+  }
+});
+
+var Button = React.createClass({
+  render: function() {
+    return (
+      <div className='btn-blue'>
+        <h4>Reset</h4>
       </div>
     );
   }
@@ -87,9 +104,9 @@ var Nav = React.createClass({
 var Badge = React.createClass({
 	render: function() {
 		return (
-      <div>This is the badge component
-        <div className='badge-div'>This has a className</div>
-        <img src={badge} />
+      <div className='badge pad-20'>
+        <img src={badge} className='badge-icon'/>
+        <h2 className='prog-percent'>11%</h2>
       </div>
       );
 	}
