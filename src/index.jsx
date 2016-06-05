@@ -5,9 +5,13 @@ var ReactDOM = require('react-dom');
 require("./stylesheets/main.scss");
 //require imgs
 var badge = require("./assets/badge.svg");
+var earth = require("./assets/earth.svg");
+var people = require("./assets/nationalities.svg");
+var gazebo = require("./assets/mixitup.svg");
 
 //uri vars
 var home = 'index.html';
+var countries = '#';
 
 var Main = React.createClass({
   render: function() {
@@ -36,7 +40,26 @@ var PanelLeft = React.createClass({
     return (
       <div className='col-3-4'>
         <div className='panel panel-left'>
-          <div className='pad-10'>
+          <div className='pad-20'>
+            <h3 className='title pad-20'>Learn countries and nationalities in French</h3>
+            <div className='col-1-3'>
+              <a href={countries}>
+                <img src={earth} className='main-pg-img'/>
+                <Button />
+              </a>
+            </div>
+            <div className='col-1-3'>
+              <a href={countries}>
+                <img src={people} className='main-pg-img'/>
+                <Button />
+              </a>
+            </div>
+            <div className='col-1-3'>
+              <a href={countries}>
+                <img src={gazebo} className='main-pg-img'/>
+                <Button />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -52,7 +75,7 @@ var PanelRight = React.createClass({
           <div className='pad-10'>
             <h4 className='progress'>Progress</h4>
             <Badge />
-            <Button />
+            <Button className='reset'/>
           </div>
         </div>
       </div>
@@ -64,7 +87,7 @@ var Button = React.createClass({
   render: function() {
     return (
       <div className='btn-blue'>
-        <h4>Reset</h4>
+        <h4>Word</h4>
       </div>
     );
   }
