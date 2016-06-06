@@ -1,5 +1,5 @@
 .progress {
-  padding: 30px 10px 0px 5px;
+  padding: 40px 20px 0px 15px;
   font-weight: 600;
   color: #343434;
   text-align: center;
@@ -13,12 +13,17 @@
   font-size: 30px;
 }
 
-.badge {
+.progress-badge {
   position: relative;
   left: 3px;
+  margin: 40px 5px 0px 5px;
 }
 
 .badge-icon {
   height: 160px;
   width: 160px;
+}
+
+.reset {
+  margin: 155px 20px 20px 20px;
 }

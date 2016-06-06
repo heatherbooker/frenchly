@@ -5,18 +5,20 @@ var ReactDOM = require('react-dom');
 require("./stylesheets/main.scss");
 //require imgs
 var badge = require("./assets/badge.svg");
+var earth = require("./assets/earth.svg");
+var people = require("./assets/nationalities.svg");
+var gazebo = require("./assets/mixitup.svg");
 
 //uri vars
 var home = 'index.html';
+var countries = '#';
 
 var Main = React.createClass({
   render: function() {
     return (
-      <div className="grid">
+      <div className="container-fluid">
         <Nav />
-        <Spacer />
         <Content />
-        <Spacer />
       </div>
       );
   }
@@ -34,12 +36,31 @@ var Panel = React.createClass({
 var PanelLeft = React.createClass({
   render: function() {
     return (
-      <div className='col-3-4'>
-        <div className='panel panel-left'>
-          <div className='pad-10'>
+        <div className='panel panel-left row'>
+          <div className='col-md-12'>
+            <h3 className='title'>Learn countries and nationalities in French</h3>
+            <div className='row'>
+              <div className='col-md-4'>
+                <a href={countries}>
+                  <img src={earth} className='main-pg-img'/>
+                  <Button />
+                </a>
+              </div>
+              <div className='col-md-4'>
+                <a href={countries}>
+                  <img src={people} className='main-pg-img'/>
+                  <Button />
+                </a>
+              </div>
+              <div className='col-md-4'>
+                <a href={countries}>
+                  <img src={gazebo} className='main-pg-img'/>
+                  <Button />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
     );
   }
 });
@@ -47,15 +68,13 @@ var PanelLeft = React.createClass({
 var PanelRight = React.createClass({
   render: function() {
     return (
-      <div className='col-1-4'>
-        <div className='panel panel-right'>
-          <div className='pad-10'>
+        <div className='panel panel-right row'>
+          <div className='col-md-12'>
             <h4 className='progress'>Progress</h4>
             <Badge />
-            <Button />
+            <Button className='reset'/>
           </div>
         </div>
-      </div>
     );
   }
 });
@@ -64,7 +83,7 @@ var Button = React.createClass({
   render: function() {
     return (
       <div className='btn-blue'>
-        <h4>Reset</h4>
+        <h4>Word</h4>
       </div>
     );
   }
@@ -73,18 +92,13 @@ var Button = React.createClass({
 var Content = React.createClass({
   render: function() {
     return (
-      <div className='col-4-6'>
-        <PanelLeft />
-        <PanelRight />
-      </div>
-    );
-  }
-});
-
-var Spacer = React.createClass({
-  render: function() {
-    return (
-      <div className="col-1-6">
+      <div className='row'>
+        <div className='col-md-offset-2 col-md-6'>
+          <PanelLeft />
+        </div>
+        <div className='col-md-2'>
+          <PanelRight />
+        </div>
       </div>
     );
   }
@@ -93,9 +107,10 @@ var Spacer = React.createClass({
 var Nav = React.createClass({
   render: function() {
     return (
-      <div className='nav'>
-        <Spacer />
-        <h1 className='nav-logo'><a href={home}>Frenchly</a></h1>
+      <div className='row nav'>
+        <div className='col-md-2 col-md-offset-2'>
+          <h1 className='nav-logo'><a href={home}>Frenchly</a></h1>
+        </div>
       </div>
     );
   }
@@ -104,7 +119,7 @@ var Nav = React.createClass({
 var Badge = React.createClass({
 	render: function() {
 		return (
-      <div className='badge pad-20'>
+      <div className='progress-badge'>
         <img src={badge} className='badge-icon'/>
         <h2 className='prog-percent'>11%</h2>
       </div>
