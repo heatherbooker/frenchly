@@ -2,22 +2,19 @@ body {
   background-color: #e9e9e9 !important;
 }
 
-.panel {
+.f-panel {
   background-color: #fff;
   height: 455px;
   position: relative;
   border-radius: 10px;
 }
 
-.panel-big {
+.f-panel-big, .f-panel-right {
+  @extend .f-panel;
   margin: 40px 0px;
-  width: 100%;
 }
 
-.panel-left {
+.f-panel-left {
+  @extend .f-panel;
   margin: 40px 40px 40px 0px;
-}
-
-.panel-right {
-  margin: 40px 0px 40px 0px;
 }

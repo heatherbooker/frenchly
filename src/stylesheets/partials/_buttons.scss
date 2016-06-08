@@ -1,6 +1,6 @@
 @import "../modules/variables.scss";
 
-%btn {
+%f-btn {
   border-radius: 33px;
   color: white;
   padding: 13px;
@@ -8,7 +8,7 @@
   text-align: center;
 }
 
-.btn-blue {
-  @extend %btn;
+.f-btn-blue {
+  @extend %f-btn;
   background-color: $main-blue;
 }
