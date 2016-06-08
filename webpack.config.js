@@ -18,7 +18,7 @@ module.exports = {
         presets: ['es2015', 'react', 'react-hmre']
       }
     }, {
-      test: /\.png$/,
+      test: /\.svg$/,
       loader: 'file'
     }]
   },

@@ -1,0 +1,20 @@
+body {
+  background-color: #e9e9e9 !important;
+}
+
+.f-panel {
+  background-color: #fff;
+  height: 455px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.f-panel-big, .f-panel-right {
+  @extend .f-panel;
+  margin: 40px 0px;
+}
+
+.f-panel-left {
+  @extend .f-panel;
+  margin: 40px 40px 40px 0px;
+}
