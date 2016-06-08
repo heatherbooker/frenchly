@@ -4,7 +4,7 @@ var ReactDOM = require('react-dom');
 //require other components
 var Nav = require("./components/nav.jsx");
 var PanelRight = require("./components/right-panel.jsx");
-var Button = require('components/button.jsx');
+var MapPage = require('./components/map.jsx')
 //require stylesheet
 require("./stylesheets/main.scss");
 //require imgs
@@ -20,7 +20,7 @@ var Main = React.createClass({
     return (
       <div className="container-fluid">
         <Nav />
-        <Content />
+        <MapPage />
       </div>
       );
   }
@@ -36,19 +36,25 @@ var PanelLeft = React.createClass({
               <div className='col-md-4'>
                 <a href={countries}>
                   <img src={earth} className='f-main-pg-img'/>
-                  <Button />
+                  <div className='f-btn-primary'>
+                    <h4>Word</h4>
+                  </div>
                 </a>
               </div>
               <div className='col-md-4'>
                 <a href={countries}>
                   <img src={people} className='f-main-pg-img'/>
-                  <Button />
+                  <div className='f-btn-primary'>
+                    <h4>Word</h4>
+                  </div>
                 </a>
               </div>
               <div className='col-md-4'>
                 <a href={countries}>
                   <img src={gazebo} className='f-main-pg-img'/>
-                  <Button />
+                  <div className='f-btn-primary'>
+                    <h4>Word</h4>
+                  </div>
                 </a>
               </div>
             </div>

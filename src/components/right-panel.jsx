@@ -1,8 +1,5 @@
 var React = require('react');
 
-//require other components
-var Button = require("./button.jsx")
-
 //require badge img
 var badge = require("../assets/badge.svg");
 
@@ -14,7 +11,9 @@ var PanelRight = React.createClass({
           <div className='col-md-12'>
             <h4 className='f-progress'>Progress</h4>
             <Badge />
-            <Button className='f-reset'/>
+            <div className='f-btn-primary f-reset'>
+              <h4>Word</h4>
+            </div>
           </div>
         </div>
     );
