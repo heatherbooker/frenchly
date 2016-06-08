@@ -1,9 +1,10 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 //require other components
-var Nav = require("./components/nav.jsx");
-var PanelRight = require("./components/right-panel.jsx");
-var MapPage = require('./components/map.jsx')
+var Nav = require("./components/Nav.jsx");
+var PanelRight = require("./components/PanelRight.jsx");
+var PanelLeft = require('./components/PanelLeft.jsx');
+var MapPage = require('./components/Map.jsx');
 //require stylesheet
 require("./stylesheets/main.scss");
 //require imgs
@@ -24,45 +25,6 @@ var Main = React.createClass({
       );
   }
 });
-
-var PanelLeft = React.createClass({
-  render: function() {
-    return (
-        <div className='f-panel f-panel-left row'>
-          <div className='col-md-12'>
-            <h3 className='f-title'>Learn countries and nationalities in French</h3>
-            <div className='row'>
-              <div className='col-md-4'>
-                <a href={countries}>
-                  <img src={earth} className='f-main-pg-img'/>
-                  <div className='f-btn-primary'>
-                    <h4>Word</h4>
-                  </div>
-                </a>
-              </div>
-              <div className='col-md-4'>
-                <a href={countries}>
-                  <img src={people} className='f-main-pg-img'/>
-                  <div className='f-btn-primary'>
-                    <h4>Word</h4>
-                  </div>
-                </a>
-              </div>
-              <div className='col-md-4'>
-                <a href={countries}>
-                  <img src={gazebo} className='f-main-pg-img'/>
-                  <div className='f-btn-primary'>
-                    <h4>Word</h4>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-    );
-  }
-});
-
 
 var Content = React.createClass({
   render: function() {

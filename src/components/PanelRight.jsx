@@ -1,6 +1,6 @@
 var React = require('react');
 //require badge img
-var badge = require("../assets/badge.svg");
+var Badge = require('./Badge.jsx');
 
 
 //build components
@@ -17,17 +17,6 @@ var PanelRight = React.createClass({
           </div>
         </div>
     );
-  }
-});
-
-var Badge = React.createClass({
-  render: function() {
-    return (
-      <div className='f-progress-badge'>
-        <img src={badge} className='f-badge-icon'/>
-        <h2 className='f-prog-percent'>11%</h2>
-      </div>
-      );
   }
 });
 
