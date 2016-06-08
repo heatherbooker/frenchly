@@ -8,7 +8,7 @@
   text-align: center;
 }
 
-.f-btn-blue {
+.f-btn-primary {
   @extend %f-btn;
-  background-color: $main-blue;
+  background-color: $blue-primary;
 }
