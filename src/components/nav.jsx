@@ -1,7 +1,7 @@
 var React = require('react');
-
 //uri vars
 var home = 'index.html';
+
 
 var Nav = React.createClass({
   render: function() {

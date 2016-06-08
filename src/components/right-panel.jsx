@@ -1,7 +1,7 @@
 var React = require('react');
-
 //require badge img
 var badge = require("../assets/badge.svg");
+
 
 //build components
 var PanelRight = React.createClass({

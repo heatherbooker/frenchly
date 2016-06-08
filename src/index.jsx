@@ -1,6 +1,5 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-
 //require other components
 var Nav = require("./components/nav.jsx");
 var PanelRight = require("./components/right-panel.jsx");
@@ -11,9 +10,9 @@ require("./stylesheets/main.scss");
 var earth = require("./assets/earth.svg");
 var people = require("./assets/nationalities.svg");
 var gazebo = require("./assets/mixitup.svg");
-
 //uri vars
 var countries = '#';
+
 
 var Main = React.createClass({
   render: function() {
