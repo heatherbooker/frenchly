@@ -2,9 +2,9 @@ var React = require('react');
 //uri vars
 var countries = '#';
 //require imgs
-var earth = require("../assets/earth.svg");
-var people = require("../assets/nationalities.svg");
-var gazebo = require("../assets/mixitup.svg");
+var earthImg = require("../assets/earth.svg");
+var peopleImg = require("../assets/nationalities.svg");
+var gazeboImg = require("../assets/mixitup.svg");
 
 var PanelLeft = React.createClass({
   render: function() {
@@ -15,7 +15,7 @@ var PanelLeft = React.createClass({
             <div className='row'>
               <div className='col-md-4'>
                 <a href={countries}>
-                  <img src={earth} className='f-main-pg-img'/>
+                  <img src={earthImg} className='f-main-pg-img'/>
                   <div className='f-btn-primary'>
                     <h4>Word</h4>
                   </div>
@@ -23,7 +23,7 @@ var PanelLeft = React.createClass({
               </div>
               <div className='col-md-4'>
                 <a href={countries}>
-                  <img src={people} className='f-main-pg-img'/>
+                  <img src={peopleImg} className='f-main-pg-img'/>
                   <div className='f-btn-primary'>
                     <h4>Word</h4>
                   </div>
@@ -31,7 +31,7 @@ var PanelLeft = React.createClass({
               </div>
               <div className='col-md-4'>
                 <a href={countries}>
-                  <img src={gazebo} className='f-main-pg-img'/>
+                  <img src={gazeboImg} className='f-main-pg-img'/>
                   <div className='f-btn-primary'>
                     <h4>Word</h4>
                   </div>
