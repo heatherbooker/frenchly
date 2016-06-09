@@ -1,0 +1,30 @@
+%f-map {
+  color: $colour-text-mild;
+  font-size: 24px;
+  display: inline;
+  padding: 20px 10px;
+}
+
+.f-map-title {
+  @extend %f-map;
+  float: left;
+}
+
+.f-quit {
+  @extend %f-map;
+  float: right;
+}
+
+.f-map-img {
+  padding: 0px 40px;
+  margin: 0px 40px;
+}
+
+.f-map-next {
+  display: inline-block;
+}
+
+.f-map-random {
+  height: 40px;
+  display: inline;
+}
