@@ -3,7 +3,7 @@ var world = require('../assets/world.svg');
 //require other components
 var MapImg = require('./Map.jsx');
 //require imgs
-var randomize = require('../assets/random.svg')
+var randomize = require('../assets/random.svg');
 
 //build components
 var Content = React.createClass({
