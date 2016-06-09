@@ -7,12 +7,6 @@ var PanelLeft = require('./components/PanelLeft.jsx');
 var MapPage = require('./components/Map.jsx');
 //require stylesheet
 require("./stylesheets/main.scss");
-//require imgs
-var earth = require("./assets/earth.svg");
-var people = require("./assets/nationalities.svg");
-var gazebo = require("./assets/mixitup.svg");
-//uri vars
-var countries = '#';
 
 
 var Main = React.createClass({

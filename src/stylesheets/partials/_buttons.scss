@@ -6,9 +6,16 @@
   padding: 13px;
   margin: 50px 20px 20px 20px;
   text-align: center;
+  height: 42px;
+  width: 132px;
 }
 
 .f-btn-primary {
   @extend %f-btn;
-  background-color: $blue-primary;
+  background-color: $colour-primary;
+}
+
+.f-btn-disabled {
+  @extend %f-btn;
+  background-color: $colour-disabled;
 }
