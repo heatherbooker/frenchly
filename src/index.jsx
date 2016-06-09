@@ -2,17 +2,10 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 //require other components
 var Nav = require("./components/Nav.jsx");
-var PanelRight = require("./components/PanelRight.jsx");
-var PanelLeft = require('./components/PanelLeft.jsx');
 var MapPage = require('./components/MapPage.jsx');
+var LandingPage = require('./components/LandingPage.jsx');
 //require stylesheet
 require("./stylesheets/main.scss");
-//require imgs
-var earth = require("./assets/earth.svg");
-var people = require("./assets/nationalities.svg");
-var gazebo = require("./assets/mixitup.svg");
-//uri vars
-var countries = '#';
 
 
 var Main = React.createClass({
@@ -25,22 +18,6 @@ var Main = React.createClass({
       );
   }
 });
-
-var Content = React.createClass({
-  render: function() {
-    return (
-      <div className='row'>
-        <div className='col-md-offset-2 col-md-6'>
-          <PanelLeft />
-        </div>
-        <div className='col-md-2'>
-          <PanelRight />
-        </div>
-      </div>
-    );
-  }
-});
-
 
 //render react component
 ReactDOM.render(
