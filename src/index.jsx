@@ -4,7 +4,7 @@ var ReactDOM = require('react-dom');
 var Nav = require("./components/Nav.jsx");
 var PanelRight = require("./components/PanelRight.jsx");
 var PanelLeft = require('./components/PanelLeft.jsx');
-var MapPage = require('./components/MapPage.jsx');
+var MapPage = require('./components/Map.jsx');
 //require stylesheet
 require("./stylesheets/main.scss");
 
