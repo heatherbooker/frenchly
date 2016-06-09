@@ -1,12 +1,13 @@
 var React = require('react');
-var world = require('../assets/world.svg');
+var worldImg = require('../assets/world.svg');
+
 
 var MapImg = React.createClass({
   render: function() {
     return (
       <div className='row'>
         <div className='col-md-12'>
-          <img className='f-map-img' src={world} />
+          <img className='f-map-img' src={worldImg} />
         </div>
       </div>
     );
