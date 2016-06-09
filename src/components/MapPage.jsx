@@ -37,6 +37,7 @@ var Panel = React.createClass({
           <div className='col-md-12'>
             <img className='f-map-random' src={randomize} />
             <div className='f-btn-disabled f-map-next'>
+              <span>Continue</span>
             </div>
           </div>
         </div>

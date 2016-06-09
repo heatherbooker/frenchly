@@ -17,14 +17,18 @@
 
 .f-map-img {
   padding: 0px 40px;
-  margin: 0px 40px;
+  margin: 0px auto;
+  display: block;
 }
 
 .f-map-next {
   display: inline-block;
+  float: right;
+  margin: 0px 10px;
 }
 
 .f-map-random {
   height: 40px;
   display: inline;
+  margin: 0px 10px;
 }

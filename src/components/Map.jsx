@@ -6,9 +6,7 @@ var MapImg = React.createClass({
     return (
       <div className='row'>
         <div className='col-md-12'>
-          <div className='f-map-img'>
-            <img src={world} />
-          </div>
+          <img className='f-map-img' src={world} />
         </div>
       </div>
     );
