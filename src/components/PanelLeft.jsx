@@ -1,5 +1,10 @@
 var React = require('react');
-
+//uri vars
+var countries = '#';
+//require imgs
+var earth = require("../assets/earth.svg");
+var people = require("../assets/nationalities.svg");
+var gazebo = require("../assets/mixitup.svg");
 
 var PanelLeft = React.createClass({
   render: function() {
