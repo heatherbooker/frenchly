@@ -34,14 +34,36 @@
   border-color: #1cb0f6;
 }
 
+.f-fillQ {
+  margin: 30px 20px 50px 20px;
+  display: inline;
+  font-size: 22px;
+  position: relative;
+  bottom: 10px;
+}
+
+.f-fillA {
+  border: 1px solid;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px #1cb0f6;
+  border-color: #1cb0f6;
+  height: 45px;
+  width: 250px;
+  display: inline-block;
+}
+
 .f-bottom-bar {
   border-radius: 0px 0px 10px 10px;
   background-color: #dbdbdb;
   height: 100px;
-  position: relative;
+  position: absolute !important;
+  top: 360px;
 }
 
 .f-checkQ {
   float: right;
   margin-top: 15px;
+}
+.f-Q2 {
+  margin: 60px;
 }

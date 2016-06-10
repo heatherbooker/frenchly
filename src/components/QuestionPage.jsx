@@ -1,7 +1,7 @@
 var React = require('react');
 var ProgressBar = require('./ProgressBar.jsx');
-var QuestionBox = require('./QuestionBox.jsx');
-var AnswerBox = require('./AnswerBox.jsx');
+var Question1 = require('./Question1.jsx');
+var Question2 = require('./Question2.jsx');
 
 
 var QuestionPage = React.createClass({
@@ -19,15 +19,7 @@ var QuestionPage = React.createClass({
             <div className='row'>
               <ProgressBar />
             </div>
-            <div className="row">
-              <div className="col-md-12">
-                <h2 className="f-instruct-text">Translate this text</h2>
-              </div>
-            </div>
-            <div className='row'>
-                <QuestionBox />
-                <AnswerBox />
-            </div>
+            <Question2 />
             <div className='row'>
               <div className='col-md-12 f-bottom-bar'>
                 <div className='f-btn-disabled f-checkQ'>
