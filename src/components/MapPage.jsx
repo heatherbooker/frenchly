@@ -3,7 +3,7 @@ var world = require('../assets/world.svg');
 //require other components
 var MapImg = require('./Map.jsx');
 //require imgs
-var randomize = require('../assets/random.svg');
+var randomizeImg = require('../assets/random.svg');
 
 
 //build components
@@ -26,7 +26,7 @@ var MapPage = React.createClass({
             </div>
             <div className='row'>
               <div className='col-md-12'>
-                <img className='f-map-random' src={randomize} />
+                <img className='f-map-random' src={randomizeImg} />
                 <div className='f-btn-disabled f-map-next'>
                   <span>Continue</span>
                 </div>
