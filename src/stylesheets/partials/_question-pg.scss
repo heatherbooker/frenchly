@@ -1,0 +1,47 @@
+.f-progress-bar {
+  border: 1px #949494 solid;
+  min-width: 300px;
+  min-height: 20px;
+  margin: 0px auto;
+  display: flex;
+  border-radius: 10px;
+}
+
+.f-instruct-text {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 18px;
+}
+
+%f-box {
+  border: 1px solid;
+  border-radius: 8px;
+  height: 150px;
+  width: 260px;
+  margin: 30px auto;
+  display: block;
+}
+
+.f-box-q {
+  @extend %f-box;
+  box-shadow: 3px 3px 3px #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.f-box-a {
+  @extend %f-box;
+  box-shadow: 3px 3px 3px #1cb0f6;
+  border-color: #1cb0f6;
+}
+
+.f-bottom-bar {
+  border-radius: 0px 0px 10px 10px;
+  background-color: #dbdbdb;
+  height: 100px;
+  position: relative;
+}
+
+.f-checkQ {
+  float: right;
+  margin-top: 15px;
+}
