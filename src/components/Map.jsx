@@ -1,26 +1,17 @@
 var React = require('react');
+var worldImg = require('../assets/world.svg');
 
 
-//build components
-var Content = React.createClass({
+var MapImg = React.createClass({
   render: function() {
     return (
       <div className='row'>
-        <div className='col-md-offset-2 col-md-8'>
-          <Panel />
+        <div className='col-md-12'>
+          <img className='f-map-img' src={worldImg} />
         </div>
       </div>
     );
   }
 });
 
-var Panel = React.createClass({
-  render: function() {
-    return (
-      <div className='f-panel f-panel-big'>
-      </div>
-    );
-  }
-});
-
-module.exports = Content
+module.exports = MapImg
