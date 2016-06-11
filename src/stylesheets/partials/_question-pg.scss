@@ -1,10 +1,28 @@
-.f-progress-bar {
-  border: 1px #949494 solid;
+%f-progress-bar {
   min-width: 300px;
-  min-height: 20px;
   margin: 0px auto;
-  display: flex;
+  display: block;
+}
+
+.f-progress-bar-outer {
+  @extend %f-progress-bar;
   border-radius: 10px;
+  border: 1px #949494 solid;
+  height: 20px;
+}
+
+.f-progress-bar-top {
+  @extend %f-progress-bar;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #e55c45;
+  height: 10px;
+}
+
+.f-progress-bar-btm {
+  @extend %f-progress-bar;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #cd503b;
+  height: 10px;
 }
 
 .f-instruct-text {
@@ -16,30 +34,32 @@
 %f-box {
   border: 1px solid;
   border-radius: 8px;
-  height: 150px;
+  height: 130px;
   width: 260px;
   margin: 30px auto;
   display: block;
+  font-size: 22px;
+  text-align: center;
 }
 
-.f-box-q {
+.f-boxQ {
   @extend %f-box;
   box-shadow: 3px 3px 3px #B9B9B9;
   border-color: #B9B9B9;
+  line-height: 100px;
 }
 
-.f-box-a {
+.f-boxA {
   @extend %f-box;
   box-shadow: 3px 3px 3px #1cb0f6;
   border-color: #1cb0f6;
 }
 
 .f-fillQ {
-  margin: 30px 20px 50px 20px;
+  margin: 20px 10px 20px 20px;
   display: inline;
   font-size: 22px;
   position: relative;
-  bottom: 10px;
 }
 
 .f-fillA {
@@ -49,7 +69,8 @@
   border-color: #1cb0f6;
   height: 45px;
   width: 250px;
-  display: inline-block;
+  display: inline;
+  padding: 10px;
 }
 
 .f-bottom-bar {
@@ -64,6 +85,7 @@
   float: right;
   margin-top: 15px;
 }
+
 .f-Q2 {
-  margin: 60px;
+  margin: 60px 0px;
 }

@@ -13,7 +13,7 @@ var Question1 = React.createClass({
           </div>
         </div>
         <div className='row'>
-          <QuestionBox />
+          <QuestionBox question={this.props.question} />
           <AnswerBox />
         </div>
       </div>
