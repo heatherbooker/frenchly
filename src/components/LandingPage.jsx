@@ -1,6 +1,6 @@
 var React = require('react');
-var PanelRight = require("./components/PanelRight.jsx");
-var PanelLeft = require('./components/PanelLeft.jsx');
+var PanelRight = require("./PanelRight.jsx");
+var PanelLeft = require('./PanelLeft.jsx');
 
 
 var LandingPage = React.createClass({

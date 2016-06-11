@@ -4,6 +4,7 @@ var ReactDOM = require('react-dom');
 var Nav = require("./components/Nav.jsx");
 var MapPage = require('./components/MapPage.jsx');
 var LandingPage = require('./components/LandingPage.jsx');
+var QuestionPage = require('./components/QuestionPage.jsx');
 //require stylesheet
 require("./stylesheets/main.scss");
 
@@ -13,7 +14,7 @@ var Main = React.createClass({
     return (
       <div className="container-fluid">
         <Nav />
-        <MapPage />
+        <QuestionPage />
       </div>
       );
   }
