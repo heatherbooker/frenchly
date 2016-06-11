@@ -19,7 +19,7 @@ var QuestionPage = React.createClass({
             <div className='row'>
               <ProgressBar />
             </div>
-            <Question2 />
+            <Question2 question="This is a dumb question type" />
             <div className='row'>
               <div className='col-md-12 f-bottom-bar'>
                 <div className='f-btn-disabled f-checkQ'>
@@ -33,5 +33,6 @@ var QuestionPage = React.createClass({
     );
   }
 });
+;
 
 module.exports = QuestionPage
