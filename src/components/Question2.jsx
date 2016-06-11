@@ -13,8 +13,8 @@ var Question2 = React.createClass({
         <div className='row'>
           <div className="col-md-offset-2 col-md-10">
             <div className="f-Q2">
-              <h3 className="f-fillQ">You will fill in the</h3>
-              <div className="f-fillA"></div>
+              <h3 className="f-fillQ">{this.props.question}</h3>
+              <input className="f-fillA" type="text" placeholder="Type missing word" />
             </div>
           </div>
         </div>

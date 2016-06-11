@@ -20,6 +20,7 @@ var Main = React.createClass({
   }
 });
 
+
 //render react component
 ReactDOM.render(
   <Main />,
