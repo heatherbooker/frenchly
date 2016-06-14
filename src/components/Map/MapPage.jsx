@@ -1,9 +1,9 @@
 var React = require('react');
-var world = require('../assets/world.svg');
+var Link = require('react-router').Link;
 //require other components
 var MapImg = require('./Map.jsx');
 //require imgs
-var randomizeImg = require('../assets/random.svg');
+var randomizeImg = require('../../assets/random.svg');
 
 
 //build components
@@ -16,7 +16,9 @@ var MapPage = React.createClass({
             <div className='row'>
               <div className='col-md-12'>
                 <h3 className='f-map-title'>Pick an area</h3>
-                <h3 className='f-quit'>Quit</h3>
+                <Link to="/">
+                  <h3 className='f-quit'>Quit</h3>
+                </Link>
               </div>
             </div>
             <div className='row'>
@@ -28,7 +30,9 @@ var MapPage = React.createClass({
               <div className='col-md-12'>
                 <img className='f-map-random' src={randomizeImg} />
                 <div className='f-btn-disabled f-map-next'>
-                  <span>Continue</span>
+                  <Link to="/question">
+                    <span>Continue</span>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -1,6 +1,6 @@
 var React = require('react');
 var ProgressBar = require('./ProgressBar.jsx');
-var Badge = require('./Badge.jsx');
+var Badge = require('../Badge.jsx');
 
 
 var LvlCompletePage = React.createClass({
