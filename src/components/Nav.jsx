@@ -4,8 +4,11 @@ var Link = require('react-router').Link;
 var home = 'index.html';
 
 
-var Nav = React.createClass({
-  render: function() {
+class Nav extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
     return (
       <div className='row f-nav'>
         <div className='col-md-2 col-md-offset-2'>
@@ -16,6 +19,6 @@ var Nav = React.createClass({
       </div>
     );
   }
-});
+}
 
 module.exports = Nav

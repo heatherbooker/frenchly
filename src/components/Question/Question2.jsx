@@ -1,8 +1,11 @@
 var React = require('react');
 
 
-var Question2 = React.createClass({
-  render: function() {
+class PanelRight extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
     return (
       <div>
         <div className="row">
@@ -21,6 +24,6 @@ var Question2 = React.createClass({
       </div>
     );
   }
-});
+}
 
 module.exports = Question2

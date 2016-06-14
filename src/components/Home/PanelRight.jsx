@@ -4,23 +4,25 @@ var Link = require('react-router').Link;
 var Badge = require('../Badge.jsx');
 
 
-//build components
-var PanelRight = React.createClass({
-  render: function() {
+class PanelRight extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
     return (
-        <div className='f-panel f-panel-right row'>
-          <div className='col-md-12'>
-            <h4 className='f-progress'>Progress</h4>
-            <Badge />
-            <div className='f-btn-primary f-reset'>
-              <Link to="/home">
-                <h4>Reset</h4>
-              </Link>
-            </div>
+      <div className='f-panel f-panel-right row'>
+        <div className='col-md-12'>
+          <h4 className='f-progress'>Progress</h4>
+          <Badge />
+          <div className='f-btn-primary f-reset'>
+            <Link to="/home">
+              <h4>Reset</h4>
+            </Link>
           </div>
         </div>
+      </div>
     );
   }
-});
+}
 
 module.exports = PanelRight

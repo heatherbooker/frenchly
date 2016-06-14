@@ -6,9 +6,11 @@ var MapImg = require('./Map.jsx');
 var randomizeImg = require('../../assets/random.svg');
 
 
-//build components
-var MapPage = React.createClass({
-  render: function() {
+class PanelRight extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
     return (
       <div className='row'>
         <div className='col-md-offset-2 col-md-8'>
@@ -41,6 +43,6 @@ var MapPage = React.createClass({
       </div>
     );
   }
-});
+}
 
 module.exports = MapPage

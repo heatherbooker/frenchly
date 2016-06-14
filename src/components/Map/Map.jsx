@@ -4,15 +4,17 @@ var Router = require('react-router').Router;
 var transitionTo = Router.transitionTo;
 
 
-
-var MapImg = React.createClass({
-  render: function() {
+class PanelRight extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
     return (
       <div className='row'>
         <iframe className='f-map-img' src={worldImg} border="0" scrolling="no"/>
       </div>
     );
   }
-});
+}
 
 module.exports = MapImg

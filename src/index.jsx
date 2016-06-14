@@ -14,17 +14,19 @@ var QuestionPage = require('./components/Question/QuestionPage.jsx');
 require("./stylesheets/main.scss");
 
 
-var Main = React.createClass({
-  render: function() {
+class Main extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
     return (
       <div className="container-fluid">
         <Nav />
         {this.props.children}
       </div>
-      );
+    );
   }
-});
-
+}
 
 //render react component
 ReactDOM.render((
@@ -33,7 +35,7 @@ ReactDOM.render((
       <IndexRoute component={LandingPage}/>
       <Route path="/map" component={MapPage}/>
       <Route path="/question" component={QuestionPage}/>
-      // (dharness) Simple route with params
+      // Simple route with params
       <Route path="/question/:questionId" component={QuestionPage}/>
     </Route>
   </Router>
