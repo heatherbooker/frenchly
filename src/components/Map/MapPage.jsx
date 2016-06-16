@@ -6,7 +6,7 @@ var MapImg = require('./Map.jsx');
 var randomizeImg = require('../../assets/random.svg');
 
 
-class PanelRight extends React.Component {
+class MapPage extends React.Component {
   constructor(props) {
     super(props);
   }

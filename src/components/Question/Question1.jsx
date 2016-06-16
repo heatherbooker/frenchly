@@ -3,7 +3,7 @@ var QuestionBox = require('./QuestionBox.jsx');
 var AnswerBox = require('./AnswerBox.jsx');
 
 
-class PanelRight extends React.Component {
+class Question1 extends React.Component {
   constructor(props) {
     super(props);
   }

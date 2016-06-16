@@ -4,7 +4,7 @@ var Router = require('react-router').Router;
 var transitionTo = Router.transitionTo;
 
 
-class PanelRight extends React.Component {
+class MapImg extends React.Component {
   constructor(props) {
     super(props);
   }

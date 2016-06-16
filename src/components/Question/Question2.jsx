@@ -1,7 +1,7 @@
 var React = require('react');
 
 
-class PanelRight extends React.Component {
+class Question2 extends React.Component {
   constructor(props) {
     super(props);
   }

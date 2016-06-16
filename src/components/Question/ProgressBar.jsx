@@ -1,7 +1,7 @@
 var React = require('react');
 
 
-class PanelRight extends React.Component {
+class ProgressBar extends React.Component {
   constructor(props) {
     super(props);
   }

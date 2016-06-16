@@ -3,7 +3,7 @@ var ProgressBar = require('./ProgressBar.jsx');
 var Badge = require('../Badge.jsx');
 
 
-class PanelRight extends React.Component {
+class LvlCompletePage extends React.Component {
   constructor(props) {
     super(props);
   }

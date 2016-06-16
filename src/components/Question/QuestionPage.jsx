@@ -6,7 +6,7 @@ var Question1 = require('./Question1.jsx');
 var Question2 = require('./Question2.jsx');
 
 
-class PanelRight extends React.Component {
+class QuestionPage extends React.Component {
   constructor(props) {
     super(props);
   }
