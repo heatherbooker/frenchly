@@ -10,6 +10,8 @@ var Nav = require("./components/Nav.jsx");
 var MapPage = require('./components/Map/MapPage.jsx');
 var LandingPage = require('./components/Home/LandingPage.jsx');
 var QuestionPage = require('./components/Question/QuestionPage.jsx');
+var Question1 = require('./components/Question/Question1.jsx');
+var Question2 = require('./components/Question/Question2.jsx');
 //require stylesheet
 require("./stylesheets/main.scss");
 
@@ -31,10 +33,11 @@ ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
       <IndexRoute component={LandingPage}/>
-      <Route path="/map" component={MapPage}/>
-      <Route path="/question" component={QuestionPage}/>
-      // (dharness) Simple route with params
-      <Route path="/question/:questionId" component={QuestionPage}/>
+      <Route path="map" component={MapPage}/>
+      <Route component={QuestionPage}>
+        <Route path="question1" component={Question1}/>
+        <Route path="question2" component={Question2}/>
+      </Route>
     </Route>
   </Router>
 ), document.getElementById('app'))
