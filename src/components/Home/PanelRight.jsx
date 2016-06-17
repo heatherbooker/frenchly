@@ -1,6 +1,7 @@
 var React = require('react');
+var Link = require('react-router').Link;
 //require badge img
-var Badge = require('./Badge.jsx');
+var Badge = require('../Badge.jsx');
 
 
 //build components
@@ -12,7 +13,9 @@ var PanelRight = React.createClass({
             <h4 className='f-progress'>Progress</h4>
             <Badge />
             <div className='f-btn-primary f-reset'>
-              <h4>Word</h4>
+              <Link to="/home">
+                <h4>Reset</h4>
+              </Link>
             </div>
           </div>
         </div>
