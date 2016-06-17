@@ -9,6 +9,8 @@ var randomizeImg = require('../../assets/random.svg');
 class MapPage extends React.Component {
   constructor(props) {
     super(props);
+    this.category = props.params.category;
+    this.questionId = Math.random().toString().slice(7);
   }
   render() {
     return (
@@ -32,7 +34,7 @@ class MapPage extends React.Component {
               <div className='col-md-12'>
                 <img className='f-map-random' src={randomizeImg} />
                 <div className='f-btn-disabled f-map-next'>
-                  <Link to="/question1">
+                  <Link to={`question/${this.category}/anArea/${this.questionId}`}>
                     <span>Continue</span>
                   </Link>
                 </div>
