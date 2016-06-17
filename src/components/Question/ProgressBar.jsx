@@ -1,8 +1,11 @@
 var React = require('react');
 
 
-var ProgressBar = React.createClass({
-  render: function() {
+class ProgressBar extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
     return (
       <div className="col-md-offset-3 col-md-6">
         <div className="f-progress-bar-outer">
@@ -14,6 +17,6 @@ var ProgressBar = React.createClass({
       </div>
     );
   }
-});
+}
 
 module.exports = ProgressBar

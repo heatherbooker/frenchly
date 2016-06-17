@@ -16,17 +16,19 @@ var Question2 = require('./components/Question/Question2.jsx');
 require("./stylesheets/main.scss");
 
 
-var Main = React.createClass({
-  render: function() {
+class Main extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
     return (
       <div className="container-fluid">
         <Nav />
         {this.props.children}
       </div>
-      );
+    );
   }
-});
-
+}
 
 //render react component
 ReactDOM.render((

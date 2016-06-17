@@ -3,8 +3,11 @@ var QuestionBox = require('./QuestionBox.jsx');
 var AnswerBox = require('./AnswerBox.jsx');
 
 
-var Question1 = React.createClass({
-  render: function() {
+class Question1 extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
     return (
       <div>
         <div className="row">
@@ -19,6 +22,6 @@ var Question1 = React.createClass({
       </div>
     );
   }
-});
+}
 
 module.exports = Question1

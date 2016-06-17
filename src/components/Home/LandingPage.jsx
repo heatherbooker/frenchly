@@ -3,8 +3,11 @@ var PanelRight = require("./PanelRight.jsx");
 var PanelLeft = require('./PanelLeft.jsx');
 
 
-var LandingPage = React.createClass({
-  render: function() {
+class LandingPage extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
     return (
       <div className='row'>
         <div className='col-md-offset-2 col-md-6'>
@@ -16,6 +19,6 @@ var LandingPage = React.createClass({
       </div>
     );
   }
-});
+}
 
 module.exports = LandingPage

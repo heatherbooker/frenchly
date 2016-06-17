@@ -6,8 +6,11 @@ var Question1 = require('./Question1.jsx');
 var Question2 = require('./Question2.jsx');
 
 
-var QuestionPage = React.createClass({
-  render: function() {
+class QuestionPage extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
     return (
       <div className='row'>
         <div className='col-md-offset-2 col-md-8'>
@@ -38,7 +41,6 @@ var QuestionPage = React.createClass({
       </div>
     );
   }
-});
-;
+}
 
 module.exports = QuestionPage

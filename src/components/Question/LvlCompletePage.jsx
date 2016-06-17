@@ -3,8 +3,11 @@ var ProgressBar = require('./ProgressBar.jsx');
 var Badge = require('../Badge.jsx');
 
 
-var LvlCompletePage = React.createClass({
-  render: function() {
+class LvlCompletePage extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
     return (
       <div className="row">
         <div className="col-md-offset-2 col-md-8">
@@ -35,6 +38,6 @@ var LvlCompletePage = React.createClass({
       </div>
     );
   }
-});
+}
 
 module.exports = LvlCompletePage
