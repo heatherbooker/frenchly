@@ -32,7 +32,7 @@ class MapPage extends React.Component {
               <div className='col-md-12'>
                 <img className='f-map-random' src={randomizeImg} />
                 <div className='f-btn-disabled f-map-next'>
-                  <Link to="/question">
+                  <Link to="/question1">
                     <span>Continue</span>
                   </Link>
                 </div>

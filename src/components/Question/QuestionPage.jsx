@@ -13,7 +13,6 @@ class QuestionPage extends React.Component {
   render() {
     return (
       <div className='row'>
-      <h2>QuestionId: {this.props.params.questionId}</h2>
         <div className='col-md-offset-2 col-md-8'>
           <div className='f-panel f-panel-big'>
             <div className='row'>
@@ -27,7 +26,7 @@ class QuestionPage extends React.Component {
             <div className='row'>
               <ProgressBar />
             </div>
-            <Question2 question="This is a dumb question type" />
+            {this.props.children}
             <div className='row'>
               <div className='col-md-12 f-bottom-bar'>
                 <div className='f-btn-disabled f-checkQ'>
