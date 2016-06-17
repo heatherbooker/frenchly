@@ -35,7 +35,7 @@ ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
       <IndexRoute component={LandingPage}/>
-      <Route path="map/:category" component={MapPage}/>
+      <Route path="map/:category/:clickedState" component={MapPage}/>
       <Route path="question/:category/:area/:questionId" component={QuestionPage}/>
     </Route>
   </Router>

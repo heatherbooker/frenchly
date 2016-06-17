@@ -13,10 +13,9 @@
 .f-quit {
   @extend %f-map;
   float: right;
-}
-
-.f-quit:hover {
-  color: $colour-primary;
+  &:hover {
+    color: $colour-primary;
+  }
 }
 
 .f-map-img {
@@ -25,10 +24,6 @@
   display: block;
   width: 750px;
   height: 315px;
-}
-
-#path5914 {
-  fill: #21CC49;
 }
 
 .f-map-next {
@@ -41,4 +36,18 @@
   height: 40px;
   display: inline;
   margin: 0px 10px;
+}
+
+
+//map area css
+//north america
+#path5916, #path5870, #path5882 {
+  //there are more paths to add
+}
+//south america
+#path5918, #path5842, #path5872 {
+}
+
+.f-map-clicked {
+  fill: #2CCA2A;
 }
