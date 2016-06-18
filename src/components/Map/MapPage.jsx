@@ -4,6 +4,7 @@ var Link = require('react-router').Link;
 var MapImg = require('./Map.jsx');
 //require imgs
 var randomizeImg = require('../../assets/random.svg');
+var randomizeImgSelected = require('../../assets/random-selected.svg');
 
 
 class MapPage extends React.Component {
@@ -11,6 +12,26 @@ class MapPage extends React.Component {
     super(props);
     this.category = props.params.category;
     this.questionId = Math.random().toString().slice(7);
+    this.randomizeImg = randomizeImg;
+  }
+  onMapClick() {
+    this.setState(
+      function(previousState) {
+        if (!previousState.isSelected) {
+          return {isSelected: true}
+        } else {
+          return {isSelected: false}
+        }
+      }, this.toggleColour.bind(this)
+    )
+  }
+  toggleColour() {
+    if (this.state.isSelected) {
+      this.randomizeImg = randomizeImgSelected;
+    } else {
+      this.randomizeImg = randomizeImg;
+    }
+    this.forceUpdate();
   }
   render() {
     return (
@@ -32,7 +53,7 @@ class MapPage extends React.Component {
             </div>
             <div className='row'>
               <div className='col-md-12'>
-                <img className='f-map-random' src={randomizeImg} />
+                <img className="f-map-random" src={this.randomizeImg} onClick={this.onMapClick.bind(this)} />
                 <div className='f-btn-disabled f-map-next'>
                   <Link to={`question/${this.category}/anArea/${this.questionId}`}>
                     <span>Continue</span>

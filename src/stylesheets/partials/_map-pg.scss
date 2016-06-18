@@ -36,6 +36,9 @@
   height: 40px;
   display: inline;
   margin: 0px 10px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 
@@ -48,6 +51,16 @@
 #path5918, #path5842, #path5872 {
 }
 
-.f-map-clicked {
-  fill: #2CCA2A;
+.f-map-selected {
+  fill: $colour-map-selected;
+    &:hover {
+    cursor: pointer;
+  }
+}
+
+.f-map-unselected {
+  fill: $colour-map;
+    &:hover {
+    cursor: pointer;
+  }
 }
