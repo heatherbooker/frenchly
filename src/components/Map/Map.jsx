@@ -9,19 +9,34 @@ class MapImg extends React.Component {
     super(props);
     this.selectedState = "f-map-unselected";
   }
+  componentDidMount() {
+    //set initial state
+    this.setState({mapSelected: false});
+    //create event to dispatch when map is clicked, to alert randomize button
+    this.mapClickEvent = new Event('onMapClick');
+    //listening to randomize button
+    window.addEventListener('onRandomizeClick', () => {
+      console.log('randomize was clicked');
+      if (this.state.mapSelected) {
+        console.log(this.state);
+        this.onMapClick();
+      } 
+    })
+  }
   onMapClick() {
+    window.dispatchEvent(this.mapClickEvent);
     this.setState(
       function(previousState) {
-        if (!previousState.isSelected) {
-          return {isSelected: true}
+        if (!previousState.mapSelected) {
+          return {mapSelected: true}
         } else {
-          return {isSelected: false}
+          return {mapSelected: false}
         }
       }, this.toggleColour.bind(this)
     )
   }
   toggleColour() {
-    if (this.state.isSelected) {
+    if (this.state.mapSelected) {
       this.selectedState = "f-map-selected";
     } else {
       this.selectedState = "f-map-unselected";

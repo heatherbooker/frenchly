@@ -14,19 +14,32 @@ class MapPage extends React.Component {
     this.questionId = Math.random().toString().slice(7);
     this.randomizeImg = randomizeImg;
   }
-  onMapClick() {
+  componentDidMount() {
+    //set initial state
+    this.setState({randomizeSelected: false});
+    //create event to dispatch when randomize button is clicked, to alert map
+    this.randomizeClickEvent = new Event('onRandomizeClick');
+    //listening to all map components
+    window.addEventListener('onMapClick', () => {
+      if (this.state.randomizeSelected) {
+        this.onRandomizeClick();
+      } 
+    })
+  }
+  onRandomizeClick() {
+    window.dispatchEvent(this.randomizeClickEvent);
     this.setState(
       function(previousState) {
-        if (!previousState.isSelected) {
-          return {isSelected: true}
+        if (!previousState.randomizeSelected) {
+          return {randomizeSelected: true}
         } else {
-          return {isSelected: false}
+          return {randomizeSelected: false}
         }
       }, this.toggleColour.bind(this)
     )
   }
   toggleColour() {
-    if (this.state.isSelected) {
+    if (this.state.randomizeSelected) {
       this.randomizeImg = randomizeImgSelected;
     } else {
       this.randomizeImg = randomizeImg;
@@ -53,7 +66,7 @@ class MapPage extends React.Component {
             </div>
             <div className='row'>
               <div className='col-md-12'>
-                <img className="f-map-random" src={this.randomizeImg} onClick={this.onMapClick.bind(this)} />
+                <img className="f-map-random" src={this.randomizeImg} onClick={this.onRandomizeClick.bind(this)} />
                 <div className='f-btn-disabled f-map-next'>
                   <Link to={`question/${this.category}/anArea/${this.questionId}`}>
                     <span>Continue</span>
