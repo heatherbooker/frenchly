@@ -39,7 +39,6 @@ class MapPage extends React.Component {
           newState.mapSelected = true;
           this.enableButton(true);
           if (this.state.randomizeSelected) {
-            newState.randomizeSelected = false;
           }
         } else if (mapState === 'mapOff') {
           this.enableButton(false);
@@ -47,7 +46,6 @@ class MapPage extends React.Component {
           newState.randomizeSelected = true;
           this.enableButton(true);
         } else {
-          newState.randomizeSelected = false;
           this.enableButton(false);
         }
         return newState;

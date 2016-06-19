@@ -6,7 +6,6 @@ var transitionTo = Router.transitionTo;
 class MapImg extends React.Component {
   constructor(props) {
     super(props);
-    this.selectedState = "f-map-unselected";
     this.state = {
       mapSelected: false,
       na: "f-map-unselected-na",

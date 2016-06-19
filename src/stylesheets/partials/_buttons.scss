@@ -14,10 +14,9 @@
 .f-btn-primary {
   @extend %f-btn;
   background-color: $colour-primary;
-}
-
-.f-btn-primary:hover {
-  background-color: $colour-primary-hover;
+  &:hover {
+    background-color: $colour-primary-hover;
+  }
 }
 
 .f-btn-disabled {
@@ -29,4 +28,7 @@
 .f-btn-proceed {
   @extend %f-btn;
   background-color: $colour-secondary;
+  &:hover {
+    background-color: $colour-secondary-hover;
+  }
 }
