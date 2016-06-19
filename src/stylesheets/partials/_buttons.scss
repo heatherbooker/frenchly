@@ -23,5 +23,10 @@
 .f-btn-disabled {
   @extend %f-btn;
   background-color: $colour-disabled;
+  pointer-events: none;
 }
 
+.f-btn-proceed {
+  @extend %f-btn;
+  background-color: $colour-secondary;
+}
