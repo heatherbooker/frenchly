@@ -1,6 +1,5 @@
 var React = require('react');
 var Router = require('react-router').Router;
-var transitionTo = Router.transitionTo;
 
 
 class MapImg extends React.Component {
