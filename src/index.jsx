@@ -35,11 +35,8 @@ ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
       <IndexRoute component={LandingPage}/>
-      <Route path="map" component={MapPage}/>
-      <Route component={QuestionPage}>
-        <Route path="question1" component={Question1}/>
-        <Route path="question2" component={Question2}/>
-      </Route>
+      <Route path="map/:category" component={MapPage}/>
+      <Route path="question/:category/:area/:questionId" component={QuestionPage}/>
     </Route>
   </Router>
 ), document.getElementById('app'))

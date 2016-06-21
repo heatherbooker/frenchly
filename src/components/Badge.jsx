@@ -10,7 +10,7 @@ class Badge extends React.Component {
     return (
       <div className='f-progress-badge'>
         <img src={badgeImg} className='f-badge-icon'/>
-        <h2 className='f-prog-percent'>11%</h2>
+        <h2 className='f-prog-percent'>{this.props.progressPercent}%</h2>
       </div>
     );
   }
