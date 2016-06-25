@@ -4,9 +4,6 @@ var PanelLeft = require('./PanelLeft.jsx');
 
 
 class LandingPage extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div className='row'>
@@ -21,4 +18,4 @@ class LandingPage extends React.Component {
   }
 }
 
-module.exports = LandingPage
+module.exports = LandingPage;

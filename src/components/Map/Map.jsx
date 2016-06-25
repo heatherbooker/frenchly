@@ -28,6 +28,7 @@ class MapImg extends React.Component {
   }
   onMapClick(area) {
     this.setAreaStates(area);
+    this.props.alertClick(area);
   }
   setAreaStates(area) {
     this.setState(

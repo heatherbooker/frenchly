@@ -38,8 +38,6 @@ class MapPage extends React.Component {
         if (mapState === 'mapOn') {
           newState.mapSelected = true;
           this.enableButton(true);
-          if (this.state.randomizeSelected) {
-          }
         } else if (mapState === 'mapOff') {
           this.enableButton(false);
         } else if (!this.state.randomizeSelected) {
@@ -68,6 +66,15 @@ class MapPage extends React.Component {
       this.continueBtnClass = 'f-btn-disabled';
     }
   }
+  trackArea() {
+    //listen for selected area from map + randomize button
+    window.addEventListener('onRandomizeClick', () => {
+      //do things here
+    });
+  }
+  alertClick(area) {
+    console.log(area);
+  }
   render() {
     return (
       <div className='row'>
@@ -83,7 +90,7 @@ class MapPage extends React.Component {
             </div>
             <div className='row'>
               <div className='col-md-12'>
-                <MapImg />
+                <MapImg alertClick={this.alertClick()} />
               </div>
             </div>
             <div className='row'>

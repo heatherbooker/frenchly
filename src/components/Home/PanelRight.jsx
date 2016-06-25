@@ -12,16 +12,14 @@ class PanelRight extends React.Component {
     };
   }
   handleResetClick() {
-    this.setState({progressPercent: 0});
-    let aVar = this.state;
-    console.log(this.state.progressPercent);
+    this.setState({ progressPercent: 0 });
   }
   render() {
     return (
       <div className='f-panel f-panel-right row'>
         <div className='col-md-12'>
           <h4 className='f-progress'>Progress</h4>
-          <Badge progressPercent={this.state.progressPercent}/>
+          <Badge progressPercent={this.state.progressPercent} />
           <div className='f-btn-primary f-reset' onClick={this.handleResetClick.bind(this)}>
             <h4>Reset</h4>
           </div>
@@ -31,4 +29,4 @@ class PanelRight extends React.Component {
   }
 }
 
-module.exports = PanelRight
+module.exports = PanelRight;

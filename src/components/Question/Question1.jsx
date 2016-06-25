@@ -24,4 +24,4 @@ class Question1 extends React.Component {
   }
 }
 
-module.exports = Question1
+module.exports = Question1;

@@ -4,9 +4,6 @@ var Badge = require('../Badge.jsx');
 
 
 class LvlCompletePage extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div className="row">
@@ -18,10 +15,10 @@ class LvlCompletePage extends React.Component {
               </div>
             </div>
              <div className='row'>
-               <ProgressBar />
+              <ProgressBar />
              </div>
              <div className="row">
-               <div className="col-md-12">
+              <div className="col-md-12">
                 <h2 className="f-instruct-text">Lesson Complete!</h2>
               </div>
             </div>
@@ -40,4 +37,4 @@ class LvlCompletePage extends React.Component {
   }
 }
 
-module.exports = LvlCompletePage
+module.exports = LvlCompletePage;

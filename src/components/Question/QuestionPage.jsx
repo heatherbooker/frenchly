@@ -9,7 +9,7 @@ var Question2 = require('./Question2.jsx');
 class QuestionPage extends React.Component {
   constructor(props) {
     super(props);
-    var category = props.params.category;
+    const category = props.params.category;
     this.category = category.charAt(0).toUpperCase() + category.slice(1);
     if (Number(props.params.questionId) % 2 === 0) {
       this.currentQuestion = <Question1 />;
@@ -25,7 +25,7 @@ class QuestionPage extends React.Component {
             <div className='row'>
               <div className='col-md-12'>
                 <h3 className='f-map-title'>{this.category} - Africa</h3>
-                <Link to="/map">
+                <Link to="/">
                   <h3 className='f-quit'>Quit</h3>
                 </Link>
               </div>
@@ -50,4 +50,4 @@ class QuestionPage extends React.Component {
   }
 }
 
-module.exports = QuestionPage
+module.exports = QuestionPage;

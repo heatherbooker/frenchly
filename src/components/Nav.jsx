@@ -5,9 +5,6 @@ var home = 'index.html';
 
 
 class Nav extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div className='row f-nav'>
@@ -21,4 +18,4 @@ class Nav extends React.Component {
   }
 }
 
-module.exports = Nav
+module.exports = Nav;

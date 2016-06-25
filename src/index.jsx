@@ -17,9 +17,6 @@ require("./stylesheets/main.scss");
 
 
 class Main extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div className="container-fluid">
@@ -39,4 +36,4 @@ ReactDOM.render((
       <Route path="question/:category/:area/:questionId" component={QuestionPage}/>
     </Route>
   </Router>
-), document.getElementById('app'))
+), document.getElementById('app'));

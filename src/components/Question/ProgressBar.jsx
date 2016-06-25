@@ -2,9 +2,6 @@ var React = require('react');
 
 
 class ProgressBar extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div className="col-md-offset-3 col-md-6">
@@ -19,4 +16,4 @@ class ProgressBar extends React.Component {
   }
 }
 
-module.exports = ProgressBar
+module.exports = ProgressBar;

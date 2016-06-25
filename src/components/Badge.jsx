@@ -16,4 +16,4 @@ class Badge extends React.Component {
   }
 }
 
-module.exports = Badge
+module.exports = Badge;

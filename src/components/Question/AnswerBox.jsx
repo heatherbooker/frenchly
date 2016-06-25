@@ -9,7 +9,7 @@ class AnswerBox extends React.Component {
     };
   }
   changeHandler(response) {
-    this.setState({"responseGiven": response});
+    this.setState({ responseGiven: response });
   }
   render() {
     return (
@@ -21,4 +21,4 @@ class AnswerBox extends React.Component {
   }
 }
 
-module.exports = AnswerBox
+module.exports = AnswerBox;

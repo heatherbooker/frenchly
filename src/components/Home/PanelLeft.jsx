@@ -9,9 +9,6 @@ var gazeboImg = require("../../assets/mixitup.svg");
 
 
 class PanelLeft extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div className='f-panel f-panel-left row'>
@@ -20,7 +17,7 @@ class PanelLeft extends React.Component {
           <div className='row'>
             <div className='col-md-4'>
               <Link to="/map/countries">
-                <img src={earthImg} className='f-main-pg-img'/>
+                <img src={earthImg} className='f-main-pg-img' />
                 <div className='f-btn-primary'>
                   <h4>Countries</h4>
                 </div>
@@ -28,7 +25,7 @@ class PanelLeft extends React.Component {
             </div>
             <div className='col-md-4'>
               <Link to="/map/nationalities">
-                <img src={peopleImg} className='f-main-pg-img'/>
+                <img src={peopleImg} className='f-main-pg-img' />
                 <div className='f-btn-primary'>
                   <h4>Nationalities</h4>
                 </div>
@@ -36,7 +33,7 @@ class PanelLeft extends React.Component {
             </div>
             <div className='col-md-4'>
               <Link to="/map/mixitup">
-                <img src={gazeboImg} className='f-main-pg-img'/>
+                <img src={gazeboImg} className='f-main-pg-img' />
                 <div className='f-btn-primary'>
                   <h4>Mix It Up</h4>
                 </div>
@@ -49,4 +46,4 @@ class PanelLeft extends React.Component {
   }
 }
 
-module.exports = PanelLeft
+module.exports = PanelLeft;

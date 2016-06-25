@@ -16,4 +16,4 @@ class QuestionBox extends React.Component {
   }
 }
 
-module.exports = QuestionBox
+module.exports = QuestionBox;
