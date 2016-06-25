@@ -13,15 +13,15 @@ class MapPage extends React.Component {
     this.category = props.params.category;
     this.questionId = Math.random().toString().slice(7);
     this.randomizeImg = randomizeImg;
-    this.continueBtnClass = "f-btn-disabled";
-    this.state = { randomizeSelected: false, mapSelected: false };
+    this.continueBtnClass = 'f-btn-disabled';
+    this.state = { randomizeSelected: false, mapSelected: false};
   }
   componentDidMount() {
     //create event to dispatch when randomize button is clicked, to alert map
     this.randomizeClickEvent = new Event('onRandomizeClick');
     //listening to all map components
-    window.addEventListener('onMapSelect', () => {
-      this.toggleSelectedState('mapOn');
+    window.addEventListener('onMapSelect', (e) => {
+      this.toggleSelectedState(`mapOn${e.detail.areaSelected}`);
     });
     window.addEventListener('onMapUnselect', () => {
       this.toggleSelectedState('mapOff');
@@ -29,25 +29,27 @@ class MapPage extends React.Component {
   }
   onRandomizeClick() {
     window.dispatchEvent(this.randomizeClickEvent);
-    this.toggleSelectedState();
+    this.toggleSelectedState('mapUnknown');
   }
   toggleSelectedState(mapState) {
     this.setState(
       function() {
         const newState = { randomizeSelected: false, mapSelected: false };
-        if (mapState === 'mapOn') {
+        if (mapState.slice(0, 5) === 'mapOn') {
           newState.mapSelected = true;
+          newState.area = mapState.slice(5);
           this.enableButton(true);
         } else if (mapState === 'mapOff') {
           this.enableButton(false);
         } else if (!this.state.randomizeSelected) {
           newState.randomizeSelected = true;
+          newState.area = 'randomize';
           this.enableButton(true);
         } else {
           this.enableButton(false);
         }
         return newState;
-      }, this.toggleColour.bind(this)
+      }
     );
   }
   toggleColour() {
@@ -57,7 +59,6 @@ class MapPage extends React.Component {
     } else {
       this.randomizeImg = randomizeImg;
     }
-    this.forceUpdate();
   }
   enableButton(enable) {
     if (enable) {
@@ -66,38 +67,30 @@ class MapPage extends React.Component {
       this.continueBtnClass = 'f-btn-disabled';
     }
   }
-  trackArea() {
-    //listen for selected area from map + randomize button
-    window.addEventListener('onRandomizeClick', () => {
-      //do things here
-    });
-  }
-  alertClick(area) {
-    console.log(area);
-  }
   render() {
+    this.toggleColour();
     return (
-      <div className='row'>
-        <div className='col-md-offset-2 col-md-8'>
-          <div className='f-panel f-panel-big'>
-            <div className='row'>
-              <div className='col-md-12'>
-                <h3 className='f-map-title'>Pick an area</h3>
+      <div className="row">
+        <div className="col-md-offset-2 col-md-8">
+          <div className="f-panel f-panel-big">
+            <div className="row">
+              <div className="col-md-12">
+                <h3 className="f-map-title">Pick an area</h3>
                 <Link to="/">
-                  <h3 className='f-quit'>Quit</h3>
+                  <h3 className="f-quit">Quit</h3>
                 </Link>
               </div>
             </div>
-            <div className='row'>
-              <div className='col-md-12'>
-                <MapImg alertClick={this.alertClick()} />
+            <div className="row">
+              <div className="col-md-12">
+                <MapImg randomize={this.state.randomizeSelected} />
               </div>
             </div>
-            <div className='row'>
-              <div className='col-md-12'>
+            <div className="row">
+              <div className="col-md-12">
                 <img className="f-map-random" src={this.randomizeImg} onClick={this.onRandomizeClick.bind(this)} />
                 <div className={`${this.continueBtnClass} f-map-next`}>
-                  <Link to={`question/${this.category}/anArea/${this.questionId}`}>
+                  <Link to={`question/${this.category}/${this.state.area}/${this.questionId}`}>
                     <span>Continue</span>
                   </Link>
                 </div>
