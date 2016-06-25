@@ -83,7 +83,7 @@ class MapPage extends React.Component {
             </div>
             <div className="row">
               <div className="col-md-12">
-                <MapImg randomize={this.state.randomizeSelected} />
+                <MapImg />
               </div>
             </div>
             <div className="row">
