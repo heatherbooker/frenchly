@@ -44,24 +44,16 @@
 
 //map area css
 
-%f-map-selected {
+.f-map-selected {
   fill: $colour-map-selected;
     &:hover {
     cursor: pointer;
   }
 }
 
-%f-map-unselected {
+.f-map-unselected {
   fill: $colour-map;
     &:hover {
     cursor: pointer;
   }
-}
-
-.f-map-selected-na, .f-map-selected-sa, .f-map-selected-af, .f-map-selected-eu, .f-map-selected-as, .f-map-selected-oc {
-  @extend %f-map-selected;
-}
-
-.f-map-unselected-na, .f-map-unselected-sa, .f-map-unselected-af, .f-map-unselected-eu, .f-map-unselected-as, .f-map-unselected-oc {
-  @extend %f-map-unselected;
 }

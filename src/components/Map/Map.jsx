@@ -1,5 +1,4 @@
 var React = require('react');
-var Router = require('react-router').Router;
 
 
 class MapImg extends React.Component {
@@ -7,18 +6,15 @@ class MapImg extends React.Component {
     super(props);
     this.state = {
       mapSelected: false,
-      na: "f-map-unselected-na",
-      sa: "f-map-unselected-sa",
-      af: "f-map-unselected-af",
-      eu: "f-map-unselected-eu",
-      as: "f-map-unselected-as",
-      oc: "f-map-unselected-oc"
+      na: "f-map-unselected",
+      sa: "f-map-unselected",
+      af: "f-map-unselected",
+      eu: "f-map-unselected",
+      as: "f-map-unselected",
+      oc: "f-map-unselected"
     };
   }
   componentDidMount() {
-    //create event to dispatch when map is clicked, to alert randomize button
-    this.mapSelectEvent = new Event('onMapSelect');
-    this.mapUnselectEvent = new Event('onMapUnselect');
     //listening to randomize button
     window.addEventListener('onRandomizeClick', () => {
       if (this.state.mapSelected) {
@@ -26,21 +22,33 @@ class MapImg extends React.Component {
       }
     });
   }
+  emitEvent(eventOrArea) {
+    var clickedEvent = '';
+    if (eventOrArea === 'mapUnselectEvent') {
+      clickedEvent = new Event('onMapUnselect');
+    } else {
+      clickedEvent = new CustomEvent(
+        'onMapSelect',
+        { detail: { areaSelected: eventOrArea } }
+      );
+    }
+    window.dispatchEvent(clickedEvent);
+  }
   onMapClick(area) {
     this.setAreaStates(area);
-    this.props.alertClick(area);
+    //emitEvent is called through setAreaStates --> toggleState
   }
   setAreaStates(area) {
     this.setState(
-      function() {
+      function () {
         const newState = {
           mapSelected: true,
-          na: "f-map-unselected-na",
-          sa: "f-map-unselected-sa",
-          af: "f-map-unselected-af",
-          eu: "f-map-unselected-eu",
-          as: "f-map-unselected-as",
-          oc: "f-map-unselected-oc"
+          na: 'f-map-unselected',
+          sa: 'f-map-unselected',
+          af: 'f-map-unselected',
+          eu: 'f-map-unselected',
+          as: 'f-map-unselected',
+          oc: 'f-map-unselected'
         };
         if (area === 'randomize') {
           newState.mapSelected = false;
@@ -52,20 +60,20 @@ class MapImg extends React.Component {
     );
   }
   toggleState(area) {
-    const unselected = `f-map-unselected-${area}`;
+    const unselected = `f-map-unselected`;
     let newState = '';
     if (this.state[area] === unselected) {
-      newState = `f-map-selected-${area}`;
-      window.dispatchEvent(this.mapSelectEvent);
+      newState = `f-map-selected`;
+      this.emitEvent(area);
     } else {
-      newState = `f-map-unselected-${area}`;
-      window.dispatchEvent(this.mapUnselectEvent);
+      newState = `f-map-unselected`;
+      this.emitEvent('mapUnselectEvent');
     }
     return newState;
   }
   render() {
     return (
-      <div className='row'>
+      <div className="row">
         <svg className="f-map-img" xmlns="http://www.w3.org/2000/svg" width="672" height="315" viewBox="0 0 672 315" id="svg5249">
           <defs id="defs5257">
             <linearGradient id="linearGradient4299">
