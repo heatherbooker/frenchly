@@ -17,7 +17,8 @@ class QuestionPage extends React.Component {
       checkBtnClass: 'f-btn-disabled',
       linkClass: 'f-link-disabled',
       checkBtnText: 'Check',
-      response: ''
+      response: '',
+      responseCorrect: false
     };
     this.answer = 'the answer';
   }
@@ -92,7 +93,8 @@ class QuestionPage extends React.Component {
         function() {
           return {
             linkClass: '',
-            checkBtnText: 'Continue'
+            checkBtnText: 'Continue',
+            responseCorrect: true
           };
         }
       );
@@ -115,16 +117,13 @@ class QuestionPage extends React.Component {
               <ProgressBar />
             </div>
             {this.currentQuestion('the question')}
-            <div className="row">
-              <div className="col-md-12 f-bottom-bar">
-                <BottomBar 
-                  btnTxt={this.state.checkBtnText}
-                  btnClass={this.state.checkBtnClass}
-                  linkClass={this.state.linkClass}
-                  onBtnClick={this.handleCheckBtnClick.bind(this)}
-                />
-              </div>
-            </div>
+            <BottomBar 
+              btnTxt={this.state.checkBtnText}
+              btnClass={this.state.checkBtnClass}
+              linkClass={this.state.linkClass}
+              onBtnClick={this.handleCheckBtnClick.bind(this)}
+              answer={this.answer}
+            />
           </div>
         </div>
       </div>
