@@ -25,6 +25,12 @@
   height: 10px;
 }
 
+.f-questionPage-title {
+  @extend %f-map;
+  float: left;
+  font-size: 20px;
+}
+
 .f-instruct-text {
   text-align: center;
   font-size: 28px;
@@ -84,6 +90,10 @@
 .f-checkQ {
   float: right;
   margin-top: 15px;
+}
+
+.f-link-disabled {
+  pointer-events: none;
 }
 
 .f-Q2 {

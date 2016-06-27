@@ -1,5 +1,5 @@
-var React = require('react');
-var badgeImg = require("../assets/badge.svg");
+const React = require('react');
+const badgeImg = require("../assets/badge.svg");
 
 
 class Badge extends React.Component {

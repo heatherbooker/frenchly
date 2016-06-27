@@ -1,20 +1,20 @@
-var React = require('react');
-var Link = require('react-router').Link;
+const React = require('react');
+const Link = require('react-router').Link;
 //require other components
-var MapImg = require('./Map.jsx');
+const MapImg = require('./Map.jsx');
 //require imgs
-var randomizeImg = require('../../assets/random.svg');
-var randomizeImgSelected = require('../../assets/random-selected.svg');
+const randomizeImg = require('../../assets/random.svg');
+const randomizeImgSelected = require('../../assets/random-selected.svg');
 
 
 class MapPage extends React.Component {
   constructor(props) {
     super(props);
     this.category = props.params.category;
-    this.questionId = Math.random().toString().slice(7);
+    this.questionId = Number(Math.random().toString().slice(7));
     this.randomizeImg = randomizeImg;
     this.continueBtnClass = 'f-btn-disabled';
-    this.state = { randomizeSelected: false, mapSelected: false};
+    this.state = { randomizeSelected: false, mapSelected: false };
   }
   componentDidMount() {
     //create event to dispatch when randomize button is clicked, to alert map
@@ -33,7 +33,7 @@ class MapPage extends React.Component {
   }
   toggleSelectedState(mapState) {
     this.setState(
-      function() {
+      function () {
         const newState = { randomizeSelected: false, mapSelected: false };
         if (mapState.slice(0, 5) === 'mapOn') {
           newState.mapSelected = true;

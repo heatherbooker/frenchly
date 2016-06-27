@@ -25,5 +25,8 @@ class Question2 extends React.Component {
     );
   }
 }
+Question2.propTypes = {
+ question: React.PropTypes.string
+};
 
 module.exports = Question2;

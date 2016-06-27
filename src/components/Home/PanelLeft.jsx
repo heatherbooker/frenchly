@@ -1,11 +1,9 @@
-var React = require('react');
-var Link = require('react-router').Link;
-//uri vars
-var countries = '#';
+const React = require('react');
+const Link = require('react-router').Link;
 //require imgs
-var earthImg = require("../../assets/earth.svg");
-var peopleImg = require("../../assets/nationalities.svg");
-var gazeboImg = require("../../assets/mixitup.svg");
+const earthImg = require("../../assets/earth.svg");
+const peopleImg = require("../../assets/nationalities.svg");
+const gazeboImg = require("../../assets/mixitup.svg");
 
 
 class PanelLeft extends React.Component {

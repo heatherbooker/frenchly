@@ -1,6 +1,6 @@
-var React = require('react');
-var PanelRight = require("./PanelRight.jsx");
-var PanelLeft = require('./PanelLeft.jsx');
+const React = require('react');
+const PanelRight = require("./PanelRight.jsx");
+const PanelLeft = require('./PanelLeft.jsx');
 
 
 class LandingPage extends React.Component {

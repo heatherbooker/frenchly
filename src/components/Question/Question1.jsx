@@ -1,6 +1,6 @@
-var React = require('react');
-var QuestionBox = require('./QuestionBox.jsx');
-var AnswerBox = require('./AnswerBox.jsx');
+const React = require('react');
+const QuestionBox = require('./QuestionBox.jsx');
+const AnswerBox = require('./AnswerBox.jsx');
 
 
 class Question1 extends React.Component {
@@ -15,13 +15,17 @@ class Question1 extends React.Component {
             <h2 className="f-instruct-text">Translate this text</h2>
           </div>
         </div>
-        <div className='row'>
+        <div className="row">
           <QuestionBox question={this.props.question} />
-          <AnswerBox />
+          <AnswerBox onResponseChange={this.props.onResponseChange} />
         </div>
       </div>
     );
   }
 }
+Question1.propTypes = {
+ onResponseChange: React.PropTypes.func,
+ question: React.PropTypes.string
+};
 
 module.exports = Question1;
