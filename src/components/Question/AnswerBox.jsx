@@ -18,7 +18,6 @@ class AnswerBox extends React.Component {
         <input 
           className={this.props.enabledState} 
           type="text" 
-          value={this.state.responseGiven} 
           onChange={this.changeHandler.bind(this)} 
           placeholder="Type in French" 
         />

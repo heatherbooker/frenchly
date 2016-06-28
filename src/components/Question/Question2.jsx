@@ -27,7 +27,6 @@ class Question2 extends React.Component {
               <input
                 className={`${this.props.enabledState} f-fillA`} 
                 type="text" 
-                 
                 onChange={this.changeHandler.bind(this)}
                 placeholder="Type missing word"
               />
