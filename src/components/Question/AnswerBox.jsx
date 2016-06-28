@@ -16,7 +16,7 @@ class AnswerBox extends React.Component {
     return (
       <div className="col-md-5">
         <input 
-          className="f-boxA" 
+          className={this.props.enabledState} 
           type="text" 
           value={this.state.responseGiven} 
           onChange={this.changeHandler.bind(this)} 
@@ -27,7 +27,8 @@ class AnswerBox extends React.Component {
   }
 }
 AnswerBox.propTypes = {
- onResponseChange: React.PropTypes.func
+ onResponseChange: React.PropTypes.func,
+ enabledState: React.PropTypes.string
 };
 
 module.exports = AnswerBox;

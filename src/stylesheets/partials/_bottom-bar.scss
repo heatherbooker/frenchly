@@ -1,0 +1,40 @@
+.f-reactIcon {
+  height: 80px;
+  margin: 10px;
+}
+
+.f-reactIcon-disabled {
+  display: none;
+}
+
+.f-reactionText {
+  font-size: 18px;
+  margin: 20px 10px 5px 10px;
+}
+
+.f-reactionText-correct {
+  @extend .f-reactionText;
+  color: $colour-correct-text;
+}
+
+.f-reactionText-wrong {
+  @extend .f-reactionText;
+  color: $colour-wrong-text;
+}
+
+.f-answerText {
+  margin: 10px;
+}
+
+.f-answerText-hidden {
+  display: none;
+}
+
+.f-link-disabled {
+  pointer-events: none;
+}
+
+.f-checkQ {
+  float: right;
+  margin-top: 15px;
+}

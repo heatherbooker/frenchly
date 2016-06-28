@@ -31,3 +31,13 @@ body {
   top: 360px;
   width: 100%;
 }
+
+.f-bottom-bar-correct {
+  @extend .f-bottom-bar;
+  background-color: $colour-correct-bkgrd;
+}
+
+.f-bottom-bar-wrong {
+  @extend .f-bottom-bar;
+  background-color: $colour-wrong-bkgrd;
+}

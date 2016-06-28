@@ -17,7 +17,10 @@ class Question1 extends React.Component {
         </div>
         <div className="row">
           <QuestionBox question={this.props.question} />
-          <AnswerBox onResponseChange={this.props.onResponseChange} />
+          <AnswerBox 
+            onResponseChange={this.props.onResponseChange}
+            enabledState={this.props.answerBoxState}
+          />
         </div>
       </div>
     );
@@ -25,7 +28,8 @@ class Question1 extends React.Component {
 }
 Question1.propTypes = {
  onResponseChange: React.PropTypes.func,
- question: React.PropTypes.string
+ question: React.PropTypes.string,
+ answerBoxState: React.PropTypes.string
 };
 
 module.exports = Question1;

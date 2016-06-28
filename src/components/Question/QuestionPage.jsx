@@ -14,11 +14,9 @@ class QuestionPage extends React.Component {
     this.area = this.findAreaName(props.params.area);
     this.currentQuestion = this.findQuestionComponent(props.params.questionId);
     this.state = {
-      checkBtnClass: 'f-btn-disabled',
-      linkClass: 'f-link-disabled',
-      checkBtnText: 'Check',
       response: '',
-      responseCorrect: false
+      answerBoxState: 'f-boxA',
+      checkBtnClass: 'f-btn-disabled'
     };
     this.answer = 'the answer';
   }
@@ -49,27 +47,26 @@ class QuestionPage extends React.Component {
     let currentQuestion = () => {};
     if (questionId % 2 === 0) {
       currentQuestion = function (question) {
-        return <Question1 question={question} onResponseChange={this.handleAnswerBox.bind(this)} />;
+        return (
+          <Question1
+            question={question}
+            onResponseChange={this.handleAnswerBox.bind(this)}
+            answerBoxState={this.state.answerBoxState}
+          />
+        );
       };
     } else {
       currentQuestion = function (question) {
-        return <Question2 question={question} onResponseChange={this.handleAnswerBox.bind(this)} />;
+        return (
+          <Question2
+            question={question}
+            onResponseChange={this.handleAnswerBox.bind(this)}
+            enabledState={this.state.answerBoxState}
+          />
+        );
       };
     }
     return currentQuestion;
-  }
-  enableButton(enable) {
-    let newState = '';
-    if (enable) {
-      newState = { checkBtnClass: 'f-btn-proceed' };
-    } else {
-      newState = { checkBtnClass: 'f-btn-disabled' };
-    }
-    this.setState(
-      function() {
-        return newState;
-      }
-    );
   }
   handleAnswerBox(response) {
     if (response !== '') {
@@ -78,27 +75,28 @@ class QuestionPage extends React.Component {
       this.enableButton(false);
     }
     this.setState(
-      function() {
+      function () {
         return { response: response };
       }
     );
   }
-  handleCheckBtnClick() {
-    //if this.state.checkBtnText is already 'Continue', no need to do anything
-    if (this.state.checkBtnText === 'Check') {
-      if (this.state.response === this.answer) {
-        alert('RAD BEANS! YOU RULE!');
+  onCheckBtnClick() {
+    //called by BottomBar component
+    //disable QuestionBox (through Question1)
+    this.setState(
+      function () {
+        return { answerBoxState: 'f-boxA-disabled' };
       }
-      this.setState(
-        function() {
-          return {
-            linkClass: '',
-            checkBtnText: 'Continue',
-            responseCorrect: true
-          };
-        }
-      );
+    );
+  }
+  enableButton(enable) {
+    let newState = '';
+    if (enable) {
+      newState = { checkBtnClass: 'f-btn-proceed' };
+    } else {
+      newState = { checkBtnClass: 'f-btn-disabled' };
     }
+    this.setState(() => newState);
   }
   render() {
     return (
@@ -117,12 +115,13 @@ class QuestionPage extends React.Component {
               <ProgressBar />
             </div>
             {this.currentQuestion('the question')}
-            <BottomBar 
+            <BottomBar
               btnTxt={this.state.checkBtnText}
-              btnClass={this.state.checkBtnClass}
+              checkBtnClass={this.state.checkBtnClass}
               linkClass={this.state.linkClass}
-              onBtnClick={this.handleCheckBtnClick.bind(this)}
+              response={this.state.response}
               answer={this.answer}
+              onSubmit={this.onCheckBtnClick.bind(this)}
             />
           </div>
         </div>

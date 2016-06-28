@@ -16,7 +16,8 @@ class QuestionBox extends React.Component {
   }
 }
 QuestionBox.propTypes = {
- question: React.PropTypes.string
+ question: React.PropTypes.string,
+ enabledState: React.PropTypes.string
 };
 
 module.exports = QuestionBox;
