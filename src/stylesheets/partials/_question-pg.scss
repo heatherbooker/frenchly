@@ -25,6 +25,12 @@
   height: 10px;
 }
 
+.f-questionPage-title {
+  @extend %f-map;
+  float: left;
+  font-size: 20px;
+}
+
 .f-instruct-text {
   text-align: center;
   font-size: 28px;
@@ -55,6 +61,13 @@
   border-color: #1cb0f6;
 }
 
+.f-boxA-disabled {
+  @extend %f-box;
+  background-color: #f2f2f2;
+  border: 2px solid #CFCFCF;
+  pointer-events: none;
+}
+
 .f-fillQ {
   margin: 20px 10px 20px 20px;
   display: inline;
@@ -63,27 +76,10 @@
 }
 
 .f-fillA {
-  border: 1px solid;
-  border-radius: 8px;
-  box-shadow: 3px 3px 3px #1cb0f6;
-  border-color: #1cb0f6;
   height: 45px;
   width: 250px;
   display: inline;
   padding: 10px;
-}
-
-.f-bottom-bar {
-  border-radius: 0px 0px 10px 10px;
-  background-color: #dbdbdb;
-  height: 100px;
-  position: absolute !important;
-  top: 360px;
-}
-
-.f-checkQ {
-  float: right;
-  margin-top: 15px;
 }
 
 .f-Q2 {

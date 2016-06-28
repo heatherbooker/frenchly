@@ -1,6 +1,5 @@
 %f-map {
   color: $colour-text-mild;
-  font-size: 24px;
   display: inline;
   padding: 20px 10px;
 }
@@ -8,11 +7,13 @@
 .f-map-title {
   @extend %f-map;
   float: left;
+  font-size: 24px;
 }
 
 .f-quit {
   @extend %f-map;
   float: right;
+  font-size: 18px;
   &:hover {
     color: $colour-primary;
   }

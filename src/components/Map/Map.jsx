@@ -1,4 +1,4 @@
-var React = require('react');
+const React = require('react');
 
 
 class MapImg extends React.Component {
@@ -23,7 +23,7 @@ class MapImg extends React.Component {
     });
   }
   emitEvent(eventOrArea) {
-    var clickedEvent = '';
+    let clickedEvent = '';
     if (eventOrArea === 'mapUnselectEvent') {
       clickedEvent = new Event('onMapUnselect');
     } else {

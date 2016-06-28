@@ -30,5 +30,6 @@
   background-color: $colour-secondary;
   &:hover {
     background-color: $colour-secondary-hover;
+    cursor: pointer;
   }
 }

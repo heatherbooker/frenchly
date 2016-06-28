@@ -22,3 +22,22 @@ body {
   @extend .f-panel;
   margin: 40px 20px 40px 0px;
 }
+
+.f-bottom-bar {
+  border-radius: 0px 0px 10px 10px;
+  background-color: #dbdbdb;
+  height: 100px;
+  position: absolute !important;
+  top: 360px;
+  width: 100%;
+}
+
+.f-bottom-bar-correct {
+  @extend .f-bottom-bar;
+  background-color: $colour-correct-bkgrd;
+}
+
+.f-bottom-bar-wrong {
+  @extend .f-bottom-bar;
+  background-color: $colour-wrong-bkgrd;
+}

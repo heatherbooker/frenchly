@@ -1,7 +1,5 @@
-var React = require('react');
-var Link = require('react-router').Link;
-//uri vars
-var home = 'index.html';
+const React = require('react');
+const Link = require('react-router').Link;
 
 
 class Nav extends React.Component {

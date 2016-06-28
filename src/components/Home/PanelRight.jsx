@@ -1,7 +1,7 @@
-var React = require('react');
-var Link = require('react-router').Link;
+const React = require('react');
+const Link = require('react-router').Link;
 //require badge img
-var Badge = require('../Badge.jsx');
+const Badge = require('../Badge.jsx');
 
 
 class PanelRight extends React.Component {
