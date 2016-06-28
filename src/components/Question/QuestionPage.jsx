@@ -5,70 +5,25 @@ const ProgressBar = require('./ProgressBar.jsx');
 const Question1 = require('./Question1.jsx');
 const Question2 = require('./Question2.jsx');
 const BottomBar = require('./BottomBar.jsx');
+//import logic
+const logic = require('../../logic/questionPage.jsx');
 
 
 class QuestionPage extends React.Component {
   constructor(props) {
     super(props);
-    this.category = this.findCategory(props.params.category);
-    this.area = this.findAreaName(props.params.area);
-    this.currentQuestion = this.findQuestionComponent(props.params.questionId);
+    this.category = logic.findCategory(props.params.category);
+    this.area = logic.findAreaName(props.params.area);
     this.state = {
       response: '',
       answerBoxState: 'f-boxA',
-      checkBtnClass: 'f-btn-disabled'
+      checkBtnClass: 'f-btn-disabled',
+      lessonScore: 0,
+      currentQuestion: logic.findQuestionComponent(1).bind(this)
     };
     this.answer = 'the answer';
   }
-  findCategory(categoryParam) {
-    let category = categoryParam.charAt(0).toUpperCase() + categoryParam.slice(1);
-    if (category === 'Mixitup') {
-      category = 'Mix it up';
-    }
-    return category;
-  }
-  findAreaName(continentCode) {
-    let area = '';
-    if (continentCode === 'randomize') {
-      area = 'Random';
-    } else {
-      area = {
-        na: 'North America',
-        sa: 'South America',
-        af: 'Africa',
-        eu: 'Europe',
-        as: 'Asia',
-        oc: 'Oceania'
-      }[continentCode];
-    }
-    return area;
-  }
-  findQuestionComponent(questionId) {
-    let currentQuestion = () => {};
-    if (questionId % 2 === 0) {
-      currentQuestion = function (question) {
-        return (
-          <Question1
-            question={question}
-            onResponseChange={this.handleAnswerBox.bind(this)}
-            answerBoxState={this.state.answerBoxState}
-          />
-        );
-      };
-    } else {
-      currentQuestion = function (question) {
-        return (
-          <Question2
-            question={question}
-            onResponseChange={this.handleAnswerBox.bind(this)}
-            enabledState={this.state.answerBoxState}
-          />
-        );
-      };
-    }
-    return currentQuestion;
-  }
-  handleAnswerBox(response) {
+  manageAnswerBox(response) {
     if (response !== '') {
       this.enableButton(true);
     } else {
@@ -80,14 +35,33 @@ class QuestionPage extends React.Component {
       }
     );
   }
-  onCheckBtnClick() {
-    //called by BottomBar component
-    //disable QuestionBox (through Question1)
-    this.setState(
-      function () {
-        return { answerBoxState: 'f-boxA-disabled' };
+  onCheckBtnClick(btnText) {
+  //called by BottomBar component
+    if (btnText === 'Check') {
+      const newState = {};
+      if (this.state.response === this.answer) {
+        newState.lessonScore = this.state.lessonScore + 10;
+      } else {
+        newState.lessonScore = this.state.lessonScore;
       }
-    );
+      this.setState(
+        function () {
+          return {
+            answerBoxState: 'f-boxA-disabled',
+            lessonScore: newState.lessonScore
+          };
+        }
+      );
+    } else {
+      console.log('i am the man');
+      this.setState(function () {
+        return {
+          currentQuestion: logic.findQuestionComponent(0).bind(this),
+          answerBoxState: 'f-boxA'
+        }
+      })
+      this.forceUpdate();
+    }
   }
   enableButton(enable) {
     let newState = '';
@@ -114,11 +88,10 @@ class QuestionPage extends React.Component {
             <div className="row">
               <ProgressBar />
             </div>
-            {this.currentQuestion('the question')}
+            {this.state.currentQuestion('the question')}
             <BottomBar
               btnTxt={this.state.checkBtnText}
               checkBtnClass={this.state.checkBtnClass}
-              linkClass={this.state.linkClass}
               response={this.state.response}
               answer={this.answer}
               onSubmit={this.onCheckBtnClick.bind(this)}

@@ -33,7 +33,7 @@ ReactDOM.render((
     <Route path="/" component={Main}>
       <IndexRoute component={LandingPage}/>
       <Route path="map/:category" component={MapPage}/>
-      <Route path="question/:category/:area/:questionId" component={QuestionPage}/>
+      <Route path="question/:category/:area" component={QuestionPage}/>
     </Route>
   </Router>
 ), document.getElementById('app'));

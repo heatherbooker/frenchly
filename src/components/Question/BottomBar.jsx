@@ -20,7 +20,6 @@ class BottomBar extends React.Component {
     };
     this.answer = this.props.answer;
     this.state = {
-      linkClass: 'f-link-disabled',
       checkBtnText: 'Check',
       reactionText: '',
       iconClass: 'f-reactIcon-disabled',
@@ -30,9 +29,6 @@ class BottomBar extends React.Component {
     };
   }
   onBtnClick() {
-    //if this.state.checkBtnText is already 'Continue':
-     //Link is being clicked, not btn;
-     //therefore, do nothing
     if (this.state.checkBtnText === 'Check') {
       const newState = {};
       if (this.props.response === this.answer) {
@@ -40,15 +36,10 @@ class BottomBar extends React.Component {
       } else {
         this.reactToResponse(false);
       }
-      //remove link disabling class
-      newState.linkClass = '';
-      //change btn text to continue
       newState.checkBtnText = 'Continue';
-      //tell question page to disable question box
-      this.props.onSubmit();
-      //set new state
       this.setState(() => newState);
     }
+    this.props.onSubmit(this.state.checkBtnText);
   }
   reactToResponse(isCorrect) {
     let newState = {};
@@ -87,9 +78,7 @@ class BottomBar extends React.Component {
           <div
             className={`${this.props.checkBtnClass} f-checkQ`}
             onClick={this.onBtnClick.bind(this)}>
-            <Link to="/" className={this.state.linkClass}>
-              <span>{this.state.checkBtnText}</span>
-            </Link>
+            <span>{this.state.checkBtnText}</span>
           </div>
         </div>
       </div>

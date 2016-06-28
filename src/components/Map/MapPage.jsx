@@ -11,7 +11,6 @@ class MapPage extends React.Component {
   constructor(props) {
     super(props);
     this.category = props.params.category;
-    this.questionId = Number(Math.random().toString().slice(7));
     this.randomizeImg = randomizeImg;
     this.continueBtnClass = 'f-btn-disabled';
     this.state = { randomizeSelected: false, mapSelected: false };
@@ -90,7 +89,7 @@ class MapPage extends React.Component {
               <div className="col-md-12">
                 <img className="f-map-random" src={this.randomizeImg} onClick={this.onRandomizeClick.bind(this)} />
                 <div className={`${this.continueBtnClass} f-map-next`}>
-                  <Link to={`question/${this.category}/${this.state.area}/${this.questionId}`}>
+                  <Link to={`question/${this.category}/${this.state.area}`}>
                     <span>Continue</span>
                   </Link>
                 </div>
