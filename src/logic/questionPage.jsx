@@ -27,12 +27,8 @@ exports.findAreaName = function(continentCode) {
   return area;
 }
 
-exports.findQuestionComponent = function(originalQuestionId) {
+exports.findQuestionComponent = function(questionId) {
   let currentQuestion = () => {};
-  let questionId = originalQuestionId;
-  if (originalQuestionId !== 0) {
-    questionId = Number(Math.random().toString().slice(7));
-  }
   if (questionId % 2 === 0) {
     currentQuestion = function (question) {
       return (
@@ -40,6 +36,7 @@ exports.findQuestionComponent = function(originalQuestionId) {
           question={question}
           onResponseChange={this.manageAnswerBox.bind(this)}
           answerBoxState={this.state.answerBoxState}
+          response={this.state.response}
         />
       );
     };
@@ -50,6 +47,7 @@ exports.findQuestionComponent = function(originalQuestionId) {
           question={question}
           onResponseChange={this.manageAnswerBox.bind(this)}
           enabledState={this.state.answerBoxState}
+          response={this.state.response}
         />
       );
     };

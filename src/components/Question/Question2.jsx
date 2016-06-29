@@ -26,7 +26,8 @@ class Question2 extends React.Component {
               <h3 className="f-fillQ">{this.props.question}</h3>
               <input
                 className={`${this.props.enabledState} f-fillA`} 
-                type="text" 
+                type="text"
+                value={this.props.response}
                 onChange={this.changeHandler.bind(this)}
                 placeholder="Type missing word"
               />
@@ -40,7 +41,8 @@ class Question2 extends React.Component {
 Question2.propTypes = {
  question: React.PropTypes.string,
  onResponseChange: React.PropTypes.func,
- enabledState: React.PropTypes.string
+ enabledState: React.PropTypes.string,
+ response: React.PropTypes.string
 };
 
 module.exports = Question2;

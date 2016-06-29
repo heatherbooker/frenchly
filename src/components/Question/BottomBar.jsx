@@ -19,6 +19,8 @@ class BottomBar extends React.Component {
       colour: 'f-bottom-bar-wrong'
     };
     this.answer = this.props.answer;
+    this.link = `question/${this.props.category}/${this.props.area}/lvlcomplete`
+    this.linkClass = 'f-link-disabled';
     this.state = {
       checkBtnText: 'Check',
       reactionText: '',
@@ -29,16 +31,18 @@ class BottomBar extends React.Component {
     };
   }
   onBtnClick() {
+    const newState = {};
     if (this.state.checkBtnText === 'Check') {
-      const newState = {};
       if (this.props.response === this.answer) {
         this.reactToResponse(true);
       } else {
         this.reactToResponse(false);
       }
       newState.checkBtnText = 'Continue';
-      this.setState(() => newState);
+    } else {
+      this.reset();
     }
+    this.setState(() => newState);
     this.props.onSubmit(this.state.checkBtnText);
   }
   reactToResponse(isCorrect) {
@@ -60,7 +64,21 @@ class BottomBar extends React.Component {
     newState.iconClass = 'f-reactIcon';
     this.setState(() => newState);
   }
+  reset() {
+    this.setState(function () {
+      return ({
+        checkBtnText: 'Check',
+        reactionText: '',
+        iconClass: 'f-reactIcon-disabled',
+        bkgrdColour: 'f-bottom-bar',
+        answerClass: 'f-answerText-hidden'
+      });
+    })
+  }
   render() {
+    if (this.props.lvlIsComplete) {
+      this.linkClass = '';
+    }
     return (
       <div className={`row ${this.state.bkgrdColour}`}>
         <div className="col-md-2">
@@ -75,11 +93,15 @@ class BottomBar extends React.Component {
           </p>
         </div>
         <div className="col-md-4">
-          <div
-            className={`${this.props.checkBtnClass} f-checkQ`}
-            onClick={this.onBtnClick.bind(this)}>
-            <span>{this.state.checkBtnText}</span>
-          </div>
+          
+            <div
+              className={`${this.props.checkBtnClass} f-checkQ`}
+              onClick={this.onBtnClick.bind(this)}>
+              <Link to={this.link} className={this.linkClass}>
+              <span>{this.state.checkBtnText}</span>
+              </Link>
+            </div>
+          
         </div>
       </div>
     );
@@ -89,7 +111,10 @@ BottomBar.propTypes = {
   answer: React.PropTypes.string,
   response: React.PropTypes.string,
   onSubmit: React.PropTypes.func,
-  checkBtnClass: React.PropTypes.string
+  checkBtnClass: React.PropTypes.string,
+  category: React.PropTypes.string,
+  area: React.PropTypes.string,
+  lvlIsComplete: React.PropTypes.bool
 };
 
 module.exports = BottomBar;

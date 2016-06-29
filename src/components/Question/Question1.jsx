@@ -20,6 +20,7 @@ class Question1 extends React.Component {
           <AnswerBox 
             onResponseChange={this.props.onResponseChange}
             enabledState={this.props.answerBoxState}
+            response={this.props.response}
           />
         </div>
       </div>

@@ -1,5 +1,6 @@
 const React = require('react');
 const Link = require('react-router').Link;
+const browserHistory = require('react-router').browserHistory;
 //import other components
 const ProgressBar = require('./ProgressBar.jsx');
 const Question1 = require('./Question1.jsx');
@@ -19,9 +20,11 @@ class QuestionPage extends React.Component {
       answerBoxState: 'f-boxA',
       checkBtnClass: 'f-btn-disabled',
       lessonScore: 0,
-      currentQuestion: logic.findQuestionComponent(1).bind(this)
+      currentQuestion: logic.findQuestionComponent().bind(this),
+      questionId: 0,
+      lvlComplete: false
     };
-    this.answer = 'the answer';
+    this.answer = 'a';
   }
   manageAnswerBox(response) {
     if (response !== '') {
@@ -37,31 +40,38 @@ class QuestionPage extends React.Component {
   }
   onCheckBtnClick(btnText) {
   //called by BottomBar component
+    const newState = {};
     if (btnText === 'Check') {
-      const newState = {};
       if (this.state.response === this.answer) {
-        newState.lessonScore = this.state.lessonScore + 10;
+        newState.lessonScore = this.state.lessonScore + 40;
+        if (newState.lessonScore >= 100) {
+          newState.lvlComplete = true;
+        }
       } else {
         newState.lessonScore = this.state.lessonScore;
+        newState.lvlComplete = false;
       }
       this.setState(
         function () {
           return {
             answerBoxState: 'f-boxA-disabled',
-            lessonScore: newState.lessonScore
+            lessonScore: newState.lessonScore,
+            lvlComplete: newState.lvlComplete
           };
         }
       );
     } else {
-      console.log('i am the man');
-      this.setState(function () {
-        return {
-          currentQuestion: logic.findQuestionComponent(0).bind(this),
-          answerBoxState: 'f-boxA'
-        }
-      })
-      this.forceUpdate();
+        this.setState(function () {
+          return {
+            currentQuestion: logic.findQuestionComponent(this.state.questionId).bind(this),
+            questionId: this.state.questionId +1,
+            answerBoxState: 'f-boxA',
+            response: '',
+            checkBtnClass: 'f-btn-disabled'
+          }
+        });
     }
+    this.forceUpdate();
   }
   enableButton(enable) {
     let newState = '';
@@ -95,6 +105,9 @@ class QuestionPage extends React.Component {
               response={this.state.response}
               answer={this.answer}
               onSubmit={this.onCheckBtnClick.bind(this)}
+              category={this.category}
+              area={this.area}
+              lvlIsComplete={this.state.lvlComplete}
             />
           </div>
         </div>
