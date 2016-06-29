@@ -4,6 +4,11 @@ var Badge = require('../Badge.jsx');
 
 
 class LvlCompletePage extends React.Component {
+  constructor() {
+    super();
+    window.FrenchlyProgress = window.FrenchlyProgress + 12;
+    this.state = { progress: window.FrenchlyProgress};
+  }
   render() {
     return (
       <div className="row">
@@ -24,10 +29,10 @@ class LvlCompletePage extends React.Component {
             </div>
             <div className="row">
               <div className="col-md-8">
-                <span className="f-fluency-text">You are now 11% fluent in countries in French!</span>
+                <span className="f-fluency-text">You are now {this.state.progress}% fluent in countries in French!</span>
               </div>
               <div className="col-md-4">
-                <Badge />
+                <Badge progressPercent={this.state.progress} />
               </div>
             </div>
           </div>

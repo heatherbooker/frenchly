@@ -8,7 +8,7 @@ class PanelRight extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      progressPercent: 11
+      progressPercent: window.FrenchlyProgress
     };
   }
   handleResetClick() {
