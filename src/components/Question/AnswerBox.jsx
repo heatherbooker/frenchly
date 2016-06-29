@@ -15,21 +15,21 @@ class AnswerBox extends React.Component {
   render() {
     return (
       <div className="col-md-5">
-        <input 
-          className={this.props.enabledState} 
+        <input
+          className={this.props.enabledState}
           type="text"
           value={this.props.response}
-          onChange={this.changeHandler.bind(this)} 
-          placeholder="Type in French" 
+          onChange={this.changeHandler.bind(this)}
+          placeholder="Type in French"
         />
       </div>
     );
   }
 }
 AnswerBox.propTypes = {
- onResponseChange: React.PropTypes.func,
- enabledState: React.PropTypes.string,
- response: React.PropTypes.string
+  onResponseChange: React.PropTypes.func,
+  enabledState: React.PropTypes.string,
+  response: React.PropTypes.string
 };
 
 module.exports = AnswerBox;

@@ -1,10 +1,7 @@
 const React = require('react');
 const Link = require('react-router').Link;
-const browserHistory = require('react-router').browserHistory;
 //import other components
 const ProgressBar = require('./ProgressBar.jsx');
-const Question1 = require('./Question1.jsx');
-const Question2 = require('./Question2.jsx');
 const BottomBar = require('./BottomBar.jsx');
 //import logic
 const logic = require('../../logic/questionPage.jsx');
@@ -32,11 +29,7 @@ class QuestionPage extends React.Component {
     } else {
       this.enableButton(false);
     }
-    this.setState(
-      function () {
-        return { response: response };
-      }
-    );
+    this.setState(() => ({ response }));
   }
   onCheckBtnClick(btnText) {
   //called by BottomBar component
@@ -51,25 +44,23 @@ class QuestionPage extends React.Component {
         newState.lessonScore = this.state.lessonScore;
         newState.lvlComplete = false;
       }
-      this.setState(
-        function () {
-          return {
-            answerBoxState: 'f-boxA-disabled',
-            lessonScore: newState.lessonScore,
-            lvlComplete: newState.lvlComplete
-          };
-        }
+      this.setState(() =>
+        ({
+          answerBoxState: 'f-boxA-disabled',
+          lessonScore: newState.lessonScore,
+          lvlComplete: newState.lvlComplete
+        })
       );
     } else {
-        this.setState(function () {
-          return {
-            currentQuestion: logic.findQuestionComponent(this.state.questionId).bind(this),
-            questionId: this.state.questionId +1,
-            answerBoxState: 'f-boxA',
-            response: '',
-            checkBtnClass: 'f-btn-disabled'
-          }
-        });
+      this.setState(function () {
+        return {
+          currentQuestion: logic.findQuestionComponent(this.state.questionId).bind(this),
+          questionId: this.state.questionId + 1,
+          answerBoxState: 'f-boxA',
+          response: '',
+          checkBtnClass: 'f-btn-disabled'
+        };
+      });
     }
     this.forceUpdate();
   }

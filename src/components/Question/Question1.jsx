@@ -28,9 +28,10 @@ class Question1 extends React.Component {
   }
 }
 Question1.propTypes = {
- onResponseChange: React.PropTypes.func,
- question: React.PropTypes.string,
- answerBoxState: React.PropTypes.string
+  onResponseChange: React.PropTypes.func,
+  question: React.PropTypes.string,
+  answerBoxState: React.PropTypes.string,
+  response: React.PropTypes.string
 };
 
 module.exports = Question1;

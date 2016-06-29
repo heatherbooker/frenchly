@@ -19,7 +19,6 @@ class BottomBar extends React.Component {
       colour: 'f-bottom-bar-wrong'
     };
     this.answer = this.props.answer;
-    this.link = `question/${this.props.category}/${this.props.area}/lvlcomplete`
     this.linkClass = 'f-link-disabled';
     this.state = {
       checkBtnText: 'Check',
@@ -65,7 +64,7 @@ class BottomBar extends React.Component {
     this.setState(() => newState);
   }
   reset() {
-    this.setState(function () {
+    this.setState(() => {
       return ({
         checkBtnText: 'Check',
         reactionText: '',
@@ -73,7 +72,7 @@ class BottomBar extends React.Component {
         bkgrdColour: 'f-bottom-bar',
         answerClass: 'f-answerText-hidden'
       });
-    })
+    });
   }
   render() {
     if (this.props.lvlIsComplete) {
@@ -93,15 +92,17 @@ class BottomBar extends React.Component {
           </p>
         </div>
         <div className="col-md-4">
-          
-            <div
-              className={`${this.props.checkBtnClass} f-checkQ`}
-              onClick={this.onBtnClick.bind(this)}>
-              <Link to={this.link} className={this.linkClass}>
+          <div
+            className={`${this.props.checkBtnClass} f-checkQ`}
+            onClick={this.onBtnClick.bind(this)}
+          >
+            <Link
+              to={`question/${this.props.category}/${this.props.area}/lvlcomplete`}
+              className={this.linkClass}
+            >
               <span>{this.state.checkBtnText}</span>
-              </Link>
-            </div>
-          
+            </Link>
+          </div>
         </div>
       </div>
     );

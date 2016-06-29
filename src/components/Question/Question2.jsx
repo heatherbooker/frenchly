@@ -1,4 +1,4 @@
-var React = require('react');
+const React = require('react');
 
 
 class Question2 extends React.Component {
@@ -20,7 +20,7 @@ class Question2 extends React.Component {
             <h2 className="f-instruct-text">Fill in the blank</h2>
           </div>
         </div>
-        <div className='row'>
+        <div className="row">
           <div className="col-md-offset-2 col-md-10">
             <div className="f-Q2">
               <h3 className="f-fillQ">{this.props.question}</h3>
@@ -39,10 +39,10 @@ class Question2 extends React.Component {
   }
 }
 Question2.propTypes = {
- question: React.PropTypes.string,
- onResponseChange: React.PropTypes.func,
- enabledState: React.PropTypes.string,
- response: React.PropTypes.string
+  question: React.PropTypes.string,
+  onResponseChange: React.PropTypes.func,
+  enabledState: React.PropTypes.string,
+  response: React.PropTypes.string
 };
 
 module.exports = Question2;
