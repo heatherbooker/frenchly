@@ -1,4 +1,6 @@
 var React = require('react');
+const Link = require('react-router').Link;
+//other components
 var ProgressBar = require('./ProgressBar.jsx');
 var Badge = require('../Badge.jsx');
 
@@ -19,20 +21,29 @@ class LvlCompletePage extends React.Component {
                 <h3 className='f-map-title'>Countries - Africa</h3>
               </div>
             </div>
-             <div className='row'>
+            <div className='row'>
               <ProgressBar progress={100} />
-             </div>
-             <div className="row">
+            </div>
+            <div className="row">
               <div className="col-md-12">
                 <h2 className="f-instruct-text">Lesson Complete!</h2>
               </div>
             </div>
             <div className="row">
               <div className="col-md-8">
-                <span className="f-fluency-text">You are now {this.state.progress}% fluent in countries in French!</span>
+                <span className="f-fluency-text">You are now {this.state.progress}% fluent in {this.props.params.category} in French!</span>
               </div>
               <div className="col-md-4">
                 <Badge progressPercent={this.state.progress} />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-4 col-md-offset-8">
+                <div className="f-continue-btn f-btn-proceed">
+                  <Link to="/" >
+                    <span>Continue</span>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -40,6 +51,10 @@ class LvlCompletePage extends React.Component {
       </div>
     );
   }
+}
+
+LvlCompletePage.propTypes = {
+  params: React.PropTypes.object
 }
 
 module.exports = LvlCompletePage;
