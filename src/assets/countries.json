@@ -184,8 +184,12 @@
   "english": "Comoros"
  }, 
  {
-  "french": "Congo", 
-  "english": "Congo"
+  "french": "République du Congo", 
+  "english": "Republic of the Congo"
+ },
+ {
+  "french": "République démocratique du Congo", 
+  "english": "Democratic Republic of the Congo"
  },
  {
   "french": "\u00celes Cook", 
@@ -874,7 +878,7 @@
  }, 
  {
   "french": "Ouganda", 
-  "english": "Ugandax"
+  "english": "Uganda"
  }, 
  {
   "french": "Ukraine", 

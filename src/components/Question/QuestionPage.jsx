@@ -12,7 +12,7 @@ class QuestionPage extends React.Component {
     super(props);
     this.category = logic.findCategory(props.params.category);
     this.area = logic.findAreaName(props.params.area);
-    this.qAndA = logic.pickQuestion();
+    this.qAndA = logic.pickQuestion(props.params.area);
     this.state = {
       response: '',
       answerBoxState: 'f-boxA',
@@ -54,7 +54,7 @@ class QuestionPage extends React.Component {
       );
     } else {
       this.setState(function () {
-        this.qAndA = logic.pickQuestion();
+        this.qAndA = logic.pickQuestion(this.props.params.area);
         return {
           currentQuestion: logic.findQuestionComponent(this.qAndA[1], this.state.questionId).bind(this),
           answer: this.qAndA[0],

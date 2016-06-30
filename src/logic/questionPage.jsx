@@ -2,7 +2,7 @@ const React = require('react');
 const Question1 = require('../components/Question/Question1.jsx');
 const Question2 = require('../components/Question/Question2.jsx');
 //country names in english and french
-const countries = require('json!../assets/countries.json');
+const countries = require('json!../assets/countries-by-continent.json');
 
 
 exports.findCategory = function(categoryParam) {
@@ -30,9 +30,24 @@ exports.findAreaName = function(continentCode) {
   return area;
 }
 
-exports.pickQuestion = function() {
-  const num = Math.floor(Math.random() * (241));
-  const country = countries[num];
+const pickRandomContinent = function() {
+  let continent = '';
+  let count = 0;
+  for (var prop in countries)
+    if (Math.random() < 1/++count)
+      continent = prop;
+  return continent;
+}
+
+exports.pickQuestion = function(area) {
+  let continent = '';
+  if (area === 'randomize') {
+    continent = pickRandomContinent();
+  } else {
+    continent = area.toUpperCase();
+  }
+  const index = Math.floor(Math.random() * (countries[continent].length));
+  const country = countries[continent][index];
   return [country.english, country.french];
 }
 

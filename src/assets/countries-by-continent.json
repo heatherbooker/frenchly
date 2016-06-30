@@ -1,0 +1,879 @@
+{
+ "AF": [
+  {
+   "french": "Burkina Faso", 
+   "english": "Burkina Faso"
+  }, 
+  {
+   "french": "Burundi", 
+   "english": "Burundi"
+  }, 
+  {
+   "french": "B\u00e9nin", 
+   "english": "Benin"
+  }, 
+  {
+   "french": "Botswana", 
+   "english": "Botswana"
+  }, 
+  {
+   "french": "Rwanda", 
+   "english": "Rwanda"
+  },
+  {
+  "french": "Ile de la R\u00e9union", 
+  "english": "Reunion Island"
+  }, 
+  {
+   "french": "Guin\u00e9e-Bissau", 
+   "english": "Guinea-Bissau"
+  }, 
+  {
+   "french": "Guin\u00e9e \u00c9quatoriale", 
+   "english": "Equatorial Guinea"
+  }, 
+  {
+   "french": "Gabon", 
+   "english": "Gabon"
+  }, 
+  {
+   "french": "Guin\u00e9ee", 
+   "english": "Guinea"
+  }, 
+  {
+   "french": "Gambie", 
+   "english": "Gambia"
+  }, 
+  {
+   "french": "Ghana", 
+   "english": "Ghana"
+  }, 
+  {
+   "french": "Tunisie", 
+   "english": "Tunisia"
+  }, 
+  {
+   "french": "Zambie", 
+   "english": "Zambia"
+  }, 
+  {
+   "french": "Sahara Occidental", 
+   "english": "Western Sahara"
+  }, 
+  {
+   "french": "\u00c9gypte", 
+   "english": "Egypt"
+  }, 
+  {
+   "french": "Afrique du Sud", 
+   "english": "South Africa"
+  }, 
+  {
+   "french": "\u00c9thiopie", 
+   "english": "Ethiopia"
+  }, 
+  {
+   "french": "Somalie", 
+   "english": "Somalia"
+  }, 
+  {
+   "french": "Zimbabwe", 
+   "english": "Zimbabwe"
+  }, 
+  {
+   "french": "\u00c9rythr\u00e9e", 
+   "english": "Eritrea"
+  }, 
+  {
+   "french": "Madagascar", 
+   "english": "Madagascar"
+  }, 
+  {
+   "french": "Maroc", 
+   "english": "Morocco"
+  }, 
+  {
+   "french": "Mali", 
+   "english": "Mali"
+  }, 
+  {
+   "french": "\u00cele Maurice", 
+   "english": "Mauritius"
+  }, 
+  {
+   "french": "Malawi", 
+   "english": "Malawi"
+  }, 
+  {
+   "french": "Mauritanie", 
+   "english": "Mauritania"
+  }, 
+  {
+   "french": "Ouganda", 
+   "english": "Uganda"
+  }, 
+  {
+   "french": "Tanzanie", 
+   "english": "Tanzania"
+  }, 
+  {
+   "french": "Namibie", 
+   "english": "Namibia"
+  }, 
+  {
+   "french": "Niger", 
+   "english": "Niger"
+  }, 
+  {
+   "french": "Nig\u00e9ria", 
+   "english": "Nigeria"
+  }, 
+  {
+   "french": "C\u00f4te D'ivoire", 
+   "english": "Ivory Coast"
+  }, 
+  {
+   "french": "Cameroun", 
+   "english": "Cameroon"
+  }, 
+  {
+   "french": "R\u00e9publique du Congo", 
+   "english": "Republic of the Congo"
+  }, 
+  {
+  "french": "R\u00e9publique Centrafricaine", 
+  "english": "Central African \nRepublic"
+  }, 
+  {
+   "french": "R\u00e9publique d\u00e9mocratique du Congo", 
+   "english": "Democratic Republic of the Congo"
+  }, 
+  {
+   "french": "Cap-Vert", 
+   "english": "Cape Verde"
+  }, 
+  {
+   "french": "Swaziland", 
+   "english": "Swaziland"
+  }, 
+  {
+   "french": "Kenya", 
+   "english": "Kenya"
+  }, 
+  {
+   "french": "Soudan du Sud", 
+   "english": "South Sudan"
+  }, 
+  {
+   "french": "Comores", 
+   "english": "Comoros"
+  }, 
+  {
+   "french": "S\u00e9n\u00e9gal", 
+   "english": "Senegal"
+  }, 
+  {
+   "french": "Sierra Leone", 
+   "english": "Sierra Leone"
+  }, 
+  {
+   "french": "Seychelles", 
+   "english": "Seychelles"
+  }, 
+  {
+   "french": "Soudan", 
+   "english": "Sudan"
+  }, 
+  {
+   "french": "Djibouti", 
+   "english": "Djibouti"
+  }, 
+  {
+   "french": "Alg\u00e9rie", 
+   "english": "Algeria"
+  }, 
+  {
+   "french": "Mayotte", 
+   "english": "Mayotte"
+  }, 
+  {
+   "french": "Lib\u00e9ria", 
+   "english": "Liberia"
+  }, 
+  {
+   "french": "Lesotho", 
+   "english": "Lesotho"
+  }, 
+  {
+   "french": "Togo", 
+   "english": "Togo"
+  }, 
+  {
+   "french": "Tchad", 
+   "english": "Chad"
+  }, 
+  {
+   "french": "Libye", 
+   "english": "Libya"
+  }, 
+  {
+   "french": "Angola", 
+   "english": "Angola"
+  }, 
+  {
+   "french": "Mozambique", 
+   "english": "Mozambique"
+  }
+ ], 
+ "NA": [
+  {
+   "french": "Barbade", 
+   "english": "Barbados"
+  }, 
+  {
+   "french": "Bermudes", 
+   "english": "Bermuda"
+  }, 
+  {
+   "french": "Jama\u00efque", 
+   "english": "Jamaica"
+  }, 
+  {
+   "french": "Bahamas", 
+   "english": "Bahamas"
+  }, 
+  {
+   "french": "Belize", 
+   "english": "Belize"
+  }, 
+  {
+   "french": "Guatemala", 
+   "english": "Guatemala"
+  }, 
+  {
+   "french": "Guadeloupe", 
+   "english": "Guadeloupe"
+  }, 
+  {
+   "french": "Grenade", 
+   "english": "Grenada"
+  }, 
+  {
+   "french": "El Salvador", 
+   "english": "El Salvador"
+  }, 
+  {
+   "french": "Groenland", 
+   "english": "Greenland"
+  }, 
+  {
+   "french": "Ha\u00efti", 
+   "english": "Haiti"
+  }, 
+  {
+   "french": "Honduras", 
+   "english": "Honduras"
+  }, 
+  {
+   "french": "Porto Rico", 
+   "english": "Puerto Rico"
+  }, 
+  {
+   "french": "Panama", 
+   "english": "Panama"
+  }, 
+  {
+   "french": "Martinique", 
+   "english": "Martinique"
+  }, 
+  {
+   "french": "Montserrat", 
+   "english": "Montserrat"
+  }, 
+  {
+   "french": "Mexique", 
+   "english": "Mexico"
+  }, 
+  {
+   "french": "Nicaragua", 
+   "english": "Nicaragua"
+  }, 
+  {
+   "french": "Canada", 
+   "english": "Canada"
+  }, 
+  {
+   "french": "Costa Rica", 
+   "english": "Costa Rica"
+  }, 
+  {
+   "french": "Cuba", 
+   "english": "Cuba"
+  }, 
+  {
+   "french": "Saint-Kitts-et-Nevis", 
+   "english": "Saint Kitts and Nevis"
+  }, 
+  {
+   "french": "Ca\u00efmanes, \u00celes", 
+   "english": "Cayman Islands"
+  }, 
+  {
+   "french": "Dominicaine, R\u00e9publique", 
+   "english": "Dominican Republic"
+  }, 
+  {
+   "french": "Dominique", 
+   "english": "Dominica"
+  }, 
+  {
+   "french": "\u00c9tats-Unis", 
+   "english": "United States"
+  }, 
+  {
+   "french": "Sainte-Lucie", 
+   "english": "Saint Lucia"
+  }, 
+  {
+   "french": "Trinit\u00e9-et-Tobago", 
+   "english": "Trinidad and Tobago"
+  }, 
+  {
+   "french": "Turks et Ca\u00efques, \u00celes", 
+   "english": "Turks and Caicos Islands"
+  }, 
+  {
+   "french": "Saint-Vincent-et-les Grenadines", 
+   "english": "Saint Vincent and the Grenadines"
+  }, 
+  {
+   "french": "Antigua-et-Barbuda", 
+   "english": "Antigua and Barbuda"
+  }, 
+  {
+   "french": "Anguilla", 
+   "english": "Anguilla"
+  }, 
+  {
+   "french": "Aruba", 
+   "english": "Aruba"
+  }
+ ], 
+ "OC": [
+  "Wallis and Futuna", 
+  {
+   "french": "Samoa", 
+   "english": "Samoa"
+  }, 
+  {
+   "french": "Tokelau", 
+   "english": "Tokelau"
+  }, 
+  {
+   "french": "Guam", 
+   "english": "Guam"
+  }, 
+  {
+   "french": "Palaos", 
+   "english": "Palau"
+  }, 
+  {
+   "french": "Polyn\u00e9sie Fran\u00e7aise", 
+   "english": "French Polynesia"
+  }, 
+  {
+   "french": "Papouasie-Nouvelle-Guin\u00e9e", 
+   "english": "Papua New Guinea"
+  }, 
+  {
+   "french": "Salomon, \u00celes", 
+   "english": "Solomon Islands"
+  }, 
+  {
+   "french": "\u00celes Marshall", 
+   "english": "Marshall Islands"
+  }, 
+  {
+   "french": "\u00celes Mariannes du Nord", 
+   "english": "Northern Mariana Islands"
+  }, 
+  {
+   "french": "Fidji", 
+   "english": "Fiji"
+  }, 
+  {
+   "french": "Micron\u00e9sie", 
+   "english": "Micronesia"
+  }, 
+  {
+   "french": "Vanuatu", 
+   "english": "Vanuatu"
+  }, 
+  {
+   "french": "Nouvelle-Cal\u00e9donie", 
+   "english": "New Caledonia"
+  }, 
+  {
+   "french": "Nouvelle-Z\u00e9lande", 
+   "english": "New Zealand"
+  }, 
+  {
+   "french": "Nauru", 
+   "english": "Nauru"
+  }, 
+  {
+   "french": "Niou\u00e9", 
+   "english": "Niue"
+  }, 
+  {
+   "french": "\u00celes Cook", 
+   "english": "Cook Islands"
+  }, 
+  {
+   "french": "Kiribati", 
+   "english": "Kiribati"
+  }, 
+  {
+   "french": "Tuvalu", 
+   "english": "Tuvalu"
+  }, 
+  {
+   "french": "Tonga", 
+   "english": "Tonga"
+  }, 
+  {
+   "french": "Samoa Am\u00e9ricaines", 
+   "english": "American Samoa"
+  }, 
+  {
+   "french": "Australie", 
+   "english": "Australia"
+  }
+ ], 
+ "AS": [
+  {
+   "french": "Bangladesh", 
+   "english": "Bangladesh"
+  }, 
+  {
+   "french": "Bahre\u00efn", 
+   "english": "Bahrain"
+  }, 
+  {
+   "french": "Bhoutan", 
+   "english": "Bhutan"
+  }, 
+  {
+   "french": "Turkm\u00e9nistan", 
+   "english": "Turkmenistan"
+  }, 
+  {
+   "french": "Tadjikistan", 
+   "english": "Tajikistan"
+  }, 
+  {
+   "french": "Japon", 
+   "english": "Japan"
+  }, 
+  {
+   "french": "G\u00e9orgie", 
+   "english": "Georgia"
+  }, 
+  {
+   "french": "Oman", 
+   "english": "Oman"
+  }, 
+  {
+   "french": "Jordanie", 
+   "english": "Jordan"
+  }, 
+  {
+   "french": "Hong-Kong", 
+   "english": "Hong Kong"
+  }, 
+  {
+   "french": "Iraq", 
+   "english": "Iraq"
+  }, 
+  {
+   "french": "Pakistan", 
+   "english": "Pakistan"
+  }, 
+  {
+   "french": "Philippines", 
+   "english": "Philippines"
+  }, 
+  {
+   "french": "Vi\u00eat Nam", 
+   "english": "Vietnam"
+  }, 
+  {
+   "french": "Arabie Saoudite", 
+   "english": "Saudi Arabia"
+  }, 
+  {
+   "french": "Ouzb\u00e9kistan", 
+   "english": "Uzbekistan"
+  }, 
+  {
+   "french": "Mongolie", 
+   "english": "Mongolia"
+  }, 
+  {
+   "french": "Maldives", 
+   "english": "Maldives"
+  }, 
+  {
+   "french": "Malaisie", 
+   "english": "Malaysia"
+  }, 
+  {
+   "french": "Isra\u00ebl", 
+   "english": "Israel"
+  }, 
+  {
+   "french": "N\u00e9pal", 
+   "english": "Nepal"
+  }, 
+  {
+   "french": "Chine", 
+   "english": "China"
+  }, 
+  {
+   "french": "\u00cele Christmas", 
+   "english": "Christmas Island"
+  }, 
+  {
+   "french": "Syrie", 
+   "english": "Syria"
+  }, 
+  {
+   "french": "Kirghizistan", 
+   "english": "Kyrgyzstan"
+  }, 
+  {
+   "french": "Cambodge", 
+   "english": "Cambodia"
+  }, 
+  {
+   "french": "Cor\u00e9e du Sud", 
+   "english": "South Korea"
+  }, 
+  {
+   "french": "Cor\u00e9e du Nord", 
+   "english": "North Korea"
+  }, 
+  {
+   "french": "Kowe\u00eft", 
+   "english": "Kuwait"
+  }, 
+  {
+   "french": "Kazakstan", 
+   "english": "Kazakhstan"
+  }, 
+  {
+   "french": "Singapour", 
+   "english": "Singapore"
+  }, 
+  {
+   "french": "Y\u00e9men", 
+   "english": "Yemen"
+  }, 
+  {
+   "french": "Liban", 
+   "english": "Lebanon"
+  }, 
+  {
+   "french": "Laos", 
+   "english": "Laos"
+  }, 
+  {
+   "french": "Ta\u00efwan", 
+   "english": "Taiwan"
+  }, 
+  {
+   "french": "Turquie", 
+   "english": "Turkey"
+  }, 
+  {
+   "french": "Sri Lanka", 
+   "english": "Sri Lanka"
+  }, 
+  {
+   "french": "Tha\u00eflande", 
+   "english": "Thailand"
+  }, 
+  {
+   "french": "\u00c9mirats Arabes Unis", 
+   "english": "United Arab Emirates"
+  }, 
+  {
+   "french": "Afghanistan", 
+   "english": "Afghanistan"
+  }, 
+  {
+   "french": "Iran", 
+   "english": "Iran"
+  }, 
+  {
+   "french": "Arm\u00e9nie", 
+   "english": "Armenia"
+  }, 
+  {
+   "french": "Inde", 
+   "english": "India"
+  }, 
+  {
+   "french": "Azerba\u00efdjan", 
+   "english": "Azerbaijan"
+  }, 
+  {
+   "french": "Indon\u00e9sie", 
+   "english": "Indonesia"
+  }, 
+  {
+   "french": "Qatar", 
+   "english": "Qatar"
+  }
+ ], 
+ "EU": [
+  {
+   "french": "Belgique", 
+   "english": "Belgium"
+  }, 
+  {
+   "french": "Bulgarie", 
+   "english": "Bulgaria"
+  }, 
+  {
+   "french": "Bosnie-Herz\u00e9govine", 
+   "english": "Bosnia and Herzegovina"
+  }, 
+  {
+   "french": "B\u00e9larus", 
+   "english": "Belarus"
+  }, 
+  {
+   "french": "Serbie", 
+   "english": "Serbia"
+  }, 
+  {
+   "french": "Roumanie", 
+   "english": "Romania"
+  }, 
+  {
+   "french": "Gr\u00e8ce", 
+   "english": "Greece"
+  }, 
+  {
+   "french": "Royaume-Uni", 
+   "english": "United Kingdom"
+  }, 
+  {
+   "french": "Gibraltar", 
+   "english": "Gibraltar"
+  }, 
+  {
+   "french": "Croatie", 
+   "english": "Croatia"
+  }, 
+  {
+   "french": "Hongrie", 
+   "english": "Hungary"
+  }, 
+  {
+   "french": "Portugal", 
+   "english": "Portugal"
+  }, 
+  {
+   "french": "Pologne", 
+   "english": "Poland"
+  }, 
+  {
+   "french": "Estonie", 
+   "english": "Estonia"
+  }, 
+  {
+   "french": "Italie", 
+   "english": "Italy"
+  }, 
+  {
+   "french": "Espagne", 
+   "english": "Spain"
+  }, 
+  {
+   "french": "Mont\u00e9n\u00e9gro", 
+   "english": "Montenegro"
+  }, 
+  {
+   "french": "Moldova", 
+   "english": "Moldova"
+  }, 
+  {
+   "french": "Monaco", 
+   "english": "Monaco"
+  }, 
+  {
+   "french": "Malte", 
+   "english": "Malta"
+  }, 
+  {
+   "french": "France", 
+   "english": "France"
+  }, 
+  {
+   "french": "Finlande", 
+   "english": "Finland"
+  }, 
+  {
+   "french": "\u00celes F\u00e9ro\u00e9", 
+   "english": "Faroe Islands"
+  }, 
+  {
+   "french": "Pays-Bas", 
+   "english": "Netherlands"
+  }, 
+  {
+   "french": "Norv\u00e8ge", 
+   "english": "Norway"
+  }, 
+  {
+   "french": "Kosovo", 
+   "english": "Kosovo"
+  }, 
+  {
+   "french": "Suisse", 
+   "english": "Switzerland"
+  }, 
+  {
+   "french": "R\u00e9publique Tch\u00e8que", 
+   "english": "Czech Republic"
+  }, 
+  {
+   "french": "Chypre", 
+   "english": "Cyprus"
+  }, 
+  {
+   "french": "Slovaquie", 
+   "english": "Slovakia"
+  }, 
+  {
+   "french": "Slov\u00e9nie", 
+   "english": "Slovenia"
+  }, 
+  {
+   "french": "Saint-Marin", 
+   "english": "San Marino"
+  }, 
+  {
+   "french": "Su\u00e8de", 
+   "english": "Sweden"
+  }, 
+  {
+   "french": "Danemark", 
+   "english": "Denmark"
+  }, 
+  {
+   "french": "Allemagne", 
+   "english": "Germany"
+  }, 
+  {
+   "french": "Liechtenstein", 
+   "english": "Liechtenstein"
+  }, 
+  {
+   "french": "Lettonie", 
+   "english": "Latvia"
+  }, 
+  {
+   "french": "Lituanie", 
+   "english": "Lithuania"
+  }, 
+  {
+   "french": "Luxembourg", 
+   "english": "Luxembourg"
+  }, 
+  {
+   "french": "Andorre", 
+   "english": "Andorra"
+  }, 
+  {
+   "french": "Islande", 
+   "english": "Iceland"
+  }, 
+  {
+   "french": "Albanie", 
+   "english": "Albania"
+  }, 
+  {
+   "french": "Autriche", 
+   "english": "Austria"
+  }, 
+  {
+   "french": "Irlande", 
+   "english": "Ireland"
+  }, 
+  {
+   "french": "Ukraine", 
+   "english": "Ukraine"
+  }
+ ], 
+ "SA": [
+  {
+   "french": "Bolivie", 
+   "english": "Bolivia"
+  }, 
+  {
+   "french": "Br\u00e9sil", 
+   "english": "Brazil"
+  }, 
+  {
+   "french": "Guyana", 
+   "english": "Guyana"
+  }, 
+  {
+   "french": "Guyane Fran\u00e7aise", 
+   "english": "French Guiana"
+  }, 
+  {
+   "french": "Venezuela", 
+   "english": "Venezuela"
+  }, 
+  {
+   "french": "Paraguay", 
+   "english": "Paraguay"
+  }, 
+  {
+   "french": "P\u00e9rou", 
+   "english": "Peru"
+  }, 
+  {
+   "french": "\u00c9quateur", 
+   "english": "Ecuador"
+  }, 
+  {
+   "french": "Falkland, \u00celes (Malvinas)", 
+   "english": "Falkland Islands"
+  }, 
+  {
+   "french": "Colombie", 
+   "english": "Colombia"
+  }, 
+  {
+   "french": "Chili", 
+   "english": "Chile"
+  }, 
+  {
+   "french": "Suriname", 
+   "english": "Suriname"
+  }, 
+  {
+   "french": "Uruguay", 
+   "english": "Uruguay"
+  }, 
+  {
+   "french": "Argentine", 
+   "english": "Argentina"
+  }
+ ]
+}

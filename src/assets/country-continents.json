@@ -81,15 +81,6 @@
       "currency": "AOA",
       "languages": "pt"
     },
-    "AQ": {
-      "name": "Antarctica",
-      "native": "",
-      "phone": "",
-      "continent": "AN",
-      "capital": "",
-      "currency": "",
-      "languages": ""
-    },
     "AR": {
       "name": "Argentina",
       "native": "Argentina",
@@ -305,15 +296,6 @@
       "capital": "Thimphu",
       "currency": "BTN,INR",
       "languages": "dz"
-    },
-    "BV": {
-      "name": "Bouvet Island",
-      "native": "Bouvetøya",
-      "phone": "",
-      "continent": "AN",
-      "capital": "",
-      "currency": "NOK",
-      "languages": ""
     },
     "BW": {
       "name": "Botswana",
@@ -810,15 +792,6 @@
       "currency": "EUR",
       "languages": "el"
     },
-    "GS": {
-      "name": "South Georgia and the South Sandwich Islands",
-      "native": "South Georgia",
-      "phone": "500",
-      "continent": "AN",
-      "capital": "King Edward Point",
-      "currency": "GBP",
-      "languages": "en"
-    },
     "GT": {
       "name": "Guatemala",
       "native": "Guatemala",
@@ -863,15 +836,6 @@
       "capital": "City of Victoria",
       "currency": "HKD",
       "languages": "zh,en"
-    },
-    "HM": {
-      "name": "Heard Island and McDonald Islands",
-      "native": "Heard Island and McDonald Islands",
-      "phone": "",
-      "continent": "AN",
-      "capital": "",
-      "currency": "AUD",
-      "languages": "en"
     },
     "HN": {
       "name": "Honduras",
@@ -1943,15 +1907,6 @@
       "capital": "N'Djamena",
       "currency": "XAF",
       "languages": "fr,ar"
-    },
-    "TF": {
-      "name": "French Southern Territories",
-      "native": "Territoire des Terres australes et antarctiques fr",
-      "phone": "",
-      "continent": "AN",
-      "capital": "Port-aux-Français",
-      "currency": "EUR",
-      "languages": "fr"
     },
     "TG": {
       "name": "Togo",

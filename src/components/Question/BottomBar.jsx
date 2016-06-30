@@ -18,7 +18,6 @@ class BottomBar extends React.Component {
       message: 'Correct Solution',
       colour: 'f-bottom-bar-wrong'
     };
-    this.answer = this.props.answer;
     this.linkClass = 'f-link-disabled';
     this.state = {
       checkBtnText: 'Check',
@@ -32,7 +31,7 @@ class BottomBar extends React.Component {
   onBtnClick() {
     const newState = {};
     if (this.state.checkBtnText === 'Check') {
-      if (this.props.response === this.answer) {
+      if (this.props.response === this.props.answer) {
         this.reactToResponse(true);
       } else {
         this.reactToResponse(false);
