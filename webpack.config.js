@@ -20,6 +20,9 @@ module.exports = {
     }, {
       test: /\.svg$/,
       loader: 'file'
+    }, {
+      test: /\.json$/,
+      loader: 'strip-json-comments-loader'
     }]
   },
   plugins: [

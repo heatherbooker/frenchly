@@ -12,16 +12,17 @@ class QuestionPage extends React.Component {
     super(props);
     this.category = logic.findCategory(props.params.category);
     this.area = logic.findAreaName(props.params.area);
+    this.qAndA = logic.pickQuestion();
     this.state = {
       response: '',
       answerBoxState: 'f-boxA',
       checkBtnClass: 'f-btn-disabled',
       lessonScore: 0,
-      currentQuestion: logic.findQuestionComponent().bind(this),
+      currentQuestion: logic.findQuestionComponent(this.qAndA[1]).bind(this),
+      answer: this.qAndA[0],
       questionId: 0,
       lvlComplete: false
     };
-    this.answer = 'a';
   }
   manageAnswerBox(response) {
     if (response !== '') {
@@ -35,7 +36,7 @@ class QuestionPage extends React.Component {
   //called by BottomBar component
     const newState = {};
     if (btnText === 'Check') {
-      if (this.state.response === this.answer) {
+      if (this.state.response === this.state.answer) {
         newState.lessonScore = this.state.lessonScore + 40;
         if (newState.lessonScore >= 100) {
           newState.lvlComplete = true;
@@ -53,8 +54,10 @@ class QuestionPage extends React.Component {
       );
     } else {
       this.setState(function () {
+        this.qAndA = logic.pickQuestion();
         return {
-          currentQuestion: logic.findQuestionComponent(this.state.questionId).bind(this),
+          currentQuestion: logic.findQuestionComponent(this.qAndA[1], this.state.questionId).bind(this),
+          answer: this.qAndA[0],
           questionId: this.state.questionId + 1,
           answerBoxState: 'f-boxA',
           response: '',
@@ -87,14 +90,14 @@ class QuestionPage extends React.Component {
               </div>
             </div>
             <div className="row">
-              <ProgressBar />
+              <ProgressBar progress={this.state.lessonScore} />
             </div>
-            {this.state.currentQuestion('the question')}
+            {this.state.currentQuestion()}
             <BottomBar
               btnTxt={this.state.checkBtnText}
               checkBtnClass={this.state.checkBtnClass}
               response={this.state.response}
-              answer={this.answer}
+              answer={this.state.answer}
               onSubmit={this.onCheckBtnClick.bind(this)}
               category={this.category}
               area={this.area}

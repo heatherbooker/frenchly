@@ -1,14 +1,14 @@
 %f-progress-bar {
-  min-width: 300px;
   margin: 0px auto;
   display: block;
 }
 
 .f-progress-bar-outer {
   @extend %f-progress-bar;
+  min-width: 300px;
   border-radius: 10px;
   border: 1px #949494 solid;
-  height: 20px;
+  height: 21px;
 }
 
 .f-progress-bar-top {
@@ -16,6 +16,7 @@
   border-radius: 10px 10px 0px 0px;
   background-color: #e55c45;
   height: 10px;
+  float: left;
 }
 
 .f-progress-bar-btm {
@@ -23,6 +24,8 @@
   border-radius: 0px 0px 10px 10px;
   background-color: #cd503b;
   height: 10px;
+  float: left;
+  clear: left;
 }
 
 .f-questionPage-title {

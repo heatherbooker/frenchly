@@ -88,7 +88,7 @@ class BottomBar extends React.Component {
             {this.state.reactionText}
           </h3>
           <p className={this.state.answerClass}>
-            {this.answer}
+            {this.props.answer}
           </p>
         </div>
         <div className="col-md-4">

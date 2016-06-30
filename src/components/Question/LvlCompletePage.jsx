@@ -20,7 +20,7 @@ class LvlCompletePage extends React.Component {
               </div>
             </div>
              <div className='row'>
-              <ProgressBar />
+              <ProgressBar progress={100} />
              </div>
              <div className="row">
               <div className="col-md-12">
