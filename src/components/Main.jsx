@@ -5,7 +5,24 @@ const Nav = require("./Nav.jsx");
 class Main extends React.Component {
   constructor() {
     super();
-    window.FrenchlyProgress = 0;
+    window.FrenchlyProgress = {
+      score: 0,
+      Countries: {
+        na: false,
+        sa: false,
+        af: false,
+        eu: false,
+        as: false,
+        oc: false
+      }, Nationalities: {
+        na: false,
+        sa: false,
+        af: false,
+        eu: false,
+        as: false,
+        oc: false
+      }
+    };
   }
   componentDidMount() {
   }

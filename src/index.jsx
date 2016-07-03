@@ -23,8 +23,8 @@ ReactDOM.render((
     <Route path="/" component={Main}>
       <IndexRoute component={LandingPage} />
       <Route path="map/:category" component={MapPage} />
-      <Route path="question/:category/:area" component={QuestionPage} />
-      <Route path="question/:category/:area/lvlcomplete" component={LvlCompletePage} />
+      <Route path="question/:category/:continentCode" component={QuestionPage} />
+      <Route path="question/:category/:continentCode/lvlcomplete" component={LvlCompletePage} />
     </Route>
   </Router>
 ), document.getElementById('app'));

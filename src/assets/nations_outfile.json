@@ -1,0 +1,1849 @@
+{
+ "AF": [
+  {
+   "countryNames": {
+    "english": "Burkina Faso", 
+    "french": "Burkina Faso"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Burundi", 
+    "french": "Burundi"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Benin", 
+    "french": "B\u00e9nin"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Botswana", 
+    "french": "Botswana"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Rwanda", 
+    "french": "Rwanda"
+   },
+   "nationalities": {
+    "french": [
+     "Rwandais", 
+     "Rwandaise"
+    ], 
+    "english": "Rwandan"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Reunion Island", 
+    "french": "Ile de la R\u00e9union"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Guinea-Bissau", 
+    "french": "Guin\u00e9e-Bissau"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Equatorial Guinea", 
+    "french": "Guin\u00e9e \u00c9quatoriale"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Gabon", 
+    "french": "Gabon"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Guinea", 
+    "french": "Guin\u00e9e"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Gambia", 
+    "french": "Gambie"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Ghana", 
+    "french": "Ghana"
+   },
+   "nationalities": {
+    "french": [
+     "Ghan\u00e9en", 
+     "Ghan\u00e9enne"
+    ], 
+    "english": "Ghanaian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Tunisia", 
+    "french": "Tunisie"
+   },
+   "nationalities": {
+    "french": [
+     "Tunisien", 
+     "Tunisienne"
+    ], 
+    "english": "Tunisian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Zambia", 
+    "french": "Zambie"
+   },
+   "nationalities": {
+    "french": [
+     "Zambien", 
+     "Zambienne"
+    ], 
+    "english": "Zambian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Western Sahara", 
+    "french": "Sahara Occidental"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Egypt", 
+    "french": "\u00c9gypte" 
+   },
+   "nationalities": {
+    "french": [
+     "\u00c9gyptien", 
+     "\u00c9gyptienne"
+    ], 
+    "english": "Egyptian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "South Africa", 
+    "french": "Afrique du Sud"
+   },
+   "nationalities": {
+    "french": [
+     "Sud-Africain", 
+     "Sud-Africaine"
+    ], 
+    "english": "South African"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Ethiopia", 
+    "french": "\u00c9thiopie"
+   },
+   "nationalities": {
+    "french": [
+     "\u00c9thiopien", 
+     "\u00c9thiopienne"
+    ], 
+    "english": "Ethiopian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Somalia", 
+    "french": "Somalie"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Zimbabwe", 
+    "french": "Zimbabwe"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Eritrea", 
+    "french": "\u00c9rythr\u00e9e"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Madagascar", 
+    "french": "Madagascar"
+   },
+   "nationalities": {
+    "french": [
+     "Malgache", 
+     "Malgache"
+    ], 
+    "english": "Madagascan"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Morocco", 
+    "french": "Maroc"
+   },
+   "nationalities": {
+    "french": [
+     "Marocain", 
+     "Marocaine"
+    ], 
+    "english": "Moroccan"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Mali", 
+    "french": "Mali"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Mauritius", 
+    "french": "\u00cele Maurice"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Malawi", 
+    "french": "Malawi"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Mauritania", 
+    "french": "Mauritanie"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Uganda", 
+    "french": "Ouganda"
+   },
+   "nationalities": {
+    "french": [
+     "Ougandais", 
+     "Ougandaise"
+    ], 
+    "english": "Ugandan"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Tanzania", 
+    "french": "Tanzanie"
+   },
+   "nationalities": {
+    "french": [
+     "Tanzanien", 
+     "Tanzanienne"
+    ], 
+    "english": "Tanzanian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Namibia", 
+    "french": "Namibie"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Niger", 
+    "french": "Niger"
+   },
+   "nationalities": {
+    "french": [
+     "Nig\u00e9rien", 
+     "Nig\u00e9rienne"
+    ], 
+    "english": "Nigerien"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Nigeria", 
+    "french": "Nig\u00e9ria"
+   },
+   "nationalities": {
+    "french": [
+     "Nig\u00e9rian", 
+     "Nig\u00e9riane"
+    ], 
+    "english": "Nigerian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Ivory Coast", 
+    "french": "C\u00f4te D'ivoire"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Cameroon", 
+    "french": "Cameroun"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Republic of the Congo", 
+    "french": "R\u00e9publique du Congo"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Central African \nRepublic", 
+    "french": "R\u00e9publique Centrafricaine"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Democratic Republic of the Congo", 
+    "french": "R\u00e9publique d\u00e9mocratique du Congo"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Cape Verde", 
+    "french": "Cap-Vert"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Swaziland", 
+    "french": "Swaziland"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Kenya", 
+    "french": "Kenya"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "South Sudan", 
+    "french": "Soudan du Sud"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Comoros", 
+    "french": "Comores"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Senegal", 
+    "french": "S\u00e9n\u00e9gal"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Sierra Leone", 
+    "french": "Sierra Leone"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Seychelles", 
+    "french": "Seychelles"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Sudan", 
+    "french": "Soudan"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Djibouti", 
+    "french": "Djibouti"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Algeria", 
+    "french": "Alg\u00e9rie"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Mayotte", 
+    "french": "Mayotte"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Liberia", 
+    "french": "Lib\u00e9ria"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Lesotho", 
+    "french": "Lesotho"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Togo", 
+    "french": "Togo"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Chad", 
+    "french": "Tchad"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Libya", 
+    "french": "Libye"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Angola", 
+    "french": "Angola"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Mozambique", 
+    "french": "Mozambique"
+   }
+  }
+ ], 
+ "NA": [
+  {
+   "countryNames": {
+    "english": "Barbados", 
+    "french": "Barbade"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Bermuda", 
+    "french": "Bermudes"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Jamaica", 
+    "french": "Jama\u00efque"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Bahamas", 
+    "french": "Bahamas"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Belize", 
+    "french": "Belize"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Guatemala", 
+    "french": "Guatemala"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Guadeloupe", 
+    "french": "Guadeloupe"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Grenada", 
+    "french": "Grenade"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "El Salvador", 
+    "french": "El Salvador"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Greenland", 
+    "french": "Groenland"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Haiti", 
+    "french": "Ha\u00efti"
+   },
+   "nationalities": {
+    "french": [
+     "Ha\u00eftien", 
+     "Ha\u00eftienne"
+    ], 
+    "english": "Haitian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Honduras", 
+    "french": "Honduras"
+   },
+   "nationalities": {
+    "french": [
+     "Hondurien", 
+     "Hondurienne"
+    ], 
+    "english": "Honduran"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Puerto Rico", 
+    "french": "Porto Rico"
+   },
+   "nationalities": {
+    "french": [
+     "Portoricain", 
+     "Portoricaine"
+    ], 
+    "english": "Puerto Rican"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Panama", 
+    "french": "Panama"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Martinique", 
+    "french": "Martinique"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Montserrat", 
+    "french": "Montserrat"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Mexico", 
+    "french": "Mexique" 
+   },
+   "nationalities": {
+    "french": [
+     "Mexicain", 
+     "Mexicaine"
+    ], 
+    "english": "Mexican"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Nicaragua", 
+    "french": "Nicaragua"
+   },
+   "nationalities": {
+    "french": [
+     "Nicaraguayen", 
+     "Nicaraguayenne"
+    ], 
+    "english": "Nicaraguan"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Canada", 
+    "french": "Canada" 
+   },
+   "nationalities": {
+    "french": [
+     "Canadien", 
+     "Canadienne"
+    ], 
+    "english": "Canadian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Costa Rica", 
+    "french": "Costa Rica"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Cuba", 
+    "french": "Cuba"
+   },
+   "nationalities": {
+    "french": [
+     "Cubain", 
+     "Cubaine"
+    ], 
+    "english": "Cuban"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Saint Kitts and Nevis", 
+    "french": "Saint-Kitts-et-Nevis"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Cayman Islands", 
+    "french": "\u00celes Ca\u00efmanes"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Dominican Republic", 
+    "french": "R\u00e9publique Dominicaine"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Dominica", 
+    "french": "Dominique"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "United States", 
+    "french": "\u00c9tats-Unis"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Saint Lucia", 
+    "french": "Sainte-Lucie"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Trinidad and Tobago", 
+    "french": "Trinit\u00e9-et-Tobago"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Turks and Caicos Islands", 
+    "french": "Turks et Ca\u00efques, \u00celes"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Saint Vincent and the Grenadines", 
+    "french": "Saint-Vincent-et-les Grenadines"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Antigua and Barbuda", 
+    "french": "Antigua-et-Barbuda"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Anguilla", 
+    "french": "Anguilla"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Aruba", 
+    "french": "Aruba"
+   }
+  }
+ ], 
+ "OC": [
+  {
+   "countryNames": {
+    "english": "Samoa", 
+    "french": "Samoa"
+   },
+   "nationalities": {
+    "french": [
+     "Samoan", 
+     "Samoan"
+    ], 
+    "english": "Samoan"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Tokelau", 
+    "french": "Tokelau"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Guam", 
+    "french": "Guam"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Palau", 
+    "french": "Palaos"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "French Polynesia", 
+    "french": "Polyn\u00e9sie Fran\u00e7aise"
+   },
+   "nationalities": {
+    "french": [
+     "Polyn\u00e9sien", 
+     "Polyn\u00e9sienne"
+    ], 
+    "english": "Polynesian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Papua New Guinea", 
+    "french": "Papouasie-Nouvelle-Guin\u00e9e"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Solomon Islands", 
+    "french": "Salomon, \u00celes"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Marshall Islands", 
+    "french": "\u00celes Marshall"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Northern Mariana Islands", 
+    "french": "\u00celes Mariannes du Nord"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Fiji", 
+    "french": "Fidji"
+   },
+   "nationalities": {
+    "french": [
+     "Fidjien", 
+     "Fidjienne"
+    ], 
+    "english": "Fijian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Micronesia", 
+    "french": "Micron\u00e9sie"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Vanuatu", 
+    "french": "Vanuatu"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "New Caledonia", 
+    "french": "Nouvelle-Cal\u00e9donie"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "New Zealand", 
+    "french": "Nouvelle-Z\u00e9lande" 
+   },
+   "nationalities": {
+    "french": [
+     "N\u00e9o-Z\u00e9landais", 
+     "N\u00e9o-Z\u00e9landaise"
+    ], 
+    "english": "New Zealander"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Nauru", 
+    "french": "Nauru"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Niue", 
+    "french": "Niou\u00e9"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Cook Islands", 
+    "french": "\u00celes Cook"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Kiribati", 
+    "french": "Kiribati"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Tuvalu", 
+    "french": "Tuvalu"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Tonga", 
+    "french": "Tonga"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "American Samoa", 
+    "french": "Samoa Am\u00e9ricaines"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Australia", 
+    "french": "Australie" 
+   },
+   "nationalities": {
+    "french": [
+     "Australien", 
+     "Australienne"
+    ], 
+    "english": "Australian"
+   }
+  }
+ ], 
+ "AS": [
+  {
+   "countryNames": {
+    "english": "Bangladesh", 
+    "french": "Bangladesh"
+   },
+   "nationalities": {
+    "french": [
+     "Bangladais", 
+     "Bangladaise"
+    ], 
+    "english": "Bangladeshi"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Bahrain", 
+    "french": "Bahre\u00efn"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Bhutan", 
+    "french": "Bhoutan"
+   },
+   "nationalities": {
+    "french": [
+     "Bhoutanais", 
+     "Bhoutanaise"
+    ], 
+    "english": "Bhutanese"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Turkmenistan", 
+    "french": "Turkm\u00e9nistan"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Tajikistan", 
+    "french": "Tadjikistan"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Japan", 
+    "french": "Japon" 
+   },
+   "nationalities": {
+    "french": [
+     "Japonais", 
+     "Japonaise"
+    ], 
+    "english": "Japanese"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Georgia", 
+    "french": "G\u00e9orgie"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Oman", 
+    "french": "Oman"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Jordan", 
+    "french": "Jordanie"
+   },
+   "nationalities": {
+    "french": [
+     "Jordanien", 
+     "Jordanienne"
+    ], 
+    "english": "Jordanian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Hong Kong", 
+    "french": "Hong-Kong"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Iraq", 
+    "french": "Iraq"
+   },
+   "nationalities": {
+    "french": [
+     "Irakien", 
+     "Irakienne"
+    ], 
+    "english": "Iraqi"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Pakistan", 
+    "french": "Pakistan"
+   },
+   "nationalities": {
+    "french": [
+     "Pakistanais", 
+     "Pakistanaise"
+    ], 
+    "english": "Pakistani"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Philippines", 
+    "french": "Philippines"
+   },
+   "nationalities": {
+    "french": [
+     "Philippin", 
+     "Philippine"
+    ], 
+    "english": "Filipino"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Vietnam", 
+    "french": "Vi\u00eat Nam"
+   },
+   "nationalities": {
+    "french": [
+     "Vietnamien", 
+     "Vietnamienne"
+    ], 
+    "english": "Vietnamese"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Saudi Arabia", 
+    "french": "Arabie Saoudite"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Uzbekistan", 
+    "french": "Ouzb\u00e9kistan"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Mongolia", 
+    "french": "Mongolie"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Maldives", 
+    "french": "Maldives"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Malaysia", 
+    "french": "Malaisie"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Israel", 
+    "french": "Isra\u00ebl" 
+   },
+   "nationalities": {
+    "french": [
+     "Isra\u00e9lien", 
+     "Isra\u00e9lienne"
+    ], 
+    "english": "Israeli"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Nepal", 
+    "french": "N\u00e9pal"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "China", 
+    "french": "Chine" 
+   },
+   "nationalities": {
+    "french": [
+     "Chinois", 
+     "Chinoise"
+    ], 
+    "english": "Chinese"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Christmas Island", 
+    "french": "\u00cele Christmas"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Syria", 
+    "french": "Syrie"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Kyrgyzstan", 
+    "french": "Kirghizistan"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Cambodia", 
+    "french": "Cambodge"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "South Korea", 
+    "french": "Cor\u00e9e du Sud"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "North Korea", 
+    "french": "Cor\u00e9e du Nord"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Kuwait", 
+    "french": "Kowe\u00eft"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Kazakhstan", 
+    "french": "Kazakstan"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Singapore", 
+    "french": "Singapour"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Yemen", 
+    "french": "Y\u00e9men"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Lebanon", 
+    "french": "Liban"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Laos", 
+    "french": "Laos"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Taiwan", 
+    "french": "Ta\u00efwan"
+   },
+   "nationalities": {
+    "french": [
+     "Ta\u00efwanais", 
+     "Ta\u00efwanaise"
+    ], 
+    "english": "Taiwanese"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Turkey", 
+    "french": "Turquie" 
+   },
+   "nationalities": {
+    "french": [
+     "Turc", 
+     "Turque"
+    ], 
+    "english": "Turkish"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Sri Lanka", 
+    "french": "Sri Lanka"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Thailand", 
+    "french": "Tha\u00eflande"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "United Arab Emirates", 
+    "french": "\u00c9mirats Arabes Unis"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Afghanistan", 
+    "french": "Afghanistan"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Iran", 
+    "french": "Iran"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Armenia", 
+    "french": "Arm\u00e9nie"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "India", 
+    "french": "Inde" 
+   },
+   "nationalities": {
+    "french": [
+     "Indien", 
+     "Indienne"
+    ], 
+    "english": "Indian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Azerbaijan", 
+    "french": "Azerba\u00efdjan"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Indonesia", 
+    "french": "Indon\u00e9sie" 
+   },
+   "nationalities": {
+    "french": [
+     "Indon\u00e9sien", 
+     "Indon\u00e9sienne"
+    ], 
+    "english": "Indonesian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Qatar", 
+    "french": "Qatar"
+   }
+  }
+ ], 
+ "EU": [
+  {
+   "countryNames": {
+    "english": "Belgium", 
+    "french": "Belgique" 
+   },
+   "nationalities": {
+    "french": [
+     "Belge", 
+     "Belge"
+    ], 
+    "english": "Belgian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Bulgaria", 
+    "french": "Bulgarie" 
+   },
+   "nationalities": {
+    "french": [
+     "Bulgare", 
+     "Bulgare"
+    ], 
+    "english": "Bulgarian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Bosnia and Herzegovina", 
+    "french": "Bosnie-Herz\u00e9govine"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Belarus", 
+    "french": "B\u00e9larus"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Serbia", 
+    "french": "Serbie" 
+   },
+   "nationalities": {
+    "french": [
+     "Serbe", 
+     "Serbe"
+    ], 
+    "english": "Serbian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Romania", 
+    "french": "Roumanie" 
+   },
+   "nationalities": {
+    "french": [
+     "Roumain", 
+     "Roumaine"
+    ], 
+    "english": "Romanian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Greece", 
+    "french": "Gr\u00e8ce" 
+   },
+   "nationalities": {
+    "french": [
+     "Grec", 
+     "Grecque"
+    ], 
+    "english": "Greek"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "United Kingdom", 
+    "french": "Royaume-Uni"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Gibraltar", 
+    "french": "Gibraltar"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Croatia", 
+    "french": "Croatie" 
+   },
+   "nationalities": {
+    "french": [
+     "Croate", 
+     "Croate"
+    ], 
+    "english": "Croatian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Hungary", 
+    "french": "Hongrie" 
+   },
+   "nationalities": {
+    "french": [
+     "Hongrois", 
+     "Hongroise"
+    ], 
+    "english": "Hungarian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Portugal", 
+    "french": "Portugal" 
+   },
+   "nationalities": {
+    "french": [
+     "Portugais", 
+     "Portugaise"
+    ], 
+    "english": "Portuguese"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Poland", 
+    "french": "Pologne" 
+   },
+   "nationalities": {
+    "french": [
+     "Polonais", 
+     "Polonaise"
+    ], 
+    "english": "Polish"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Estonia", 
+    "french": "Estonie" 
+   },
+   "nationalities": {
+    "french": [
+     "Estonien", 
+     "Estonienne"
+    ], 
+    "english": "Estonian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Italy", 
+    "french": "Italie" 
+   },
+   "nationalities": {
+    "french": [
+     "Italien", 
+     "Italienne"
+    ], 
+    "english": "Italian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Spain", 
+    "french": "Espagne" 
+   },
+   "nationalities": {
+    "french": [
+     "Espagnol", 
+     "Espagnole"
+    ], 
+    "english": "Spanish"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Montenegro", 
+    "french": "Mont\u00e9n\u00e9gro"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Moldova", 
+    "french": "Moldova"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Monaco", 
+    "french": "Monaco"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Malta", 
+    "french": "Malte" 
+   },
+   "nationalities": {
+    "french": [
+     "Maltais", 
+     "Maltaise"
+    ], 
+    "english": "Maltese"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "France", 
+    "french": "France" 
+   },
+   "nationalities": {
+    "french": [
+     "Fran\u00e7ais", 
+     "Fran\u00e7aise"
+    ], 
+    "english": "French"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Finland", 
+    "french": "Finlande" 
+   },
+   "nationalities": {
+    "french": [
+     "Finnois", 
+     "Finnoise"
+    ], 
+    "english": "Finnish"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Faroe Islands", 
+    "french": "\u00celes F\u00e9ro\u00e9"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Netherlands", 
+    "french": "Pays-Bas" 
+   },
+   "nationalities": {
+    "french": [
+     "N\u00e9erlandais", 
+     "N\u00e9erlandaise"
+    ], 
+    "english": "Dutch"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Norway", 
+    "french": "Norv\u00e8ge" 
+   },
+   "nationalities": {
+    "french": [
+     "Norv\u00e9gien", 
+     "Norv\u00e9gienne"
+    ], 
+    "english": "Norwegian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Kosovo", 
+    "french": "Kosovo"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Switzerland", 
+    "french": "Suisse" 
+   },
+   "nationalities": {
+    "french": [
+     "Suisse", 
+     "Suisse"
+    ], 
+    "english": "Swiss"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Czech Republic", 
+    "french": "R\u00e9publique Tch\u00e8que" 
+   },
+   "nationalities": {
+    "french": [
+     "Tch\u00e8que", 
+     "Tch\u00e8que"
+    ], 
+    "english": "Czech"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Cyprus", 
+    "french": "Chypre"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Slovakia", 
+    "french": "Slovaquie" 
+   },
+   "nationalities": {
+    "french": [
+     "Slovaque", 
+     "Slovaque"
+    ], 
+    "english": "Slovak"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Slovenia", 
+    "french": "Slov\u00e9nie" 
+   },
+   "nationalities": {
+    "french": [
+     "Slov\u00e8ne", 
+     "Slov\u00e8ne"
+    ], 
+    "english": "Slovene"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "San Marino", 
+    "french": "Saint-Marin"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Sweden", 
+    "french": "Su\u00e8de" 
+   },
+   "nationalities": {
+    "french": [
+     "Su\u00e9dois", 
+     "Su\u00e9doise"
+    ], 
+    "english": "Swedish"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Denmark", 
+    "french": "Danemark" 
+   },
+   "nationalities": {
+    "french": [
+     "Danois", 
+     "Danoise"
+    ], 
+    "english": "Danish"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Germany", 
+    "french": "Allemagne" 
+   },
+   "nationalities": {
+    "french": [
+     "Allemand", 
+     "Allemande"
+    ], 
+    "english": "German"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Liechtenstein", 
+    "french": "Liechtenstein"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Latvia", 
+    "french": "Lettonie" 
+   },
+   "nationalities": {
+    "french": [
+     "Letton", 
+     "Lettonne"
+    ], 
+    "english": "Latvian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Lithuania", 
+    "french": "Lituanie" 
+   },
+   "nationalities": {
+    "french": [
+     "Lituanien", 
+     "Lituanienne"
+    ], 
+    "english": "Lithuanian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Luxembourg", 
+    "french": "Luxembourg" 
+   },
+   "nationalities": {
+    "french": [
+     "Luxembourgeois", 
+     "Luxembourgeoise"
+    ], 
+    "english": "Luxembourger"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Andorra", 
+    "french": "Andorre"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Iceland", 
+    "french": "Islande" 
+   },
+   "nationalities": {
+    "french": [
+     "Islandais", 
+     "Islandaise"
+    ], 
+    "english": "Icelandic"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Albania", 
+    "french": "Albanie" 
+   },
+   "nationalities": {
+    "french": [
+     "Albanais", 
+     "Albanaise"
+    ], 
+    "english": "Albanian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Austria", 
+    "french": "Autriche" 
+   },
+   "nationalities": {
+    "french": [
+     "Autrichien", 
+     "Autrichienne"
+    ], 
+    "english": "Austrian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Ireland", 
+    "french": "Irlande" 
+   },
+   "nationalities": {
+    "french": [
+     "Irlandais", 
+     "Irlandaise"
+    ], 
+    "english": "Irishman"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Ukraine", 
+    "french": "Ukraine" 
+   },
+   "nationalities": {
+    "french": [
+     "Ukrainien", 
+     "Ukrainienne"
+    ], 
+    "english": "Ukrainian"
+   }
+  }
+ ], 
+ "SA": [
+  {
+   "countryNames": {
+    "english": "Bolivia", 
+    "french": "Bolivie"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Brazil", 
+    "french": "Br\u00e9sil" 
+   },
+   "nationalities": {
+    "french": [
+     "Br\u00e9silien", 
+     "Br\u00e9silienne"
+    ], 
+    "english": "Brazilian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Guyana", 
+    "french": "Guyana"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "French Guiana", 
+    "french": "Guyane Fran\u00e7aise"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Venezuela", 
+    "french": "Venezuela"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Paraguay", 
+    "french": "Paraguay"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Peru", 
+    "french": "P\u00e9rou"
+   },
+   "nationalities": {
+    "french": [
+     "P\u00e9ruvien", 
+     "P\u00e9ruvienne"
+    ], 
+    "english": "Peruvian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Ecuador", 
+    "french": "\u00c9quateur"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Falkland Islands", 
+    "french": "Falkland, \u00celes (Malvinas)"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Colombia", 
+    "french": "Colombie"
+   },
+   "nationalities": {
+    "french": [
+     "Colombien", 
+     "Colombienne"
+    ], 
+    "english": "Colombian"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Chile", 
+    "french": "Chili"
+   },
+   "nationalities": {
+    "french": [
+     "Chilien", 
+     "Chilienne"
+    ], 
+    "english": "Chilean"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Suriname", 
+    "french": "Suriname"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Uruguay", 
+    "french": "Uruguay"
+   },
+   "nationalities": {
+    "french": [
+     "Uruguayen", 
+     "Uruguayenne"
+    ], 
+    "english": "Uruguayan"
+   }
+  }, 
+  {
+   "countryNames": {
+    "english": "Argentina", 
+    "french": "Argentine" 
+   },
+   "nationalities": {
+    "french": [
+     "Argentin", 
+     "Argentine"
+    ], 
+    "english": "Argentinian"
+   }
+  }
+ ]
+}

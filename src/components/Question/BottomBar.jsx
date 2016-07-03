@@ -93,12 +93,10 @@ class BottomBar extends React.Component {
         <div className="col-md-4">
           <div
             className={`${this.props.checkBtnClass} f-checkQ`}
-            onClick={this.onBtnClick.bind(this)}
-          >
+            onClick={this.onBtnClick.bind(this)}>
             <Link
-              to={`question/${this.props.category}/${this.props.area}/lvlcomplete`}
-              className={this.linkClass}
-            >
+              to={`question/${this.props.category}/${this.props.continent}/lvlcomplete`}
+              className={this.linkClass}>
               <span>{this.state.checkBtnText}</span>
             </Link>
           </div>
@@ -114,7 +112,8 @@ BottomBar.propTypes = {
   checkBtnClass: React.PropTypes.string,
   category: React.PropTypes.string,
   area: React.PropTypes.string,
-  lvlIsComplete: React.PropTypes.bool
+  lvlIsComplete: React.PropTypes.bool,
+  continent: React.PropTypes.string
 };
 
 module.exports = BottomBar;

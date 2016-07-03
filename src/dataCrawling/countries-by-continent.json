@@ -1,0 +1,878 @@
+{
+ "AF": [
+  {
+   "frenchC": "Burkina Faso", 
+   "englishC": "Burkina Faso"
+  }, 
+  {
+   "frenchC": "Burundi", 
+   "englishC": "Burundi"
+  }, 
+  {
+   "frenchC": "B\u00e9nin", 
+   "englishC": "Benin"
+  }, 
+  {
+   "frenchC": "Botswana", 
+   "englishC": "Botswana"
+  }, 
+  {
+   "frenchC": "Rwanda", 
+   "englishC": "Rwanda"
+  },
+  {
+  "frenchC": "Ile de la R\u00e9union", 
+  "englishC": "Reunion Island"
+  }, 
+  {
+   "frenchC": "Guin\u00e9e-Bissau", 
+   "englishC": "Guinea-Bissau"
+  }, 
+  {
+   "frenchC": "Guin\u00e9e \u00c9quatoriale", 
+   "englishC": "Equatorial Guinea"
+  }, 
+  {
+   "frenchC": "Gabon", 
+   "englishC": "Gabon"
+  }, 
+  {
+   "frenchC": "Guin\u00e9ee", 
+   "englishC": "Guinea"
+  }, 
+  {
+   "frenchC": "Gambie", 
+   "englishC": "Gambia"
+  }, 
+  {
+   "frenchC": "Ghana", 
+   "englishC": "Ghana"
+  }, 
+  {
+   "frenchC": "Tunisie", 
+   "englishC": "Tunisia"
+  }, 
+  {
+   "frenchC": "Zambie", 
+   "englishC": "Zambia"
+  }, 
+  {
+   "frenchC": "Sahara Occidental", 
+   "englishC": "Western Sahara"
+  }, 
+  {
+   "frenchC": "\u00c9gypte", 
+   "englishC": "Egypt"
+  }, 
+  {
+   "frenchC": "Afrique du Sud", 
+   "englishC": "South Africa"
+  }, 
+  {
+   "frenchC": "\u00c9thiopie", 
+   "englishC": "Ethiopia"
+  }, 
+  {
+   "frenchC": "Somalie", 
+   "englishC": "Somalia"
+  }, 
+  {
+   "frenchC": "Zimbabwe", 
+   "englishC": "Zimbabwe"
+  }, 
+  {
+   "frenchC": "\u00c9rythr\u00e9e", 
+   "englishC": "Eritrea"
+  }, 
+  {
+   "frenchC": "Madagascar", 
+   "englishC": "Madagascar"
+  }, 
+  {
+   "frenchC": "Maroc", 
+   "englishC": "Morocco"
+  }, 
+  {
+   "frenchC": "Mali", 
+   "englishC": "Mali"
+  }, 
+  {
+   "frenchC": "\u00cele Maurice", 
+   "englishC": "Mauritius"
+  }, 
+  {
+   "frenchC": "Malawi", 
+   "englishC": "Malawi"
+  }, 
+  {
+   "frenchC": "Mauritanie", 
+   "englishC": "Mauritania"
+  }, 
+  {
+   "frenchC": "Ouganda", 
+   "englishC": "Uganda"
+  }, 
+  {
+   "frenchC": "Tanzanie", 
+   "englishC": "Tanzania"
+  }, 
+  {
+   "frenchC": "Namibie", 
+   "englishC": "Namibia"
+  }, 
+  {
+   "frenchC": "Niger", 
+   "englishC": "Niger"
+  }, 
+  {
+   "frenchC": "Nig\u00e9ria", 
+   "englishC": "Nigeria"
+  }, 
+  {
+   "frenchC": "C\u00f4te D'ivoire", 
+   "englishC": "Ivory Coast"
+  }, 
+  {
+   "frenchC": "Cameroun", 
+   "englishC": "Cameroon"
+  }, 
+  {
+   "frenchC": "R\u00e9publique du Congo", 
+   "englishC": "Republic of the Congo"
+  }, 
+  {
+  "frenchC": "R\u00e9publique Centrafricaine", 
+  "englishC": "Central African \nRepublic"
+  }, 
+  {
+   "frenchC": "R\u00e9publique d\u00e9mocratique du Congo", 
+   "englishC": "Democratic Republic of the Congo"
+  }, 
+  {
+   "frenchC": "Cap-Vert", 
+   "englishC": "Cape Verde"
+  }, 
+  {
+   "frenchC": "Swaziland", 
+   "englishC": "Swaziland"
+  }, 
+  {
+   "frenchC": "Kenya", 
+   "englishC": "Kenya"
+  }, 
+  {
+   "frenchC": "Soudan du Sud", 
+   "englishC": "South Sudan"
+  }, 
+  {
+   "frenchC": "Comores", 
+   "englishC": "Comoros"
+  }, 
+  {
+   "frenchC": "S\u00e9n\u00e9gal", 
+   "englishC": "Senegal"
+  }, 
+  {
+   "frenchC": "Sierra Leone", 
+   "englishC": "Sierra Leone"
+  }, 
+  {
+   "frenchC": "Seychelles", 
+   "englishC": "Seychelles"
+  }, 
+  {
+   "frenchC": "Soudan", 
+   "englishC": "Sudan"
+  }, 
+  {
+   "frenchC": "Djibouti", 
+   "englishC": "Djibouti"
+  }, 
+  {
+   "frenchC": "Alg\u00e9rie", 
+   "englishC": "Algeria"
+  }, 
+  {
+   "frenchC": "Mayotte", 
+   "englishC": "Mayotte"
+  }, 
+  {
+   "frenchC": "Lib\u00e9ria", 
+   "englishC": "Liberia"
+  }, 
+  {
+   "frenchC": "Lesotho", 
+   "englishC": "Lesotho"
+  }, 
+  {
+   "frenchC": "Togo", 
+   "englishC": "Togo"
+  }, 
+  {
+   "frenchC": "Tchad", 
+   "englishC": "Chad"
+  }, 
+  {
+   "frenchC": "Libye", 
+   "englishC": "Libya"
+  }, 
+  {
+   "frenchC": "Angola", 
+   "englishC": "Angola"
+  }, 
+  {
+   "frenchC": "Mozambique", 
+   "englishC": "Mozambique"
+  }
+ ], 
+ "NA": [
+  {
+   "frenchC": "Barbade", 
+   "englishC": "Barbados"
+  }, 
+  {
+   "frenchC": "Bermudes", 
+   "englishC": "Bermuda"
+  }, 
+  {
+   "frenchC": "Jama\u00efque", 
+   "englishC": "Jamaica"
+  }, 
+  {
+   "frenchC": "Bahamas", 
+   "englishC": "Bahamas"
+  }, 
+  {
+   "frenchC": "Belize", 
+   "englishC": "Belize"
+  }, 
+  {
+   "frenchC": "Guatemala", 
+   "englishC": "Guatemala"
+  }, 
+  {
+   "frenchC": "Guadeloupe", 
+   "englishC": "Guadeloupe"
+  }, 
+  {
+   "frenchC": "Grenade", 
+   "englishC": "Grenada"
+  }, 
+  {
+   "frenchC": "El Salvador", 
+   "englishC": "El Salvador"
+  }, 
+  {
+   "frenchC": "Groenland", 
+   "englishC": "Greenland"
+  }, 
+  {
+   "frenchC": "Ha\u00efti", 
+   "englishC": "Haiti"
+  }, 
+  {
+   "frenchC": "Honduras", 
+   "englishC": "Honduras"
+  }, 
+  {
+   "frenchC": "Porto Rico", 
+   "englishC": "Puerto Rico"
+  }, 
+  {
+   "frenchC": "Panama", 
+   "englishC": "Panama"
+  }, 
+  {
+   "frenchC": "Martinique", 
+   "englishC": "Martinique"
+  }, 
+  {
+   "frenchC": "Montserrat", 
+   "englishC": "Montserrat"
+  }, 
+  {
+   "frenchC": "Mexique", 
+   "englishC": "Mexico"
+  }, 
+  {
+   "frenchC": "Nicaragua", 
+   "englishC": "Nicaragua"
+  }, 
+  {
+   "frenchC": "Canada", 
+   "englishC": "Canada"
+  }, 
+  {
+   "frenchC": "Costa Rica", 
+   "englishC": "Costa Rica"
+  }, 
+  {
+   "frenchC": "Cuba", 
+   "englishC": "Cuba"
+  }, 
+  {
+   "frenchC": "Saint-Kitts-et-Nevis", 
+   "englishC": "Saint Kitts and Nevis"
+  }, 
+  {
+   "frenchC": "\u00celes Ca\u00efmanes", 
+   "englishC": "Cayman Islands"
+  }, 
+  {
+   "frenchC": "R\u00e9publique Dominicaine", 
+   "englishC": "Dominican Republic"
+  }, 
+  {
+   "frenchC": "Dominique", 
+   "englishC": "Dominica"
+  }, 
+  {
+   "frenchC": "\u00c9tats-Unis", 
+   "englishC": "United States"
+  }, 
+  {
+   "frenchC": "Sainte-Lucie", 
+   "englishC": "Saint Lucia"
+  }, 
+  {
+   "frenchC": "Trinit\u00e9-et-Tobago", 
+   "englishC": "Trinidad and Tobago"
+  }, 
+  {
+   "frenchC": "Turks et Ca\u00efques, \u00celes", 
+   "englishC": "Turks and Caicos Islands"
+  }, 
+  {
+   "frenchC": "Saint-Vincent-et-les Grenadines", 
+   "englishC": "Saint Vincent and the Grenadines"
+  }, 
+  {
+   "frenchC": "Antigua-et-Barbuda", 
+   "englishC": "Antigua and Barbuda"
+  }, 
+  {
+   "frenchC": "Anguilla", 
+   "englishC": "Anguilla"
+  }, 
+  {
+   "frenchC": "Aruba", 
+   "englishC": "Aruba"
+  }
+ ], 
+ "OC": [ 
+  {
+   "frenchC": "Samoa", 
+   "englishC": "Samoa"
+  }, 
+  {
+   "frenchC": "Tokelau", 
+   "englishC": "Tokelau"
+  }, 
+  {
+   "frenchC": "Guam", 
+   "englishC": "Guam"
+  }, 
+  {
+   "frenchC": "Palaos", 
+   "englishC": "Palau"
+  }, 
+  {
+   "frenchC": "Polyn\u00e9sie Fran\u00e7aise", 
+   "englishC": "French Polynesia"
+  }, 
+  {
+   "frenchC": "Papouasie-Nouvelle-Guin\u00e9e", 
+   "englishC": "Papua New Guinea"
+  }, 
+  {
+   "frenchC": "Salomon, \u00celes", 
+   "englishC": "Solomon Islands"
+  }, 
+  {
+   "frenchC": "\u00celes Marshall", 
+   "englishC": "Marshall Islands"
+  }, 
+  {
+   "frenchC": "\u00celes Mariannes du Nord", 
+   "englishC": "Northern Mariana Islands"
+  }, 
+  {
+   "frenchC": "Fidji", 
+   "englishC": "Fiji"
+  }, 
+  {
+   "frenchC": "Micron\u00e9sie", 
+   "englishC": "Micronesia"
+  }, 
+  {
+   "frenchC": "Vanuatu", 
+   "englishC": "Vanuatu"
+  }, 
+  {
+   "frenchC": "Nouvelle-Cal\u00e9donie", 
+   "englishC": "New Caledonia"
+  }, 
+  {
+   "frenchC": "Nouvelle-Z\u00e9lande", 
+   "englishC": "New Zealand"
+  }, 
+  {
+   "frenchC": "Nauru", 
+   "englishC": "Nauru"
+  }, 
+  {
+   "frenchC": "Niou\u00e9", 
+   "englishC": "Niue"
+  }, 
+  {
+   "frenchC": "\u00celes Cook", 
+   "englishC": "Cook Islands"
+  }, 
+  {
+   "frenchC": "Kiribati", 
+   "englishC": "Kiribati"
+  }, 
+  {
+   "frenchC": "Tuvalu", 
+   "englishC": "Tuvalu"
+  }, 
+  {
+   "frenchC": "Tonga", 
+   "englishC": "Tonga"
+  }, 
+  {
+   "frenchC": "Samoa Am\u00e9ricaines", 
+   "englishC": "American Samoa"
+  }, 
+  {
+   "frenchC": "Australie", 
+   "englishC": "Australia"
+  }
+ ], 
+ "AS": [
+  {
+   "frenchC": "Bangladesh", 
+   "englishC": "Bangladesh"
+  }, 
+  {
+   "frenchC": "Bahre\u00efn", 
+   "englishC": "Bahrain"
+  }, 
+  {
+   "frenchC": "Bhoutan", 
+   "englishC": "Bhutan"
+  }, 
+  {
+   "frenchC": "Turkm\u00e9nistan", 
+   "englishC": "Turkmenistan"
+  }, 
+  {
+   "frenchC": "Tadjikistan", 
+   "englishC": "Tajikistan"
+  }, 
+  {
+   "frenchC": "Japon", 
+   "englishC": "Japan"
+  }, 
+  {
+   "frenchC": "G\u00e9orgie", 
+   "englishC": "Georgia"
+  }, 
+  {
+   "frenchC": "Oman", 
+   "englishC": "Oman"
+  }, 
+  {
+   "frenchC": "Jordanie", 
+   "englishC": "Jordan"
+  }, 
+  {
+   "frenchC": "Hong-Kong", 
+   "englishC": "Hong Kong"
+  }, 
+  {
+   "frenchC": "Iraq", 
+   "englishC": "Iraq"
+  }, 
+  {
+   "frenchC": "Pakistan", 
+   "englishC": "Pakistan"
+  }, 
+  {
+   "frenchC": "Philippines", 
+   "englishC": "Philippines"
+  }, 
+  {
+   "frenchC": "Vi\u00eat Nam", 
+   "englishC": "Vietnam"
+  }, 
+  {
+   "frenchC": "Arabie Saoudite", 
+   "englishC": "Saudi Arabia"
+  }, 
+  {
+   "frenchC": "Ouzb\u00e9kistan", 
+   "englishC": "Uzbekistan"
+  }, 
+  {
+   "frenchC": "Mongolie", 
+   "englishC": "Mongolia"
+  }, 
+  {
+   "frenchC": "Maldives", 
+   "englishC": "Maldives"
+  }, 
+  {
+   "frenchC": "Malaisie", 
+   "englishC": "Malaysia"
+  }, 
+  {
+   "frenchC": "Isra\u00ebl", 
+   "englishC": "Israel"
+  }, 
+  {
+   "frenchC": "N\u00e9pal", 
+   "englishC": "Nepal"
+  }, 
+  {
+   "frenchC": "Chine", 
+   "englishC": "China"
+  }, 
+  {
+   "frenchC": "\u00cele Christmas", 
+   "englishC": "Christmas Island"
+  }, 
+  {
+   "frenchC": "Syrie", 
+   "englishC": "Syria"
+  }, 
+  {
+   "frenchC": "Kirghizistan", 
+   "englishC": "Kyrgyzstan"
+  }, 
+  {
+   "frenchC": "Cambodge", 
+   "englishC": "Cambodia"
+  }, 
+  {
+   "frenchC": "Cor\u00e9e du Sud", 
+   "englishC": "South Korea"
+  }, 
+  {
+   "frenchC": "Cor\u00e9e du Nord", 
+   "englishC": "North Korea"
+  }, 
+  {
+   "frenchC": "Kowe\u00eft", 
+   "englishC": "Kuwait"
+  }, 
+  {
+   "frenchC": "Kazakstan", 
+   "englishC": "Kazakhstan"
+  }, 
+  {
+   "frenchC": "Singapour", 
+   "englishC": "Singapore"
+  }, 
+  {
+   "frenchC": "Y\u00e9men", 
+   "englishC": "Yemen"
+  }, 
+  {
+   "frenchC": "Liban", 
+   "englishC": "Lebanon"
+  }, 
+  {
+   "frenchC": "Laos", 
+   "englishC": "Laos"
+  }, 
+  {
+   "frenchC": "Ta\u00efwan", 
+   "englishC": "Taiwan"
+  }, 
+  {
+   "frenchC": "Turquie", 
+   "englishC": "Turkey"
+  }, 
+  {
+   "frenchC": "Sri Lanka", 
+   "englishC": "Sri Lanka"
+  }, 
+  {
+   "frenchC": "Tha\u00eflande", 
+   "englishC": "Thailand"
+  }, 
+  {
+   "frenchC": "\u00c9mirats Arabes Unis", 
+   "englishC": "United Arab Emirates"
+  }, 
+  {
+   "frenchC": "Afghanistan", 
+   "englishC": "Afghanistan"
+  }, 
+  {
+   "frenchC": "Iran", 
+   "englishC": "Iran"
+  }, 
+  {
+   "frenchC": "Arm\u00e9nie", 
+   "englishC": "Armenia"
+  }, 
+  {
+   "frenchC": "Inde", 
+   "englishC": "India"
+  }, 
+  {
+   "frenchC": "Azerba\u00efdjan", 
+   "englishC": "Azerbaijan"
+  }, 
+  {
+   "frenchC": "Indon\u00e9sie", 
+   "englishC": "Indonesia"
+  }, 
+  {
+   "frenchC": "Qatar", 
+   "englishC": "Qatar"
+  }
+ ], 
+ "EU": [
+  {
+   "frenchC": "Belgique", 
+   "englishC": "Belgium"
+  }, 
+  {
+   "frenchC": "Bulgarie", 
+   "englishC": "Bulgaria"
+  }, 
+  {
+   "frenchC": "Bosnie-Herz\u00e9govine", 
+   "englishC": "Bosnia and Herzegovina"
+  }, 
+  {
+   "frenchC": "B\u00e9larus", 
+   "englishC": "Belarus"
+  }, 
+  {
+   "frenchC": "Serbie", 
+   "englishC": "Serbia"
+  }, 
+  {
+   "frenchC": "Roumanie", 
+   "englishC": "Romania"
+  }, 
+  {
+   "frenchC": "Gr\u00e8ce", 
+   "englishC": "Greece"
+  }, 
+  {
+   "frenchC": "Royaume-Uni", 
+   "englishC": "United Kingdom"
+  }, 
+  {
+   "frenchC": "Gibraltar", 
+   "englishC": "Gibraltar"
+  }, 
+  {
+   "frenchC": "Croatie", 
+   "englishC": "Croatia"
+  }, 
+  {
+   "frenchC": "Hongrie", 
+   "englishC": "Hungary"
+  }, 
+  {
+   "frenchC": "Portugal", 
+   "englishC": "Portugal"
+  }, 
+  {
+   "frenchC": "Pologne", 
+   "englishC": "Poland"
+  }, 
+  {
+   "frenchC": "Estonie", 
+   "englishC": "Estonia"
+  }, 
+  {
+   "frenchC": "Italie", 
+   "englishC": "Italy"
+  }, 
+  {
+   "frenchC": "Espagne", 
+   "englishC": "Spain"
+  }, 
+  {
+   "frenchC": "Mont\u00e9n\u00e9gro", 
+   "englishC": "Montenegro"
+  }, 
+  {
+   "frenchC": "Moldova", 
+   "englishC": "Moldova"
+  }, 
+  {
+   "frenchC": "Monaco", 
+   "englishC": "Monaco"
+  }, 
+  {
+   "frenchC": "Malte", 
+   "englishC": "Malta"
+  }, 
+  {
+   "frenchC": "France", 
+   "englishC": "France"
+  }, 
+  {
+   "frenchC": "Finlande", 
+   "englishC": "Finland"
+  }, 
+  {
+   "frenchC": "\u00celes F\u00e9ro\u00e9", 
+   "englishC": "Faroe Islands"
+  }, 
+  {
+   "frenchC": "Pays-Bas", 
+   "englishC": "Netherlands"
+  }, 
+  {
+   "frenchC": "Norv\u00e8ge", 
+   "englishC": "Norway"
+  }, 
+  {
+   "frenchC": "Kosovo", 
+   "englishC": "Kosovo"
+  }, 
+  {
+   "frenchC": "Suisse", 
+   "englishC": "Switzerland"
+  }, 
+  {
+   "frenchC": "R\u00e9publique Tch\u00e8que", 
+   "englishC": "Czech Republic"
+  }, 
+  {
+   "frenchC": "Chypre", 
+   "englishC": "Cyprus"
+  }, 
+  {
+   "frenchC": "Slovaquie", 
+   "englishC": "Slovakia"
+  }, 
+  {
+   "frenchC": "Slov\u00e9nie", 
+   "englishC": "Slovenia"
+  }, 
+  {
+   "frenchC": "Saint-Marin", 
+   "englishC": "San Marino"
+  }, 
+  {
+   "frenchC": "Su\u00e8de", 
+   "englishC": "Sweden"
+  }, 
+  {
+   "frenchC": "Danemark", 
+   "englishC": "Denmark"
+  }, 
+  {
+   "frenchC": "Allemagne", 
+   "englishC": "Germany"
+  }, 
+  {
+   "frenchC": "Liechtenstein", 
+   "englishC": "Liechtenstein"
+  }, 
+  {
+   "frenchC": "Lettonie", 
+   "englishC": "Latvia"
+  }, 
+  {
+   "frenchC": "Lituanie", 
+   "englishC": "Lithuania"
+  }, 
+  {
+   "frenchC": "Luxembourg", 
+   "englishC": "Luxembourg"
+  }, 
+  {
+   "frenchC": "Andorre", 
+   "englishC": "Andorra"
+  }, 
+  {
+   "frenchC": "Islande", 
+   "englishC": "Iceland"
+  }, 
+  {
+   "frenchC": "Albanie", 
+   "englishC": "Albania"
+  }, 
+  {
+   "frenchC": "Autriche", 
+   "englishC": "Austria"
+  }, 
+  {
+   "frenchC": "Irlande", 
+   "englishC": "Ireland"
+  }, 
+  {
+   "frenchC": "Ukraine", 
+   "englishC": "Ukraine"
+  }
+ ], 
+ "SA": [
+  {
+   "frenchC": "Bolivie", 
+   "englishC": "Bolivia"
+  }, 
+  {
+   "frenchC": "Br\u00e9sil", 
+   "englishC": "Brazil"
+  }, 
+  {
+   "frenchC": "Guyana", 
+   "englishC": "Guyana"
+  }, 
+  {
+   "frenchC": "Guyane Fran\u00e7aise", 
+   "englishC": "French Guiana"
+  }, 
+  {
+   "frenchC": "Venezuela", 
+   "englishC": "Venezuela"
+  }, 
+  {
+   "frenchC": "Paraguay", 
+   "englishC": "Paraguay"
+  }, 
+  {
+   "frenchC": "P\u00e9rou", 
+   "englishC": "Peru"
+  }, 
+  {
+   "frenchC": "\u00c9quateur", 
+   "englishC": "Ecuador"
+  }, 
+  {
+   "frenchC": "Falkland, \u00celes (Malvinas)", 
+   "englishC": "Falkland Islands"
+  }, 
+  {
+   "frenchC": "Colombie", 
+   "englishC": "Colombia"
+  }, 
+  {
+   "frenchC": "Chili", 
+   "englishC": "Chile"
+  }, 
+  {
+   "frenchC": "Suriname", 
+   "englishC": "Suriname"
+  }, 
+  {
+   "frenchC": "Uruguay", 
+   "englishC": "Uruguay"
+  }, 
+  {
+   "frenchC": "Argentine", 
+   "englishC": "Argentina"
+  }
+ ]
+}

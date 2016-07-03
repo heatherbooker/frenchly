@@ -6,21 +6,40 @@ const BottomBar = require('./BottomBar.jsx');
 //import logic
 const logic = require('../../logic/questionPage.jsx');
 
+const categoryMap = {
+  countries: "Countries",
+  nationalities: "Nationalities"
+};
+const continentCodeMap = {
+  na: 'North America',
+  sa: 'South America',
+  af: 'Africa',
+  eu: 'Europe',
+  as: 'Asia',
+  oc: 'Oceania',
+  randomize: 'Random'
+};
+
+//keep array of completed countries / nationalities
+let countriesUsed = [];
+let nationalitiesUsed = [];
+let used = [];
 
 class QuestionPage extends React.Component {
   constructor(props) {
     super(props);
-    this.category = logic.findCategory(props.params.category);
-    this.area = logic.findAreaName(props.params.area);
-    this.qAndA = logic.pickQuestion(props.params.area);
+    this.category = categoryMap[props.params.category];
+    this.continentCode = continentCodeMap[props.params.continentCode];
+    this.qAndA = logic.pickQuestion(props.params.continentCode, props.params.category);
     this.state = {
       response: '',
       answerBoxState: 'f-boxA',
       checkBtnClass: 'f-btn-disabled',
+      lessonMax: this.qAndA.max,
+      currentQuestion: logic.findQuestionComponent(this.qAndA.question).bind(this),
+      answer: this.qAndA.answer,
+      continent: this.continentCode,
       lessonScore: 0,
-      currentQuestion: logic.findQuestionComponent(this.qAndA[1]).bind(this),
-      answer: this.qAndA[0],
-      questionId: 0,
       lvlComplete: false
     };
   }
@@ -37,10 +56,11 @@ class QuestionPage extends React.Component {
     const newState = {};
     if (btnText === 'Check') {
       if (this.state.response === this.state.answer) {
-        newState.lessonScore = this.state.lessonScore + 40;
+        newState.lessonScore = this.state.lessonScore + (100 / this.state.lessonMax);
         if (newState.lessonScore >= 100) {
           newState.lvlComplete = true;
         }
+        logic.markQuestionUsed(this.state.answer);
       } else {
         newState.lessonScore = this.state.lessonScore;
         newState.lvlComplete = false;
@@ -54,11 +74,11 @@ class QuestionPage extends React.Component {
       );
     } else {
       this.setState(function () {
-        this.qAndA = logic.pickQuestion(this.props.params.area);
+        this.qAndA = logic.pickQuestion(this.props.params.continentCode, this.props.params.category);
         return {
-          currentQuestion: logic.findQuestionComponent(this.qAndA[1], this.state.questionId).bind(this),
-          answer: this.qAndA[0],
-          questionId: this.state.questionId + 1,
+          currentQuestion: logic.findQuestionComponent(this.qAndA.question, this.state.lessonScore).bind(this),
+          answer: this.qAndA.answer,
+          lessonScore: this.state.lessonScore + 1,
           answerBoxState: 'f-boxA',
           response: '',
           checkBtnClass: 'f-btn-disabled'
@@ -83,7 +103,7 @@ class QuestionPage extends React.Component {
           <div className="f-panel f-panel-big">
             <div className="row">
               <div className="col-md-12">
-                <h4 className="f-questionPage-title">{this.category} - {this.area}</h4>
+                <h4 className="f-questionPage-title">{this.category} - {this.continentCode}</h4>
                 <Link to="/">
                   <h3 className="f-quit">Quit</h3>
                 </Link>
@@ -100,8 +120,9 @@ class QuestionPage extends React.Component {
               answer={this.state.answer}
               onSubmit={this.onCheckBtnClick.bind(this)}
               category={this.category}
-              area={this.area}
+              area={this.props.params.continentCode}
               lvlIsComplete={this.state.lvlComplete}
+              continent={this.state.continent}
             />
           </div>
         </div>

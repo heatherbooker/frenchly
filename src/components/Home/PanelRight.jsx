@@ -8,11 +8,29 @@ class PanelRight extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      progressPercent: window.FrenchlyProgress
+      progressPercent: window.FrenchlyProgress.score
     };
   }
   handleResetClick() {
     this.setState({ progressPercent: 0 });
+    window.FrenchlyProgress = {
+      score: 0,
+      Countries: {
+        na: false,
+        sa: false,
+        af: false,
+        eu: false,
+        as: false,
+        oc: false
+      }, Nationalities: {
+        na: false,
+        sa: false,
+        af: false,
+        eu: false,
+        as: false,
+        oc: false
+      }
+    };
   }
   render() {
     return (

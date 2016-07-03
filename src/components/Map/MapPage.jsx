@@ -36,13 +36,13 @@ class MapPage extends React.Component {
         const newState = { randomizeSelected: false, mapSelected: false };
         if (mapState.slice(0, 5) === 'mapOn') {
           newState.mapSelected = true;
-          newState.area = mapState.slice(5);
+          newState.continentCode = mapState.slice(5);
           this.enableButton(true);
         } else if (mapState === 'mapOff') {
           this.enableButton(false);
         } else if (!this.state.randomizeSelected) {
           newState.randomizeSelected = true;
-          newState.area = 'randomize';
+          newState.continentCode = 'randomize';
           this.enableButton(true);
         } else {
           this.enableButton(false);
@@ -82,14 +82,14 @@ class MapPage extends React.Component {
             </div>
             <div className="row">
               <div className="col-md-12">
-                <MapImg />
+                <MapImg category={this.category}/>
               </div>
             </div>
             <div className="row">
               <div className="col-md-12">
                 <img className="f-map-random" src={this.randomizeImg} onClick={this.onRandomizeClick.bind(this)} />
                 <div className={`${this.continueBtnClass} f-map-next`}>
-                  <Link to={`question/${this.category}/${this.state.area}`}>
+                  <Link to={`question/${this.category}/${this.state.continentCode}`}>
                     <span>Continue</span>
                   </Link>
                 </div>
