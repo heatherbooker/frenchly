@@ -1,7 +1,9 @@
 # frenchly  
 ### french countries and nationalities  
 
-a tool to supplement other methods of language learning  
+a tool to supplement other methods of language learning
+
+--> __ie__, this came about because I was dissatisfied with the countries and nationalities presented on Duolingo
 
 currently implemented for English learners to learn in French  
 
