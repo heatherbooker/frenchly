@@ -30,7 +30,6 @@ const pickRandomContinent = function() {
 
 const markQuestionUsed = function(answer) {
   questionsUsed.push(answer);
-  console.log(questionsUsed);
 }
 
 const pickCountry = function(continentCode) {
@@ -38,7 +37,6 @@ const pickCountry = function(continentCode) {
   const index = Math.floor(Math.random() * numCountries);
   const country = data[continentCode][index];
   if (questionsUsed.indexOf(country.countryNames.english) !== -1) {
-    console.log('it KNOWS its wrong!');
     return pickCountry(continentCode);
   }
   return {
@@ -53,10 +51,8 @@ const getNationalitiesQuestion = function(continentCodeUpperCased, callback) {
   const index = Math.floor(Math.random() * numCountries);
   const country = nationalityData[continentCodeUpperCased][index];
   if (questionsUsed.indexOf(country.nationalities.english) !== -1) {
-    console.log('it KNOWS its wrong!');
     return getNationalitiesQuestion(continentCodeUpperCased);
   } else {
-    console.log('nah, we just returning a question');
     return {
         question: country.nationalities.french[0],
         answer: country.nationalities.english,
@@ -77,10 +73,8 @@ const pickQuestion = function(continentCode, category) {
       const index = Math.floor(Math.random() * numCountries);
       const country = nationalityData[continentCode.toUpperCase()][index];
       if (questionsUsed.indexOf(country.nationalities.english) !== -1) {
-        console.log('it KNOWS its wrong!');
         return getNationalitiesQuestion(continentCode.toUpperCase());
       } else {
-        console.log('nah, we just returning a question');
         return {
             question: country.nationalities.french[0],
             answer: country.nationalities.english,

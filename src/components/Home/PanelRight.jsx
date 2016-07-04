@@ -7,15 +7,16 @@ const Badge = require('../Badge.jsx');
 class PanelRight extends React.Component {
   constructor(props) {
     super(props);
+    const FrenchlyProgress = JSON.parse(localStorage.getItem('FrenchlyProgress'));
     this.state = {
-      progressPercent: window.FrenchlyProgress.score
+      progressPercent: (FrenchlyProgress.Countries.score + FrenchlyProgress.Nationalities.score) / 2
     };
   }
   handleResetClick() {
     this.setState({ progressPercent: 0 });
-    window.FrenchlyProgress = {
-      score: 0,
+    localStorage.setItem(JSON.stringify('FrenchlyProgress', {
       Countries: {
+        score: 0,
         na: false,
         sa: false,
         af: false,
@@ -23,6 +24,7 @@ class PanelRight extends React.Component {
         as: false,
         oc: false
       }, Nationalities: {
+        score: 0,
         na: false,
         sa: false,
         af: false,
@@ -30,7 +32,7 @@ class PanelRight extends React.Component {
         as: false,
         oc: false
       }
-    };
+    }));
   }
   render() {
     return (

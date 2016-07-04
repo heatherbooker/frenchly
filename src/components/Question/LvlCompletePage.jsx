@@ -8,14 +8,14 @@ var Badge = require('../Badge.jsx');
 class LvlCompletePage extends React.Component {
   constructor(props) {
     super(props);
-    console.log(window.FrenchlyProgress[props.params.category][props.params.continentCode]);
-    console.log(props.params);
-    if (window.FrenchlyProgress[props.params.category][props.params.continentCode] === false) {
-      this.state = { progress: window.FrenchlyProgress.score + 6 };
-      window.FrenchlyProgress.score = window.FrenchlyProgress.score + 6;
-      window.FrenchlyProgress[this.props.params.category][this.props.params.continentCode] = true;
+    const FrenchlyProgress = JSON.parse(localStorage.getItem('FrenchlyProgress'));
+    if (FrenchlyProgress[props.params.category][props.params.continentCode] === false) {
+      this.state = { progress: FrenchlyProgress[props.params.category].score + 12 };
+      FrenchlyProgress[props.params.category].score = FrenchlyProgress[props.params.category].score + 12;
+      FrenchlyProgress[this.props.params.category][this.props.params.continentCode] = true;
+      localStorage.setItem('FrenchlyProgress', JSON.stringify(FrenchlyProgress));
     } else {
-      this.state = { progress: window.FrenchlyProgress.score };
+      this.state = { progress: FrenchlyProgress.score };
     }
   }
   render() {

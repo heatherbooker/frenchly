@@ -26,7 +26,7 @@ class MapImg extends React.Component {
   }
   checkIfCompleted(continent) {
     let display = 'none';
-    if (window.FrenchlyProgress[this.category][continent] === true) {
+    if (JSON.parse(localStorage.getItem('FrenchlyProgress'))[this.category][continent] === true) {
       display = '';
     }
     return display;

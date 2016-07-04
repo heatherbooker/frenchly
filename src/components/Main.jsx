@@ -5,9 +5,9 @@ const Nav = require("./Nav.jsx");
 class Main extends React.Component {
   constructor() {
     super();
-    window.FrenchlyProgress = {
-      score: 0,
+    const FrenchlyProgress = {
       Countries: {
+        score: 0,
         na: false,
         sa: false,
         af: false,
@@ -15,6 +15,7 @@ class Main extends React.Component {
         as: false,
         oc: false
       }, Nationalities: {
+        score: 0,
         na: false,
         sa: false,
         af: false,
@@ -23,8 +24,8 @@ class Main extends React.Component {
         oc: false
       }
     };
-  }
-  componentDidMount() {
+    if (!localStorage.getItem('FrenchlyProgress'))
+    localStorage.setItem('FrenchlyProgress', JSON.stringify(FrenchlyProgress));
   }
   render() {
     return (
