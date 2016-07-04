@@ -39,23 +39,30 @@ const pickCountry = function(continentCode) {
   const country = data[continentCode][index];
   if (questionsUsed.indexOf(country.countryNames.english) !== -1) {
     console.log('it KNOWS its wrong!');
-    pickCountry(continentCode);
+    return pickCountry(continentCode);
   }
-  return [country, numCountries];
+  return {
+      question: country.countryNames.french,
+      answer: country.countryNames.english,
+      max: numCountries
+    };;
 }
 
-const getNationalitiesQuestion = function(continentCodeUpperCased) {
+const getNationalitiesQuestion = function(continentCodeUpperCased, callback) {
   const numCountries = nationalityData[continentCodeUpperCased].length - 1;
   const index = Math.floor(Math.random() * numCountries);
   const country = nationalityData[continentCodeUpperCased][index];
-  if (country.nationalities.english in questionsUsed) {
-    getNationalitiesQuestion(continentCode);
+  if (questionsUsed.indexOf(country.nationalities.english) !== -1) {
+    console.log('it KNOWS its wrong!');
+    return getNationalitiesQuestion(continentCodeUpperCased);
+  } else {
+    console.log('nah, we just returning a question');
+    return {
+        question: country.nationalities.french[0],
+        answer: country.nationalities.english,
+        max: numCountries
+    };
   }
-  return {
-      question: country.nationalities.french[0],
-      answer: country.nationalities.english,
-      max: numCountries
-  };
 }
 
 const pickQuestion = function(continentCode, category) {
@@ -63,15 +70,24 @@ const pickQuestion = function(continentCode, category) {
     continentCode = pickRandomContinent();
   }
   if (category === 'countries') {
-    const data = pickCountry(continentCode.toUpperCase());
-    const country = data[0];
-    return {
-      question: country.countryNames.french,
-      answer: country.countryNames.english,
-      max: data[1]
-    };
+    return pickCountry(continentCode.toUpperCase());
   } else if (category === 'nationalities') {
-    return getNationalitiesQuestion(continentCode.toUpperCase());
+    return (function() 
+    {const numCountries = nationalityData[continentCode.toUpperCase()].length - 1;
+      const index = Math.floor(Math.random() * numCountries);
+      const country = nationalityData[continentCode.toUpperCase()][index];
+      if (questionsUsed.indexOf(country.nationalities.english) !== -1) {
+        console.log('it KNOWS its wrong!');
+        return getNationalitiesQuestion(continentCode.toUpperCase());
+      } else {
+        console.log('nah, we just returning a question');
+        return {
+            question: country.nationalities.french[0],
+            answer: country.nationalities.english,
+            max: numCountries
+        };
+      }
+    }())
   }
 }
 const findQuestionComponent = function(q, questionId) {

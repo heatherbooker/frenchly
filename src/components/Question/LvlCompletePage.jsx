@@ -8,11 +8,15 @@ var Badge = require('../Badge.jsx');
 class LvlCompletePage extends React.Component {
   constructor(props) {
     super(props);
-    if (window.FrenchlyProgress[this.props.params.category][this.props.params.area] === false) {
+    console.log(window.FrenchlyProgress[props.params.category][props.params.continentCode]);
+    console.log(props.params);
+    if (window.FrenchlyProgress[props.params.category][props.params.continentCode] === false) {
+      this.state = { progress: window.FrenchlyProgress.score + 6 };
       window.FrenchlyProgress.score = window.FrenchlyProgress.score + 6;
-      window.FrenchlyProgress[this.props.params.category][this.props.params.area] = true;
+      window.FrenchlyProgress[this.props.params.category][this.props.params.continentCode] = true;
+    } else {
+      this.state = { progress: window.FrenchlyProgress.score };
     }
-    this.state = { progress: window.FrenchlyProgress.score};
   }
   render() {
     return (

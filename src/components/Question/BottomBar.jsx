@@ -95,7 +95,7 @@ class BottomBar extends React.Component {
             className={`${this.props.checkBtnClass} f-checkQ`}
             onClick={this.onBtnClick.bind(this)}>
             <Link
-              to={`question/${this.props.category}/${this.props.continent}/lvlcomplete`}
+              to={`question/${this.props.category}/${this.props.area}/lvlcomplete`}
               className={this.linkClass}>
               <span>{this.state.checkBtnText}</span>
             </Link>

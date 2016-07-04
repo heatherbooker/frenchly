@@ -20,10 +20,6 @@ const continentCodeMap = {
   randomize: 'Random'
 };
 
-//keep array of completed countries / nationalities
-let countriesUsed = [];
-let nationalitiesUsed = [];
-let used = [];
 
 class QuestionPage extends React.Component {
   constructor(props) {
@@ -60,7 +56,7 @@ class QuestionPage extends React.Component {
         if (newState.lessonScore >= 100) {
           newState.lvlComplete = true;
         }
-        logic.markQuestionUsed(this.state.answer);
+        logic.markQuestionUsed(this.state.answer, this.state.continent, this.props.params.category);
       } else {
         newState.lessonScore = this.state.lessonScore;
         newState.lvlComplete = false;
