@@ -2,11 +2,11 @@
   "name": "frenchly",
   "version": "1.0.0",
   "scripts": {
-    "start": "node server.js",
+    "start": "node server.js"
   },
   "author": "Heather Booker",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0",
+    "express": "^4.14.0"
   }
 }
