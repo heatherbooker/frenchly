@@ -15,7 +15,8 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel',
       query: {
-        presets: ['es2015', 'react', 'react-hmre']
+        presets: ['es2015', 'react']
+        //or to use hmr: presets: ['es2015', 'react', 'react-hmre']
       }
     }, {
       test: /\.svg$/,
