@@ -27,6 +27,7 @@ class AnswerBox extends React.Component {
           onChange={this.changeHandler.bind(this)}
           onKeyPress={this.listenForEnter.bind(this)}
           placeholder="Type in English"
+          autoFocus
         />
       </div>
     );

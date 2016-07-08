@@ -36,6 +36,7 @@ class Question2 extends React.Component {
                 onChange={this.changeHandler.bind(this)}
                 onKeyPress={this.listenForEnter.bind(this)}
                 placeholder="Type missing word"
+                autoFocus
               />
             </div>
           </div>

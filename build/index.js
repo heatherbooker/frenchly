@@ -28189,7 +28189,8 @@
 	          value: this.props.response,
 	          onChange: this.changeHandler.bind(this),
 	          onKeyPress: this.listenForEnter.bind(this),
-	          placeholder: 'Type in English'
+	          placeholder: 'Type in English',
+	          autoFocus: true
 	        })
 	      );
 	    }
@@ -28288,7 +28289,8 @@
 	                value: this.props.response,
 	                onChange: this.changeHandler.bind(this),
 	                onKeyPress: this.listenForEnter.bind(this),
-	                placeholder: 'Type missing word'
+	                placeholder: 'Type missing word',
+	                autoFocus: true
 	              })
 	            )
 	          )
