@@ -84,9 +84,10 @@ const pickQuestion = function(continentCode, category) {
     }())
   }
 }
-const findQuestionComponent = function(q, questionId) {
+const findQuestionComponent = function(q, lessonScore) {
   let currentQuestion = () => {};
-  if (questionId % 2 === 0) {
+  console.log(Math.floor(lessonScore));
+  if (Math.floor(lessonScore) % 2 === 0) {
     currentQuestion = function (question) {
       return (
         <Question1

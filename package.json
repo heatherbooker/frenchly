@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node server.js",
+    "hmr": "webpack-dev-server --hot --inline",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "watch": "webpack --watch",

@@ -12,6 +12,11 @@ class Question2 extends React.Component {
     this.setState({ responseGiven: e.target.value });
     this.props.onResponseChange(e.target.value);
   }
+  listenForEnter(e) {
+    if (e.which === 13) {
+      window.dispatchEvent(new Event('enterKeyPressed'));
+    }
+  }
   render() {
     return (
       <div>
@@ -29,6 +34,7 @@ class Question2 extends React.Component {
                 type="text"
                 value={this.props.response}
                 onChange={this.changeHandler.bind(this)}
+                onKeyPress={this.listenForEnter.bind(this)}
                 placeholder="Type missing word"
               />
             </div>

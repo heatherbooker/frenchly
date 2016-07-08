@@ -32,7 +32,7 @@ class QuestionPage extends React.Component {
       answerBoxState: 'f-boxA',
       checkBtnClass: 'f-btn-disabled',
       lessonMax: this.qAndA.max,
-      currentQuestion: logic.findQuestionComponent(this.qAndA.question).bind(this),
+      currentQuestion: logic.findQuestionComponent(this.qAndA.question, 0).bind(this),
       answer: this.qAndA.answer,
       continent: this.continentCode,
       lessonScore: 0,
@@ -51,7 +51,7 @@ class QuestionPage extends React.Component {
   //called by BottomBar component
     const newState = {};
     if (btnText === 'Check') {
-      if (this.state.response === this.state.answer) {
+      if (this.state.response.toLowerCase() === this.state.answer.toLowerCase()) {
         newState.lessonScore = this.state.lessonScore + (100 / this.state.lessonMax);
         if (newState.lessonScore >= 100) {
           newState.lvlComplete = true;

@@ -91,7 +91,7 @@ class MapImg extends React.Component {
   render() {
     return (
       <div className="row">
-        <svg className="f-map-img" xmlns="http://www.w3.org/2000/svg" width="672" height="315" viewBox="0 0 672 315" id="svg5249">
+        <svg className="f-map-img" width="672" height="315" viewBox="0 0 672 315" id="svg5249">
           <defs id="defs5257">
             <linearGradient id="linearGradient4299">
               <stop offset="0" id="stop4301" stopColor="#cc5252" />

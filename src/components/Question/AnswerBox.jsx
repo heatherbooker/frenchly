@@ -12,6 +12,11 @@ class AnswerBox extends React.Component {
     this.setState({ responseGiven: e.target.value });
     this.props.onResponseChange(e.target.value);
   }
+  listenForEnter(e) {
+    if (e.which === 13) {
+      window.dispatchEvent(new Event('enterKeyPressed'));
+    }
+  }
   render() {
     return (
       <div className="col-md-5">
@@ -20,7 +25,8 @@ class AnswerBox extends React.Component {
           type="text"
           value={this.props.response}
           onChange={this.changeHandler.bind(this)}
-          placeholder="Type in French"
+          onKeyPress={this.listenForEnter.bind(this)}
+          placeholder="Type in English"
         />
       </div>
     );

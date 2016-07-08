@@ -28,10 +28,16 @@ class BottomBar extends React.Component {
       reactionClass: ''
     };
   }
+  componentDidMount() {
+    const boundBtnClick = this.onBtnClick.bind(this);
+    window.addEventListener('enterKeyPressed', function() {
+      boundBtnClick();
+    });
+  }
   onBtnClick() {
     const newState = {};
     if (this.state.checkBtnText === 'Check') {
-      if (this.props.response === this.props.answer) {
+      if (this.props.response.toLowerCase() === this.props.answer.toLowerCase()) {
         this.reactToResponse(true);
       } else {
         this.reactToResponse(false);
